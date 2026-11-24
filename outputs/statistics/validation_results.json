@@ -1,0 +1,26 @@
+{
+  "procedure": {
+    "sampling": "simple random sample of 100 from 63,688 closed strict-bug cohort issues, numpy default_rng (seed 20261120), without replacement",
+    "reviewer": "single reviewer (report author) assisted by an LLM, reviewing title + first 1200 chars of the issue body against a written bug definition; automated review, NOT independent double-human validation",
+    "decision_scale": [
+      "confirmed",
+      "rejected",
+      "uncertain"
+    ]
+  },
+  "n_sample": 100,
+  "confirmed": 91,
+  "rejected": 2,
+  "uncertain": 7,
+  "precision_decided": 0.9785,
+  "wilson95_decided": [
+    0.9249,
+    0.9941
+  ],
+  "precision_incl_uncertain": 0.91,
+  "wilson95_incl_uncertain": [
+    0.8377,
+    0.9519
+  ],
+  "notes": "precision = share of sampled strict-labelled issues judged genuine bug reports; the complementary error is recall, which this procedure does NOT estimate"
+}

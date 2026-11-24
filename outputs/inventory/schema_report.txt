@@ -1,0 +1,67 @@
+OSSGameBench v2 schema report — root: <OSSGAMEBENCH_DATA_ROOT> (see schema.json note)
+
+== project: 970 rows ==
+  project: VARCHAR
+  is_fork: BOOLEAN
+  languages: VARCHAR
+  topics: VARCHAR
+  created_at: TIMESTAMP_NS
+  size: BIGINT
+  readme_content: VARCHAR
+  __index_level_0__: BIGINT
+  range created_at: 2009-08-14 10:17:27 .. 2025-08-07 09:08:23
+
+== issue: 326182 rows ==
+  project: VARCHAR
+  number: BIGINT
+  contributor: VARCHAR  [nulls=5821]
+  title: VARCHAR
+  body: VARCHAR
+  labels: VARCHAR[]
+  state: VARCHAR
+  created_at: VARCHAR
+  closed_at: VARCHAR  [nulls=58076]
+
+== issue_comment: 853302 rows ==
+  project: VARCHAR
+  issue_number: BIGINT
+  contributor: VARCHAR  [nulls=14171]
+  body: VARCHAR
+
+== pr: 396048 rows ==
+  project: VARCHAR
+  number: BIGINT
+  contributor: VARCHAR  [nulls=3693]
+  title: VARCHAR
+  body: VARCHAR
+  labels: VARCHAR[]
+  state: VARCHAR
+  created_at: VARCHAR
+  closed_at: VARCHAR  [nulls=6315]
+  merged_at: VARCHAR  [nulls=71793]
+
+== pr_comment: 689749 rows ==
+  project: VARCHAR
+  pr_number: BIGINT
+  contributor: VARCHAR  [nulls=8250]
+  body: VARCHAR
+
+== pr_commit: 1565625 rows ==
+  project: VARCHAR
+  pr_number: BIGINT
+  commit_sha: VARCHAR
+
+== issue_pr: 78060 rows ==
+  project: VARCHAR
+  issue_number: BIGINT
+  pr_number: BIGINT
+
+== commit_metadata: 970 rows ==
+  project: VARCHAR
+  file_location: VARCHAR
+  __index_level_0__: BIGINT
+
+commit detail files: 973
+total commit rows:   2796851
+issue_pr columns:    {'project': 'VARCHAR', 'issue_number': 'BIGINT', 'pr_number': 'BIGINT'}
+pr_commit columns:   {'project': 'VARCHAR', 'pr_number': 'BIGINT', 'commit_sha': 'VARCHAR'}

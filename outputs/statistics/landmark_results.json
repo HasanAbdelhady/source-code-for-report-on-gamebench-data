@@ -1,0 +1,241 @@
+{
+  "seed": 20261120,
+  "bootstrap_iterations": 10000,
+  "definition": {
+    "cohort": "closed strict-bug issues with >=1 matched linked PR",
+    "at_risk": "issue still open L days after creation (duration_days >= L); primary L = 30",
+    "landmark_group": "count of matched linked PRs CREATED within L days of issue creation (0 / 1 / >=2)",
+    "outcome": "additional days from landmark to issue closure",
+    "caveats": [
+      "PR creation time is used as a proxy for link time; the dataset has no link-creation timestamps",
+      "issues still open at the snapshot are not in the cohort",
+      "restricting to issues open at L conditions on slow closure"
+    ]
+  },
+  "by_landmark": {
+    "7": {
+      "L_days": 7,
+      "n_ab_cohort": 14942,
+      "n_at_risk": 7928,
+      "n_closed_before_landmark": 7014,
+      "group_sizes": [
+        {
+          "lg": "L_one",
+          "count": 1656
+        },
+        {
+          "lg": "L_multi",
+          "count": 47
+        },
+        {
+          "lg": "L_zero",
+          "count": 6225
+        }
+      ],
+      "primary_one_vs_multi": {
+        "comparison": "L_one vs L_multi (extra days after landmark)",
+        "n_ref": 1656,
+        "n_target": 47,
+        "median_ref_days": 8.311278935185186,
+        "median_target_days": 3.208946759259259,
+        "median_diff_days": -5.102332175925927,
+        "mw_u": 30860.0,
+        "mw_p": 0.015389184137607396,
+        "cliffs_delta": -0.20700997019220885,
+        "cliffs_magnitude": "small",
+        "hodges_lehmann_shift_days": -3.710162037037037,
+        "clustered_ci_median_diff_days": [
+          -6.75,
+          -1.36
+        ],
+        "q1_ref": 2.4596556712962956,
+        "q3_ref": 30.009733796296295,
+        "q1_target": 1.5247106481481483,
+        "q3_target": 15.572453703703705
+      },
+      "secondary_zero_vs_multi": {
+        "comparison": "L_zero vs L_multi (extra days after landmark)",
+        "n_ref": 6225,
+        "n_target": 47,
+        "median_ref_days": 67.8008912037037,
+        "median_target_days": 3.208946759259259,
+        "median_diff_days": -64.59194444444444,
+        "mw_u": 42713.0,
+        "mw_p": 5.5221100023714255e-17,
+        "cliffs_delta": -0.7080201657694608,
+        "cliffs_magnitude": "large",
+        "hodges_lehmann_shift_days": -77.72597222222223,
+        "clustered_ci_median_diff_days": [
+          -78.9,
+          -51.11
+        ],
+        "q1_ref": 18.610127314814815,
+        "q3_ref": 255.16575231481482,
+        "q1_target": 1.5247106481481483,
+        "q3_target": 15.572453703703705
+      },
+      "original_B_multiplicity_by_landmark": {
+        "0": 307,
+        "1": 128,
+        "2": 43,
+        "3": 4
+      },
+      "original_B_share_multi_only_after_landmark": 0.9024896265560166,
+      "original_A_share_zero_at_landmark": 0.7947891485361268,
+      "project_sign_test": {
+        "n_projects_both_groups_at_landmark": 20,
+        "projects_where_multi_longer": 6,
+        "binomial_p": 0.11531829833984375
+      }
+    },
+    "30": {
+      "L_days": 30,
+      "n_ab_cohort": 14942,
+      "n_at_risk": 4909,
+      "n_closed_before_landmark": 10033,
+      "group_sizes": [
+        {
+          "lg": "L_multi",
+          "count": 33
+        },
+        {
+          "lg": "L_one",
+          "count": 813
+        },
+        {
+          "lg": "L_zero",
+          "count": 4063
+        }
+      ],
+      "primary_one_vs_multi": {
+        "comparison": "L_one vs L_multi (extra days after landmark)",
+        "n_ref": 813,
+        "n_target": 33,
+        "median_ref_days": 30.021087962962966,
+        "median_target_days": 29.20892361111111,
+        "median_diff_days": -0.8121643518518553,
+        "mw_u": 13122.0,
+        "mw_p": 0.8319570370802432,
+        "cliffs_delta": -0.021804763502180476,
+        "cliffs_magnitude": "negligible",
+        "hodges_lehmann_shift_days": 0.20628472222222172,
+        "clustered_ci_median_diff_days": [
+          -22.5,
+          29.24
+        ],
+        "q1_ref": 7.737303240740744,
+        "q3_ref": 105.55854166666666,
+        "q1_target": 6.611770833333331,
+        "q3_target": 75.34898148148149
+      },
+      "secondary_zero_vs_multi": {
+        "comparison": "L_zero vs L_multi (extra days after landmark)",
+        "n_ref": 4063,
+        "n_target": 33,
+        "median_ref_days": 136.42195601851853,
+        "median_target_days": 29.20892361111111,
+        "median_diff_days": -107.21303240740741,
+        "mw_u": 34916.0,
+        "mw_p": 2.0563074821162925e-06,
+        "cliffs_delta": -0.4791727265268983,
+        "cliffs_magnitude": "large",
+        "hodges_lehmann_shift_days": -102.52244212962962,
+        "clustered_ci_median_diff_days": [
+          -140.17,
+          -67.17
+        ],
+        "q1_ref": 43.01939814814815,
+        "q3_ref": 391.37381944444445,
+        "q1_target": 6.611770833333331,
+        "q3_target": 75.34898148148149
+      },
+      "original_B_multiplicity_by_landmark": {
+        "0": 206,
+        "1": 105,
+        "2": 33
+      },
+      "original_B_share_multi_only_after_landmark": 0.9040697674418605,
+      "original_A_share_zero_at_landmark": 0.8449069003285871,
+      "project_sign_test": {
+        "n_projects_both_groups_at_landmark": 22,
+        "projects_where_multi_longer": 13,
+        "binomial_p": 0.5234670639038086
+      }
+    },
+    "90": {
+      "L_days": 90,
+      "n_ab_cohort": 14942,
+      "n_at_risk": 3094,
+      "n_closed_before_landmark": 11848,
+      "group_sizes": [
+        {
+          "lg": "L_multi",
+          "count": 22
+        },
+        {
+          "lg": "L_one",
+          "count": 449
+        },
+        {
+          "lg": "L_zero",
+          "count": 2623
+        }
+      ],
+      "primary_one_vs_multi": {
+        "comparison": "L_one vs L_multi (extra days after landmark)",
+        "n_ref": 449,
+        "n_target": 22,
+        "median_ref_days": 66.3420023148148,
+        "median_target_days": 87.49455439814815,
+        "median_diff_days": 21.152552083333347,
+        "mw_u": 5230.0,
+        "mw_p": 0.6411806144189696,
+        "cliffs_delta": 0.05891880947560235,
+        "cliffs_magnitude": "negligible",
+        "hodges_lehmann_shift_days": -7.069820601851852,
+        "clustered_ci_median_diff_days": [
+          -41.29,
+          188.96
+        ],
+        "q1_ref": 17.62165509259259,
+        "q3_ref": 230.86870370370372,
+        "q1_target": 16.820810185185184,
+        "q3_target": 274.6783854166667
+      },
+      "secondary_zero_vs_multi": {
+        "comparison": "L_zero vs L_multi (extra days after landmark)",
+        "n_ref": 2623,
+        "n_target": 22,
+        "median_ref_days": 223.83153935185186,
+        "median_target_days": 87.49455439814815,
+        "median_diff_days": -136.3369849537037,
+        "mw_u": 18915.0,
+        "mw_p": 0.00533826742709345,
+        "cliffs_delta": -0.3444355872872838,
+        "cliffs_magnitude": "medium",
+        "hodges_lehmann_shift_days": -182.4448611111111,
+        "clustered_ci_median_diff_days": [
+          -218.16,
+          30.91
+        ],
+        "q1_ref": 79.19319444444444,
+        "q3_ref": 571.1737731481481,
+        "q1_target": 16.820810185185184,
+        "q3_target": 274.6783854166667
+      },
+      "original_B_multiplicity_by_landmark": {
+        "0": 135,
+        "1": 87,
+        "2": 18,
+        "3": 4
+      },
+      "original_B_share_multi_only_after_landmark": 0.9098360655737705,
+      "original_A_share_zero_at_landmark": 0.8729824561403509,
+      "project_sign_test": {
+        "n_projects_both_groups_at_landmark": 20,
+        "projects_where_multi_longer": 12,
+        "binomial_p": 0.5034446716308594
+      }
+    }
+  }
+}

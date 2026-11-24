@@ -1,0 +1,13 @@
+\section{Bug Classification Validation Protocol}\label{app:validation}
+
+\textbf{Sampling Procedure.} To evaluate the precision of the rule-derived strict bug taxonomy (\S\ref{sec:labels}), a simple random sample of $n=\valvN$ issues was drawn without replacement from the closed strict-bug cohort using a pseudo-random generator initialized with fixed seed 20261120. All sampled issue identifiers, repository names, issue titles, and body excerpts are archived in the study's replication repository.
+
+\textbf{Operational Defect Definition.} Prior to conducting the audit, we established an explicit operational defect criterion:
+\begin{quote}
+\emph{The report describes software behaviour that deviates from expected operation---incorrect calculations, engine crashes, freezes, visual or audio rendering glitches, or memory leaks---as opposed to a request for new features, configuration guidance, or build/CI maintenance.}
+\end{quote}
+Illustrative confirmed categories include runtime crashes, logic faults in game mechanics, rendering distortions, and asset loading failures. Illustrative non-bugs include feature proposals, user gameplay inquiries, refactoring tasks, and external CI bot alerts.
+
+\textbf{Audit Execution.} Each sampled issue (title and initial 1{,}200 characters of the issue body) was independently evaluated against the written definition and assigned a classification: \emph{confirmed}, \emph{rejected}, or \emph{uncertain}, accompanied by a specific justification. As detailed in \S\ref{sec:labels}, the screening was conducted by a single investigator assisted by a large language model (LLM). It represents an assisted audit of rule precision rather than a double-blind multi-rater gold standard. All classification decisions and rationales are archived in the replication repository.
+
+\textbf{Audit Results.} Among the \valvN{} audited tickets, \valvConf{} were confirmed as genuine defects, \valvRej{} were rejected, and \valvUnc{} were classified as uncertain. Strict-tier precision is \valvPrec{} (95\% Wilson score CI \valvCI) among decided cases, and \valvPrecAll{} (95\% CI \valvCIAll) under the conservative lower-bound assumption that all uncertain cases represent classification errors.

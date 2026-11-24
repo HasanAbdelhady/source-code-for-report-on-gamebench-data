@@ -1,0 +1,54 @@
+\section{Measures and Analysis}\label{sec:method}
+
+\subsection{Identifying Bugs: Label Taxonomy and Validation Audit}\label{sec:labels}
+The OSSGameBench corpus does not contain ground-truth defect classifications; the primary signal is the set of label strings applied by repository maintainers. To identify reported bugs systematically, we extracted all \vallabelsTotal{} distinct label strings across the corpus and mapped them into three mutually exclusive tiers according to deterministic written rules:
+\begin{enumerate}
+  \item \textbf{Strict Tier} (\vallabelsStrict{} labels): Unambiguous bug assertions, including \texttt{bug}, \texttt{type: bug}, \texttt{defect}, and \texttt{kind/bug}. An issue is classified as a \emph{strict bug} if it carries at least one strict label (\valSone{} issues).
+  \item \textbf{Broad Tier} (\vallabelsBroad{} labels): Symptom-oriented indicators (e.g., \texttt{crash}, \texttt{regression}, \texttt{freeze}). Retained exclusively for sensitivity testing (robustness check R1).
+  \item \textbf{Excluded Tier} (\vallabelsExcl{} labels): Non-defect items (e.g., \texttt{enhancement}, \texttt{documentation}) and administrative tags like \texttt{duplicate} or \texttt{won't-fix}~\cite{herzig2013not}.
+\end{enumerate}
+
+\textbf{Label Validation Audit.} Because automated string rules can misclassify issues, we conducted a validation audit on a simple random sample of $n=\valvN$ issues drawn without replacement from the closed strict-bug cohort (fixed seed 20261120; all sampled issue IDs and reviewer notes are archived in the replication repository). We established a written operational defect definition prior to screening:
+\begin{quote}
+\emph{A bug report describes software behaviour that deviates from expected operation—incorrect computational results, crashes, engine freezes, visual or audio rendering glitches, or memory/resource leaks—as distinguished from requests for new features, configuration guidance, or build/CI maintenance.}
+\end{quote}
+Each sampled ticket (repository, title, and initial 1{,}200 characters of the body) was screened against this standard and marked \emph{confirmed}, \emph{rejected}, or \emph{uncertain}, accompanied by an explicit classification rationale.
+
+\textbf{Transparency and reviewer identity.} In full accordance with reporting guidelines, this screening was conducted by a single investigator \textbf{assisted by an LLM}, rather than through two independent double-blind human coders. We therefore treat this as an automated, assisted audit rather than a human-only gold standard. This audit evaluates \emph{precision} (the proportion of tickets classified as strict bugs that represent true defects); it does not evaluate \emph{recall} (unlabelled defects omitted from the strict tier). Results are detailed in \S\ref{sec:validation}.
+
+\subsection{Cohort Construction and Group Definitions}\label{sec:cohort}
+From the full set of \valSzero{} reported issues, we apply sequential filtering: retaining strict bugs, requiring a recorded status of \texttt{CLOSED} with a valid ISO timestamp, and confirming non-negative duration ($\texttt{closed\_at} \ge \texttt{created\_at}$). Table~\ref{tab:stages} tracks the exclusion pipeline, culminating in \valSfour{} closed strict bugs across \valnProjCohort{} projects.
+
+\input{tables/tab_stages}
+
+We define group membership based on the count of \emph{distinct, resolvable} linked pull requests referenced in the \texttt{issue\_pr} table:
+\begin{itemize}
+  \item \textbf{Group A (Single-PR)}: Exactly one resolvable linked PR ($n=\valnA$).
+  \item \textbf{Group B (Multi-PR)}: Two or more resolvable linked PRs ($n=\valnB$, maximum observed $k=\valmaxK$).
+  \item \textbf{Group C (No-PR)}: Zero resolvable linked PRs ($n=\valnC$). Group C issues represent the majority (76.5\%); they are analyzed descriptively but excluded from the primary comparative analysis, which addresses resolution dynamics among PR-linked issues.
+\end{itemize}
+
+\subsection{Outcome Operationalization: Duration vs.\ Debugging Effort}\label{sec:outcome}
+The outcome metric is \emph{observed issue-to-closure duration}, measured in elapsed calendar days from \texttt{created\_at} to \texttt{closed\_at}. We emphasize that this metric reflects the elapsed calendar lifespan of a ticket. It is \textbf{not a direct measure of developer debugging effort}~\cite{mockus2002two}. Calendar duration conflates active technical investigation with queueing delays, waiting for user reproduction steps, maintainer holidays, code review latency, and release cycle scheduling. Furthermore, closure does not necessarily imply a verified bug fix~\cite{herzig2013not}. Throughout this paper, ``longer closure'' refers strictly to elapsed calendar duration.
+
+\subsection{Comparative Statistical Framework}\label{sec:stats}
+Because issue lifetimes exhibit extreme positive skew (Table~\ref{tab:descriptives}), parametric comparisons of means are inappropriate. We evaluate distributional shifts using non-parametric methods:
+\begin{itemize}
+  \item \textbf{Mann--Whitney $U$ test}~\cite{mann1947test}: Evaluates the stochastic dominance hypothesis that a randomly selected Group-B issue tends to close later than a randomly selected Group-A issue.
+  \item \textbf{Cliff's $\delta$}~\cite{cliff1993dominance}: Non-parametric effect size quantifying the degree of overlap between groups:
+    \begin{equation}
+    \delta = \frac{\#(\text{Group B} > \text{Group A}) - \#(\text{Group B} < \text{Group A})}{n_A \cdot n_B}
+    \end{equation}
+    We interpret $\delta$ against established thresholds: $|\delta| < 0.147$ negligible, $<0.33$ small, $<0.474$ medium, and $\ge 0.474$ large.
+  \item \textbf{Hodges--Lehmann Shift}~\cite{hodges1963estimates}: The median of all pairwise differences between Group B and Group A observations, estimating the median location shift.
+\end{itemize}
+
+\textbf{Hierarchical clustering and honest uncertainty.} Issues within the same repository share common project maintainers, triage policies, and release workflows. Treating 14{,}942 issues as statistically independent observations risks substantially understating uncertainty. To prevent spurious precision, we compute two separate 10{,}000-draw bootstrap confidence intervals (fixed seed 20261120): an unclustered issue-level bootstrap and a \textbf{project-clustered bootstrap} (resampling whole project clusters). We treat the project-clustered interval as the definitive, honest measure of sampling uncertainty. Furthermore, we test within-project consistency using a paired sign test across all projects containing both groups and estimate a fixed-effects regression model controlling for project-level and creation-year intercepts with clustered standard errors.
+
+\subsection{Addressing Reverse Causality: PR Timing and Landmark Design}\label{sec:landmarkdesign}
+Because pull requests can only be linked to an issue while that issue remains open, Group-B membership is inherently conditioned on surviving in an open state—the classic \emph{reverse-causality trap}. We address this via three methodological approaches:
+\begin{enumerate}
+  \item \textbf{PR Arrival Timing}: We map the relative creation time of every linked PR as a fraction of the issue's total calendar lifespan ($0.0 = \text{creation}$, $1.0 = \text{closure}$). If secondary PRs arrive late in the issue's lifetime, link accumulation is strongly implicated.
+  \item \textbf{Exposure-Restricted Subset}: We re-run the comparison restricting to issues where all linked PRs were submitted within the first 50\% of the issue's lifespan. Because selecting this subset requires conditioning on the eventual closure date, this provides a descriptive bound rather than an unbiased causal estimate~\cite{vanhouwelingen2006landmark}.
+  \item \textbf{Fixed-Landmark Analysis}~\cite{vanhouwelingen2006landmark}: Our principal identification design fixes an explicit calendar milestone $L$ (primary $L=30$ days; sensitivity at $L=7$ and $L=90$ days) measured from issue creation. We restrict analysis to issues still open at day $L$ (the at-risk cohort). Each at-risk issue is assigned to a landmark group based strictly on the number of linked PRs created by day $L$ (zero, one, or two or more). The outcome is the \emph{subsequent calendar duration} from day $L$ until eventual closure. Because group assignment is determined strictly at calendar time $L$, future link accumulation cannot bias group assignment.
+\end{enumerate}

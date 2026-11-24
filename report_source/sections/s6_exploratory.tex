@@ -1,0 +1,7 @@
+\subsection{Exploratory Analyses (Supplementary)}\label{sec:exploratory}
+
+\textbf{Resolution Paths and Merge Rates} (Table~\ref{tab:exploratory}). Pull request merge behavior exhibits no meaningful divergence across groups: 97.2\% of Group A and 96.5\% of Group B issues merged at least one linked PR ($p_{\mathrm{Holm}}=0.39$), indicating that multi-PR delays do not stem from abandoned or rejected PR attempts. Commit volume (median 5 vs.\ 2, Cliff's $\delta = 0.537$) and comment counts (median 3 vs.\ 1, $\delta = 0.487$) scale with PR multiplicity as expected. However, these metrics represent \emph{activity proxies rather than cognitive debugging effort}, reflecting communication overhead and modular commits rather than intrinsic algorithmic difficulty.
+
+\input{tables/tab_exploratory}
+
+\textbf{Snapshot Censoring Check.} Because the primary analysis conditions on recorded closure, issues still open at the snapshot date are excluded. To test for potential selection bias, we performed an exploratory survival check on all open and closed strict-bug issues with $\ge 1$ linked PR reference, treating open issues as right-censored at the snapshot date. Observed-time medians remain consistent: \valkmAmed{}~days for Group A ($n=\valkmAn$, \valkmAopen{} open) vs.\ \valkmBmed{}~days for Group B ($n=\valkmBn$, \valkmBopen{} open; log-rank $\chi^2=\vallrChi, p=\vallrP$). We treat this check as purely descriptive because link counts for open tickets remain snapshot-truncated and link addition timestamps are unrecorded.

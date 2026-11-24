@@ -1,0 +1,14 @@
+# Pinned versions used to produce the results in report.pdf
+# (Python 3.15.2)
+duckdb==2.0.0
+polars==2.1.0
+polars-runtime-32==2.1.0
+pyarrow==26.0.1
+pandas==3.1.1
+numpy==2.5.5
+scipy==1.18.1
+statsmodels==0.15.0
+matplotlib==3.11.2
+seaborn==0.13.2
+PyYAML==6.0.3
+pytz==2026.6

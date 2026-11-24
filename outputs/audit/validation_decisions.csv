@@ -1,0 +1,101 @@
+project,issue_number,decision,reason
+2DGD-F0TH/2DGD_F0TH,102,confirmed,title/description report unintended or incorrect software behaviour
+Big-Onche/Tesseract-Sauerbraten,4,confirmed,title/description report unintended or incorrect software behaviour
+ChrisNeedham24/microcosm,13,confirmed,title/description report unintended or incorrect software behaviour
+CorsixTH/CorsixTH,2207,confirmed,title/description report unintended or incorrect software behaviour
+Crownicles/Crownicles,526,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,125,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,2868,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,4182,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,5318,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,5757,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,9517,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,10316,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,11860,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,12612,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,13378,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,13492,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,13907,confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,15391,confirmed,title/description report unintended or incorrect software behaviour
+Helco/zzio,321,confirmed,title/description report unintended or incorrect software behaviour
+RMC-14/RMC-14,5279,confirmed,title/description report unintended or incorrect software behaviour
+UltraStar-Deluxe/USDX,86,confirmed,title/description report unintended or incorrect software behaviour
+WandererXII/lishogi,927,confirmed,title/description report unintended or incorrect software behaviour
+akarnokd/open-ig,880,uncertain,"game-balance complaint about new content tuning, not a clear malfunction"
+angband/angband,3743,confirmed,title/description report unintended or incorrect software behaviour
+angband/angband,4188,uncertain,"vague design question ('needs some thought'), defect status unclear"
+ashteki/ashteki,1073,confirmed,title/description report unintended or incorrect software behaviour
+azuriom/azuriom,203,confirmed,title/description report unintended or incorrect software behaviour
+c7-game/prototype,343,confirmed,title/description report unintended or incorrect software behaviour
+colobot/colobot,440,confirmed,title/description report unintended or incorrect software behaviour
+colobot/colobot,547,confirmed,title/description report unintended or incorrect software behaviour
+cozuya/secret-hitler,820,confirmed,title/description report unintended or incorrect software behaviour
+draftbot-a-discord-adventure/draftbot,2009,confirmed,title/description report unintended or incorrect software behaviour
+ekolis/freee,137,confirmed,title/description report unintended or incorrect software behaviour
+endless-sky/endless-sky,502,uncertain,reporter explicitly unsure whether bug or balance decision
+endless-sky/endless-sky,5435,confirmed,title/description report unintended or incorrect software behaviour
+esports-manager/esports-manager,60,confirmed,title/description report unintended or incorrect software behaviour
+foundryvtt-starfinder/foundryvtt-starfinder,1144,confirmed,title/description report unintended or incorrect software behaviour
+freeorion/freeorion,3822,confirmed,title/description report unintended or incorrect software behaviour
+gameservermanagers/linuxgsm,319,confirmed,title/description report unintended or incorrect software behaviour
+gameservermanagers/linuxgsm,2637,confirmed,title/description report unintended or incorrect software behaviour
+gemrb/gemrb,483,confirmed,title/description report unintended or incorrect software behaviour
+genaray/arch.extended,56,confirmed,title/description report unintended or incorrect software behaviour
+genshinsim/gcsim,402,confirmed,title/description report unintended or incorrect software behaviour
+hajimehoshi/ebiten,977,confirmed,title/description report unintended or incorrect software behaviour
+hajimehoshi/ebiten,1429,confirmed,title/description report unintended or incorrect software behaviour
+idmarinas/lotgd-game,689,uncertain,"automated dependency CVE alert, not a functional-defect report"
+ja2-stracciatella/ja2-stracciatella,176,confirmed,title/description report unintended or incorrect software behaviour
+jdoleary/Spellmasons,606,uncertain,internal maintenance task to update bundled mods to new API types
+jonthysell/mzinga,40,rejected,"internal refactoring task (remove unnecessary abstraction), not a defect report"
+leek-wars/leek-wars,462,confirmed,title/description report unintended or incorrect software behaviour
+libgdx/libgdx,604,confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,9497,confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,10516,confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,11926,confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,11936,confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,11974,confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,16442,confirmed,title/description report unintended or incorrect software behaviour
+luanti-org/minetest_game,1193,confirmed,title/description report unintended or incorrect software behaviour
+lxgr-linux/pokete,279,confirmed,title/description report unintended or incorrect software behaviour
+magefree/mage,332,confirmed,title/description report unintended or incorrect software behaviour
+magefree/mage,3509,confirmed,title/description report unintended or incorrect software behaviour
+magefree/mage,3554,confirmed,title/description report unintended or incorrect software behaviour
+magefree/mage,3705,confirmed,title/description report unintended or incorrect software behaviour
+mapeditor/tiled,1558,confirmed,title/description report unintended or incorrect software behaviour
+maxilevi/project-hedra,594,confirmed,title/description report unintended or incorrect software behaviour
+minetest/minetest_game,1359,confirmed,title/description report unintended or incorrect software behaviour
+nroutasuo/level13,303,confirmed,title/description report unintended or incorrect software behaviour
+openhv/openhv,1058,confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,5652,confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,7000,confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,12018,confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,14081,confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,18332,rejected,complaint about external CI bot behaviour; reporter states it is not a game bug
+openra/openra,21197,confirmed,title/description report unintended or incorrect software behaviour
+pcgen/pcgen,6708,confirmed,title/description report unintended or incorrect software behaviour
+piqueserver/piqueserver,188,uncertain,support question; reporter unsure whether a bug exists
+piqueserver/piqueserver,504,confirmed,title/description report unintended or incorrect software behaviour
+pixijs/pixijs,2598,confirmed,title/description report unintended or incorrect software behaviour
+pixijs/pixijs,10603,confirmed,title/description report unintended or incorrect software behaviour
+quaver/quaver,189,confirmed,title/description report unintended or incorrect software behaviour
+quaver/quaver,1281,uncertain,"UX preference about resize animation, not a malfunction"
+quaver/quaver,2578,confirmed,title/description report unintended or incorrect software behaviour
+reactivedrop/reactivedrop_public_src,595,confirmed,title/description report unintended or incorrect software behaviour
+relativitymc/vmp-fabric,33,confirmed,title/description report unintended or incorrect software behaviour
+relativitymc/vmp-fabric,57,confirmed,title/description report unintended or incorrect software behaviour
+revolutionary-games/thrive,2191,confirmed,title/description report unintended or incorrect software behaviour
+revolutionary-games/thrive,2969,confirmed,title/description report unintended or incorrect software behaviour
+revolutionary-games/thrive,5432,confirmed,title/description report unintended or incorrect software behaviour
+rptools/maptool,3574,confirmed,title/description report unintended or incorrect software behaviour
+rptools/maptool,4352,confirmed,title/description report unintended or incorrect software behaviour
+sfttech/openage,1651,confirmed,title/description report unintended or incorrect software behaviour
+smcameron/space-nerds-in-space,81,confirmed,title/description report unintended or incorrect software behaviour
+softbearstudios/mk48,218,confirmed,title/description report unintended or incorrect software behaviour
+the-tale/the-tale,893,confirmed,title/description report unintended or incorrect software behaviour
+the-tale/the-tale,1456,confirmed,title/description report unintended or incorrect software behaviour
+tmodloader/tmodloader,3167,confirmed,title/description report unintended or incorrect software behaviour
+tobymao/18xx,10026,confirmed,title/description report unintended or incorrect software behaviour
+tophat2d/tophat,219,confirmed,title/description report unintended or incorrect software behaviour
+vcmi/vcmi,4693,confirmed,title/description report unintended or incorrect software behaviour
+vcmi/vcmi,6080,confirmed,title/description report unintended or incorrect software behaviour

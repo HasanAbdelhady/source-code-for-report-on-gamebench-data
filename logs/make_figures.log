@@ -1,0 +1,7 @@
+2026-11-24 19:48:53,351 INFO wrote outputs/figures/fig1_cohort.png
+2026-11-24 19:48:53,559 INFO wrote outputs/figures/fig2_ecdf.png
+2026-11-24 19:48:53,765 INFO wrote outputs/figures/fig3_kcategory.png
+2026-11-24 19:48:54,014 INFO wrote outputs/figures/fig4_projects.png
+2026-11-24 19:48:54,234 INFO wrote outputs/figures/fig5_timing.png
+2026-11-24 19:48:54,485 INFO wrote outputs/figures/fig6_robustness.png
+2026-11-24 19:48:54,485 INFO make_figures complete

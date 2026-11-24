@@ -1,0 +1,205 @@
+{
+  "dataset_root": "<OSSGAMEBENCH_DATA_ROOT>",
+  "dataset_root_note": "resolved from OSSGAMEBENCH_DATA_ROOT env var or config/config.yaml dataset.root",
+  "project": {
+    "columns": {
+      "project": "VARCHAR",
+      "is_fork": "BOOLEAN",
+      "languages": "VARCHAR",
+      "topics": "VARCHAR",
+      "created_at": "TIMESTAMP_NS",
+      "size": "BIGINT",
+      "readme_content": "VARCHAR",
+      "__index_level_0__": "BIGINT"
+    },
+    "rows": 970,
+    "null_counts": {},
+    "timestamp_ranges": {
+      "created_at": {
+        "min": "2009-08-14 10:17:27",
+        "max": "2025-08-07 09:08:23"
+      }
+    },
+    "sample_row": {
+      "project": "chesterbr/minitruco-android",
+      "is_fork": "False",
+      "languages": "{\"Java\":515464,\"Shell\":1702,\"Rich Text Format\":928}",
+      "topics": "android;game;java;jogo;truco",
+      "created_at": "2010-11-08 02:28:12",
+      "size": "16084",
+      "readme_content": "# miniTruco Android\n\n[<img alt=\"screenshot do jogo\" align=\"right\" src=\"docs/screenshots/screenshot-readme.png\" />](docs/screenshots/screenshot-readme-large.png)\n\nO miniTruco \u00e9 um jogo de truco para celulares, tablets e outros dispositivos Android.\n\nEle \u00e9 completamente gratuito, sem an\u00fancios, leve e ",
+      "__index_level_0__": "0"
+    }
+  },
+  "issue": {
+    "columns": {
+      "project": "VARCHAR",
+      "number": "BIGINT",
+      "contributor": "VARCHAR",
+      "title": "VARCHAR",
+      "body": "VARCHAR",
+      "labels": "VARCHAR[]",
+      "state": "VARCHAR",
+      "created_at": "VARCHAR",
+      "closed_at": "VARCHAR"
+    },
+    "rows": 326182,
+    "null_counts": {
+      "contributor": 5821,
+      "closed_at": 58076
+    },
+    "timestamp_ranges": {},
+    "sample_row": {
+      "project": "chesterbr/minitruco-android",
+      "number": "1",
+      "contributor": "chesterbr",
+      "title": "M\u00e3o de 10 no Truco Mineiro aparece como \"m\u00e3o de 11\"",
+      "body": "",
+      "labels": "['bug']",
+      "state": "CLOSED",
+      "created_at": "2012-12-09T02:39:04Z",
+      "closed_at": "2023-05-12T03:52:11Z"
+    }
+  },
+  "issue_comment": {
+    "columns": {
+      "project": "VARCHAR",
+      "issue_number": "BIGINT",
+      "contributor": "VARCHAR",
+      "body": "VARCHAR"
+    },
+    "rows": 853302,
+    "null_counts": {
+      "contributor": 14171
+    },
+    "timestamp_ranges": {},
+    "sample_row": {
+      "project": "chesterbr/minitruco-android",
+      "issue_number": "1",
+      "contributor": "chesterbr",
+      "body": "Resolvida por #64 "
+    }
+  },
+  "pr": {
+    "columns": {
+      "project": "VARCHAR",
+      "number": "BIGINT",
+      "contributor": "VARCHAR",
+      "title": "VARCHAR",
+      "body": "VARCHAR",
+      "labels": "VARCHAR[]",
+      "state": "VARCHAR",
+      "created_at": "VARCHAR",
+      "closed_at": "VARCHAR",
+      "merged_at": "VARCHAR"
+    },
+    "rows": 396048,
+    "null_counts": {
+      "contributor": 3693,
+      "closed_at": 6315,
+      "merged_at": 71793
+    },
+    "timestamp_ranges": {},
+    "sample_row": {
+      "project": "chesterbr/minitruco-android",
+      "number": "3",
+      "contributor": "chesterbr",
+      "title": "Fixing minor bugs",
+      "body": "- Added menu button for stupid mobile phones that hide it too much (Galaxy S5) or got rid of it entirely (Galaxy S6)\n- Score glyphs now scales (more or less) with the screen size/resolution.\n- Remove unnecessary permission (GPS) and leftover code from the late advertising experience.\n\nIt bumps Andro",
+      "labels": "[]",
+      "state": "MERGED",
+      "created_at": "2015-12-08T04:06:25Z",
+      "closed_at": "2015-12-08T04:07:36Z",
+      "merged_at": "2015-12-08T04:07:36Z"
+    }
+  },
+  "pr_comment": {
+    "columns": {
+      "project": "VARCHAR",
+      "pr_number": "BIGINT",
+      "contributor": "VARCHAR",
+      "body": "VARCHAR"
+    },
+    "rows": 689749,
+    "null_counts": {
+      "contributor": 8250
+    },
+    "timestamp_ranges": {},
+    "sample_row": {
+      "project": "chesterbr/minitruco-android",
+      "pr_number": "6",
+      "contributor": "chesterbr",
+      "body": "Rodolfo,\n\nObrigado pela contribui\u00e7\u00e3o, o c\u00f3digo parece fazer bastante sentido. Vou testar por aqui e te dou um feedback asap.\n\nS\u00f3 uma d\u00favida: nesse caso, os celulares _precisam_ estar pareados, correto? O m\u00e9todo antigo n\u00e3o exigia o pareamento - voc\u00ea acha que teria alguma maneira de um \"fallback\" para"
+    }
+  },
+  "pr_commit": {
+    "columns": {
+      "project": "VARCHAR",
+      "pr_number": "BIGINT",
+      "commit_sha": "VARCHAR"
+    },
+    "rows": 1565625,
+    "null_counts": {},
+    "timestamp_ranges": {},
+    "sample_row": {
+      "project": "maseshi/shioru",
+      "pr_number": "27",
+      "commit_sha": "916f59d602781ef36723a34a941ae66df59a00e2"
+    }
+  },
+  "issue_pr": {
+    "columns": {
+      "project": "VARCHAR",
+      "issue_number": "BIGINT",
+      "pr_number": "BIGINT"
+    },
+    "rows": 78060,
+    "null_counts": {},
+    "timestamp_ranges": {},
+    "sample_row": {
+      "project": "00-evan/shattered-pixel-dungeon",
+      "issue_number": "540",
+      "pr_number": "545"
+    }
+  },
+  "commit_metadata": {
+    "columns": {
+      "project": "VARCHAR",
+      "file_location": "VARCHAR",
+      "__index_level_0__": "BIGINT"
+    },
+    "rows": 970,
+    "null_counts": {},
+    "timestamp_ranges": {},
+    "sample_row": {
+      "project": "chesterbr/minitruco-android",
+      "file_location": "OSSGameBench/commits/commits|chesterbr|minitruco-android.parquet",
+      "__index_level_0__": "0"
+    }
+  },
+  "_extra": {
+    "issue_pr_columns": {
+      "project": "VARCHAR",
+      "issue_number": "BIGINT",
+      "pr_number": "BIGINT"
+    },
+    "issue_pr_pairs_distinct": 69099,
+    "pr_commit_columns": {
+      "project": "VARCHAR",
+      "pr_number": "BIGINT",
+      "commit_sha": "VARCHAR"
+    },
+    "commit_files_count": 973,
+    "total_commit_rows": 2796851,
+    "commit_file_columns": {
+      "repo": "VARCHAR",
+      "sha": "VARCHAR",
+      "contributor": "VARCHAR",
+      "contributor_email": "VARCHAR",
+      "created_at": "VARCHAR",
+      "message": "VARCHAR",
+      "files": "VARCHAR[]",
+      "diff": "STRUCT(change_type \"NULL\", file VARCHAR, patch VARCHAR)[]"
+    }
+  }
+}

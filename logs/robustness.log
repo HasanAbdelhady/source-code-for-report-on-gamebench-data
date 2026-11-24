@@ -1,0 +1,11 @@
+2026-11-20 16:05:56,830 INFO robustness checks: 10
+2026-11-20 16:05:56,830 INFO baseline_strict_primary | nA=14280 nB=662 diff=27.287 d=0.284 p=3.31e-35
+2026-11-20 16:05:56,831 INFO R1_broad_bug_definition | nA=17590 nB=797 diff=25.731 d=0.314 p=7.85e-51
+2026-11-20 16:05:56,831 INFO R2_grouping_on_all_references | nA=14280 nB=662 diff=27.287 d=0.284 p=3.31e-35
+2026-11-20 16:05:56,831 INFO R3_at_least_one_merged_PR | nA=13877 nB=639 diff=25.833 d=0.283 p=1.14e-33
+2026-11-20 16:05:56,831 INFO R4_continuous_multiplicity | nA=14942 nB=- diff=0.101 d=nan p=1.72e-35
+2026-11-20 16:05:56,831 INFO R5_projects_with_ge5_each_group | nA=10026 nB=522 diff=25.752 d=0.295 p=5.15e-30
+2026-11-20 16:05:56,831 INFO R6_winsorized_at_180_days | nA=14280 nB=662 diff=27.287 d=0.282 p=7.34e-35
+2026-11-20 16:05:56,831 INFO R6_winsorized_at_365_days | nA=14280 nB=662 diff=27.287 d=0.284 p=2.75e-35
+2026-11-20 16:05:56,831 INFO R6b_drop_durations_under_1h | nA=13942 nB=656 diff=27.265 d=0.279 p=1.28e-33
+2026-11-20 16:05:56,831 INFO R7_drop_top_project_per_group | nA=13058 nB=606 diff=30.883 d=0.307 p=2.02e-37

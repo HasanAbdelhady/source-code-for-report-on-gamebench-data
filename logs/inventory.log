@@ -1,0 +1,36 @@
+2026-11-20 15:40:30,481 INFO inventory written (35 items)
+2026-11-20 15:40:30,482 INFO entity_rows: {'project': 970, 'issue': 326182, 'issue_comment': 853302, 'pr': 396048, 'pr_comment': 689749, 'pr_commit': 1565625, 'issue_pr': 78060, 'commit_metadata': 970}
+2026-11-20 15:40:30,482 INFO issue_unique_keys: 326182
+2026-11-20 15:40:30,482 INFO pr_unique_keys: 396048
+2026-11-20 15:40:30,482 INFO issue_pr_raw_rows: 78060
+2026-11-20 15:40:30,482 INFO issue_pr_unique_links: 69099
+2026-11-20 15:40:30,482 INFO issue_pr_duplicate_rows: 8961
+2026-11-20 15:40:30,482 INFO pr_commit_rows: 1565625
+2026-11-20 15:40:30,482 INFO pr_commit_unique: 1565625
+2026-11-20 15:40:30,482 INFO projects_in_project_table: 970
+2026-11-20 15:40:30,482 INFO projects_in_issue: 964
+2026-11-20 15:40:30,482 INFO projects_in_pr: 934
+2026-11-20 15:40:30,482 INFO projects_in_issue_pr: 718
+2026-11-20 15:40:30,482 INFO projects_in_pr_comment: 882
+2026-11-20 15:40:30,482 INFO projects_in_issue_comment: 953
+2026-11-20 15:40:30,482 INFO issue_state_counts: {'CLOSED': 268106, 'OPEN': 58076}
+2026-11-20 15:40:30,482 INFO pr_state_counts: {'MERGED': 324255, 'CLOSED': 65478, 'OPEN': 6315}
+2026-11-20 15:40:30,482 INFO issue_created_at_malformed: 0
+2026-11-20 15:40:30,482 INFO issue_closed_at_malformed: 0
+2026-11-20 15:40:30,482 INFO issue_negative_closed_at_before_created: 0
+2026-11-20 15:40:30,482 INFO pr_created_at_malformed: 0
+2026-11-20 15:40:30,482 INFO pr_closed_at_malformed: 0
+2026-11-20 15:40:30,482 INFO pr_merged_at_malformed: 0
+2026-11-20 15:40:30,482 INFO pr_negative_closed_at_before_created: 1
+2026-11-20 15:40:30,482 INFO pr_negative_merged_before_created: 0
+2026-11-20 15:40:30,482 INFO links_unmatched_to_issue_table: 3694
+2026-11-20 15:40:30,482 INFO links_unmatched_to_pr_table: 137
+2026-11-20 15:40:30,482 INFO commit_detail_files: 973
+2026-11-20 15:40:30,482 INFO total_commits: 2796851
+2026-11-20 15:40:30,482 INFO issue_comment_has_created_at: False
+2026-11-20 15:40:30,482 INFO pr_comment_has_created_at: False
+2026-11-20 15:40:30,482 INFO issues_with_no_labels: 109326
+2026-11-20 15:40:30,482 INFO distinct_issue_labels: 4273
+2026-11-20 15:40:30,482 INFO issue_created_range: {'min': '2000-12-12T20:44:39Z', 'max': '2025-10-12T12:12:48Z'}
+2026-11-20 15:40:30,482 INFO issue_closed_range: {'min': '2010-03-23T15:15:23Z', 'max': '2025-10-12T10:05:24Z'}
+2026-11-20 15:40:30,482 INFO pr_merged_range: {'min': '2010-10-16T19:46:23Z', 'max': '2025-10-12T13:28:19Z'}

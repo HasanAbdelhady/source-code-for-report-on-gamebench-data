@@ -1,0 +1,3 @@
+2026-11-20 16:01:35,578 INFO distinct labels: 4273 | strict: 33 | broad-only: 75
+2026-11-20 16:01:35,578 INFO issues strict: 73035 | broad: 83247 | strict+closed: 63688
+2026-11-20 16:01:35,578 INFO top strict labels: ['-bug', 'bug', 'bug / 错误', 'bug report', 'bug 🐛', 'bug-report', 'bug_report', 'category:bug', 'defect', 'issue: bug', 'kind: bug', 'kind:bug', 'status: bug', 't - bug', 't: bug']

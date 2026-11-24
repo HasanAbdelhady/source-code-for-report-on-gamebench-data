@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Robustness checks R1--R7 for the primary comparison (all tests Mann--Whitney $U$ unless noted).\label{tab:robustness}}
+\small \resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrrrccc@{}}
+\toprule
+Check & $n_A$ & $n_B$ & Med.\ A & Med.\ B & Diff & $p$ & Cliff's $\delta$ & Same dir.? \\\midrule
+Baseline (strict label, matched links) & 14,280 & 662 & 8.0 & 35.3 & 27.3 & $3.31\times 10^{-35}$ & 0.284 & yes \\
+R1 broader bug definition & 17,590 & 797 & 6.6 & 32.3 & 25.7 & $7.85\times 10^{-51}$ & 0.314 & yes \\
+R2 group on all link references & 14,280 & 662 & 8.0 & 35.3 & 27.3 & $3.31\times 10^{-35}$ & 0.284 & yes \\
+R3 at least one merged linked PR & 13,877 & 639 & 7.8 & 33.7 & 25.8 & $1.14\times 10^{-33}$ & 0.283 & yes \\
+R4 PR count continuous (Spearman) & \multicolumn{4}{l}{14,942 issues with $\geq 1$ link} & Spearman $\rho$=0.101 & $1.72\times 10^{-35}$ & -- & yes \\
+R5 projects with $\geq$5 per group & 10,026 & 522 & 7.4 & 33.2 & 25.8 & $5.15\times 10^{-30}$ & 0.295 & yes \\
+R6 winsorised at 180 days & 14,280 & 662 & 8.0 & 35.3 & 27.3 & $7.34\times 10^{-35}$ & 0.282 & yes \\
+R6 winsorised at 365 days & 14,280 & 662 & 8.0 & 35.3 & 27.3 & $2.75\times 10^{-35}$ & 0.284 & yes \\
+R6b drop durations $<$1 hour & 13,942 & 656 & 8.7 & 35.9 & 27.3 & $1.28\times 10^{-33}$ & 0.279 & yes \\
+R7 drop largest project per group & 13,058 & 606 & 7.9 & 38.8 & 30.9 & $2.02\times 10^{-37}$ & 0.307 & yes \\
+\bottomrule
+\end{tabular}
+}
+\par\vspace{2pt}{\footnotesize\textit{Note: R2 is identical to the baseline by construction:}}
+\par\vspace{2pt}{\footnotesize\textit{Note: the cohort contains zero unmatched link references.}}
+\end{table}

@@ -1,0 +1,21 @@
+field,type,definition
+project,str,repository full name 'owner/repo' (composite key part)
+issue_number,int,GitHub issue number; unique only within project
+created_ts/closed_ts,timestamptz UTC,issue creation/closure timestamps
+duration_days,float days,"closed_ts - created_ts; OBSERVED issue lifetime, NOT debugging effort"
+created_year,int,calendar year of issue creation (FE covariate)
+is_broad,bool,issue matches the broader bug definition
+n_links_all,int,"unique (project,pr_number) references in issue_pr"
+n_links_matched,int,unique references resolved to pr.parquet records
+n_unmatched,int,references with no matching PR record
+group_matched,cat,"PRIMARY group: A_single=1 matched PR, B_multi>=2, C_zero=0"
+group_all,cat,sensitivity group using all unique references
+n_contrib,int,distinct linked-PR authors (matched PRs)
+n_merged,int,linked PRs with state MERGED
+n_matched_prs,int,matched linked PRs with timestamps
+median_pr_time_days,float,median per-PR creation->merge (or close) duration
+first/last_pr_days_after_issue,float,PR creation offset from issue creation (days)
+n_pr_created_before_issue_close,int,matched linked PRs created at/before issue closure
+n_commits,int,distinct commits reachable via pr_commit for matched PRs
+n_pr_comments,int,pr_comment rows across the matched linked PRs
+n_issue_comments,int,issue_comment table rows for this issue

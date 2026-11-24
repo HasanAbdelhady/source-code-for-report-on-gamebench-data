@@ -1,0 +1,8 @@
+2026-11-20 16:03:10,890 INFO S0 issues loaded: 326182
+2026-11-20 16:03:10,916 INFO strict issues: 73035 | broad issues: 83247
+2026-11-20 16:03:11,033 INFO stages: S0=326182 S1_strict=73035 S2_closed=63688 S3_valid_dur=63688
+2026-11-20 16:03:11,473 INFO S4 analysis cohort written: 63688 rows
+2026-11-20 16:03:11,474 INFO   group A_single  14280
+2026-11-20 16:03:11,474 INFO   group B_multi   662
+2026-11-20 16:03:11,474 INFO   group C_zero    48746
+2026-11-20 16:03:11,682 INFO prepare_data complete

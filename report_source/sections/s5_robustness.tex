@@ -1,0 +1,50 @@
+\subsection{Robustness of the Empirical Association}\label{sec:robustness}
+To ensure that the observed association between multi-PR status and closure delay is not an artifact of specific filtering choices, we executed seven pre-planned sensitivity tests (Table~\ref{tab:robustness} and Fig.~\ref{fig:robustness}):
+\begin{itemize}
+  \item \textbf{R1 (Broad bug labels)}: Expanding classification to include symptom labels (e.g., \texttt{crash}, \texttt{regression}).
+  \item \textbf{R2 (Unfiltered link tuples)}: Grouping on raw unresolved link references (identical to baseline, as all cohort links resolve).
+  \item \textbf{R3 (Merged PR requirement)}: Restricting to issues where at least one linked PR was merged into the main branch.
+  \item \textbf{R4 (Continuous PR count)}: Evaluating rank correlation across all $k \ge 1$.
+  \item \textbf{R5 (High-volume projects)}: Restricting to repositories containing at least 5 issues in both Group A and Group B.
+  \item \textbf{R6 (Duration truncation)}: Truncating extreme outliers ($>3{,}000$ days) and excluding sub-hour triage tickets ($<1$ hour).
+  \item \textbf{R7 (Dominant project removal)}: Dropping the single largest contributing repository from each group.
+\end{itemize}
+
+\input{tables/tab_robustness}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=.62\linewidth]{figures/fig6_robustness.pdf}
+\caption{Robustness checks R1--R7: median differences (days) and Cliff's $\delta$ effect sizes.\label{fig:robustness}}
+\end{figure}
+
+The empirical direction holds across all seven checks: Cliff's $\delta$ remains confined within a narrow band (0.279 to 0.314, all $p < 10^{-10}$), confirming that the raw statistical association is robust.
+
+\subsection{The Fixed-Landmark Finding: Disentangling Link Accumulation}\label{sec:landmark}
+The core inquiry is whether the raw \valmedDiff-day gap reflects genuine resolution friction or reverse-causality link accumulation.
+
+\textbf{Exposure-Restricted Subset.} Restricting the analysis to issues whose linked PRs were all created within the initial 50\% of the issue's lifespan reduces the median gap from \valmedDiff{}~days to \valdetDiff{}~days (Group B median \valdetMedB{} vs.\ Group A \valdetMedA{}~days; $n_A=\valdetNA$, $n_B=\valdetNB$; $\delta = \valdetD$, $p = \valdetP$). However, because selecting this subset conditions on the final closure date (the outcome itself), it acts as an informative upper bound rather than an unbiased causal estimate.
+
+\textbf{Fixed-Landmark Analysis (Primary $L=30$ days).} Among the \vallmCohort{} issues in Groups A and B, \vallmClosed{} issues closed prior to day~30 and drop out of the at-risk set. Among the remaining \vallmAtRisk{} open issues at day~30, their landmark status was:
+\begin{itemize}
+  \item \vallmNZero{} issues had accumulated \textbf{zero} linked PRs by day~30.
+  \item \vallmNOne{} issues had accumulated \textbf{exactly one} linked PR by day~30.
+  \item Only \vallmNM{} issues had accumulated \textbf{two or more} linked PRs by day~30.
+\end{itemize}
+
+When we measure the subsequent calendar duration from day~30 until closure, the gap between one-PR and multi-PR issues \textbf{completely vanishes}:
+\begin{equation}
+\text{Median}(\ge 2\text{ PRs}) - \text{Median}(1\text{ PR}) = \vallmMedM{} - \vallmMedOne{} = \vallmDiff\text{ days}
+\end{equation}
+The difference is statistically indistinguishable from zero ($\delta = \vallmD$, $p = \vallmP$, Mann--Whitney $U$). The project-clustered 95\% confidence interval spans \vallmCI{}~days, firmly straddling zero (Table~\ref{tab:landmark}). Within individual repositories, among the \vallmSignN{} projects with both landmark groups at day~30, multi-PR issues close slower in \vallmSignW{} projects and faster in 9 ($p=\vallmSignP$---equivalent to a random coin toss).
+
+\input{tables/tab_landmark}
+
+Two decisive mechanisms account for this finding:
+\begin{enumerate}
+  \item \textbf{Late Link Assembly}: \textbf{\vallmShareB{}} of original Group-B issues had not yet accumulated two PRs by day~30. Their multi-PR status was assembled in the second half of an already-prolonged open lifecycle.
+  \item \textbf{The True Bottleneck is Zero PR Activity}: Issues with \emph{no} linked PR by day~30 suffered severe subsequent delays, requiring a median of \vallmMedZ{} additional days to close after the landmark, compared to only \vallmMedM{} days for the multi-PR cohort ($\delta = \vallmZD$, $p = \vallmZP$).
+\end{enumerate}
+
+\textbf{Sensitivity at $L=7$ and $L=90$ days.} At an early landmark of $L=7$ days, multi-PR issues ($n=47$ at risk) closed 5.1 days \emph{faster} ($p=0.015$), indicating that early multi-PR activity reflects intense, active contributor focus. At $L=90$ days, the subsequent difference is small and statistically non-significant ($+21.2$ days, 95\% CI $-41.3$ to $+189.0$ days, $n=22$ multi-PR). 
+
+In summary, once the link-accumulation channel is controlled, having multiple linked PRs does not cause substantive resolution delays. The raw 27.3-day delay is predominantly an artifact of open issues accumulating pull requests over time.

@@ -1,0 +1,5 @@
+2026-11-24 16:59:46,336 INFO A+B cohort rows with landmark counts: 14942
+2026-11-24 16:59:48,368 INFO L=7: at risk 7928, groups [{'lg': 'L_one', 'count': 1656}, {'lg': 'L_multi', 'count': 47}, {'lg': 'L_zero', 'count': 6225}], one-vs-multi meddiff -5.1 d, delta -0.207
+2026-11-24 16:59:50,015 INFO L=30: at risk 4909, groups [{'lg': 'L_multi', 'count': 33}, {'lg': 'L_one', 'count': 813}, {'lg': 'L_zero', 'count': 4063}], one-vs-multi meddiff -0.8 d, delta -0.022
+2026-11-24 16:59:51,351 INFO L=90: at risk 3094, groups [{'lg': 'L_multi', 'count': 22}, {'lg': 'L_one', 'count': 449}, {'lg': 'L_zero', 'count': 2623}], one-vs-multi meddiff 21.2 d, delta 0.059
+2026-11-24 16:59:51,352 INFO landmark analysis complete

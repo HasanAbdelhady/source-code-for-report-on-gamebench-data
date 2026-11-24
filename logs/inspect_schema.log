@@ -1,0 +1,9 @@
+2026-11-24 19:45:50,398 INFO inspecting project
+2026-11-24 19:45:50,592 INFO inspecting issue
+2026-11-24 19:45:50,651 INFO inspecting issue_comment
+2026-11-24 19:45:50,713 INFO inspecting pr
+2026-11-24 19:45:50,777 INFO inspecting pr_comment
+2026-11-24 19:45:50,810 INFO inspecting pr_commit
+2026-11-24 19:45:50,823 INFO inspecting issue_pr
+2026-11-24 19:45:50,826 INFO inspecting commit_metadata
+2026-11-24 19:45:50,852 INFO schema report written to outputs/inventory/schema_report.txt

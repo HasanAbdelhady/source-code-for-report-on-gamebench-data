@@ -1,0 +1,29 @@
+\begin{table}[t]
+\centering
+\caption{Data dictionary of the analysis dataset (outputs/tables/data\_dictionary.csv).\label{tab:datadic}}
+\small \begin{tabular}{@{}llp{0.46\textwidth}@{}}
+\toprule
+Field & Type & Definition \\midrule
+\texttt{project} & str & repository full name 'owner/repo' (composite key part) \\
+\texttt{issue\_number} & int & GitHub issue number; unique only within project \\
+\texttt{created\_ts/closed\_ts} & timestamptz UTC & issue creation/closure timestamps \\
+\texttt{duration\_days} & float days & closed\_ts - created\_ts; OBSERVED issue lifetime, NOT debugging effort \\
+\texttt{created\_year} & int & calendar year of issue creation (FE covariate) \\
+\texttt{is\_broad} & bool & issue matches the broader bug definition \\
+\texttt{n\_links\_all} & int & unique (project,pr\_number) references in issue\_pr \\
+\texttt{n\_links\_matched} & int & unique references resolved to pr.parquet records \\
+\texttt{n\_unmatched} & int & references with no matching PR record \\
+\texttt{group\_matched} & cat & PRIMARY group: A\_single=1 matched PR, B\_multi>=2, C\_zero=0 \\
+\texttt{group\_all} & cat & sensitivity group using all unique references \\
+\texttt{n\_contrib} & int & distinct linked-PR authors (matched PRs) \\
+\texttt{n\_merged} & int & linked PRs with state MERGED \\
+\texttt{n\_matched\_prs} & int & matched linked PRs with timestamps \\
+\texttt{median\_pr\_time\_days} & float & median per-PR creation->merge (or close) duration \\
+\texttt{first/last\_pr\_days\_after\_issue} & float & PR creation offset from issue creation (days) \\
+\texttt{n\_pr\_created\_before\_issue\_close} & int & matched linked PRs created at/before issue closure \\
+\texttt{n\_commits} & int & distinct commits reachable via pr\_commit for matched PRs \\
+\texttt{n\_pr\_comments} & int & pr\_comment rows across the matched linked PRs \\
+\texttt{n\_issue\_comments} & int & issue\_comment table rows for this issue \\
+\bottomrule
+\end{tabular}
+\end{table}

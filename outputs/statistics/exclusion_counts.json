@@ -1,0 +1,7 @@
+{
+  "S0_total_issues": 326182,
+  "S1_strict_bug": 73035,
+  "S2_closed_nonnull_closed_at": 63688,
+  "S3_valid_nonneg_duration": 63688,
+  "S4_analysis_cohort": 63688
+}

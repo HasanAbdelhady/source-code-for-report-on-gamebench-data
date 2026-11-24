@@ -1,0 +1,4274 @@
+label,n
+bug,44608
+enhancement,22112
+Bug,15374
+Code,8407
+feature,5105
+Confirmed,4857
+good first issue,4702
+S: Untriaged,3784
+T: Bugfix,3468
+help wanted,3395
+question,3044
+Error Report,2968
+Feature,2854
+TR1,2744
+ui,2465
+programming,2404
+Crash,2344
+P2: Raised,2071
+D3: Low,2018
+type: bug,2017
+wontfix,1942
+improvement,1916
+Feature request,1858
+T: New Feature,1802
+C#,1800
+TR2,1788
+Design,1722
+D2: Medium,1684
+UI,1623
+duplicate,1596
+P3: Standard,1591
+TRX bug,1565
+T: bug,1557
+coding,1499
+Issue: Feature Request,1421
+P3: Normal,1354
+feature request,1353
+easy,1325
+documentation,1295
+fixed/done,1270
+Type: Bug,1267
+Duplicate,1224
+Networking,1202
+ChromieCraft Generic,1182
+🐞 Bug,1155
+Idea/Wishlist,1153
+Polish,1126
+est_simple,1073
+gui,1050
+category:bug,1045
+intermediate,1017
+Enhancement,999
+suggestion,984
+refactoring,964
+invalid,954
+Requestor-Player,940
+AI,933
+Несортированный,924
+Need more info,910
+🕷 Bug,908
+type_bug,888
+area:gameplay,887
+area:editor,882
+visuals,878
+Issue: Bug,877
+type_improvement,873
+Problem,861
+type/cosmetic,857
+needs triage,855
+content,827
+gameplay,825
+Low prio,819
+OG bug,817
+minor bug,817
+Red Alert,811
+task,804
+engine,776
+Quest,774
+Stale,762
+Medium Priority,753
+server,740
+stale,739
+type/behavioural,736
+no scala,733
+status:resolved,732
+Regression,716
+Requestor-Modders,712
+Parity,698
+mechanics,692
+graphics,682
+cont_usability,680
+Type-Defect,671
+client,665
+70,657
+tested,649
+comp_general,640
+difficult,630
+Unstable,629
+Priority-Medium,625
+area:song-select,621
+type: feature,620
+GUI,611
+priority:1,610
+high priority,608
+Issue: Replicated,602
+stage:microbe,599
+💡 Feature,588
+Modding,583
+DB,583
+S: Requires Content PR,582
+logic,580
+est_medium,574
+1-19,560
+Request / Suggestion,546
+ruleset/osu!,542
+A: General Interactions,538
+blocked/missing details,535
+NEW ISSUE,531
+60,526
+R: fixed (in master),524
+Ticket,518
+low priority,505
+abilities,502
+performance,502
+P1: High,502
+priority:0,498
+code-related,497
+Performance,497
+T: Cleanup,494
+T: change,492
+support,492
+type: enhancement,490
+Wait for verify,490
+external/osu!framework,486
+Priority: Medium,480
+comp_game_logic,477
+Priority: Low,473
+component:UI,472
+area:input,468
+Data,463
+cat: mod CGAME,461
+refactor,460
+Discussion,460
+50-59,458
+Unexpected behaviour,456
+DB: Beginner Friendly,456
+Low Priority,447
+Unreleased,445
+area:skinning,440
+game,432
+area:mods,428
+crash,428
+ui/ux,427
+cat: client,424
+Good First Issue,424
+Severe,420
+✨ enhancement,414
+Balancing,411
+Issue: Needs Replicating,409
+Outcome: Resolved,409
+netlify,408
+game-addition,406
+Topic: UI/UX,402
+Tiberian Sun,400
+Invalid-MissingHash/Commit/NotAC,395
+new feature,392
+Type: Enhancement,391
+Instance - Raid - Outland,391
+proposal,390
+Topic: Architecture,386
+-Bug,378
+Component-Client,376
+discussion,376
+P4: Low,375
+Gameplay,375
+D1: High,374
+os:windows,371
+hacktoberfest,371
+Instance - Raid - Vanilla,369
+Question / Support,366
+not confirmed,363
+can't reproduce,361
+area:multiplayer,360
+CONFIRMED,356
+Fix included,355
+type_task,355
+Fixed in development,351
+component:internal,349
+cont_game_designe,349
+Needs sniff,345
+Cosmetic or UI,343
+cat: mod,343
+Quirk,342
+Development Team,340
+🐛 bug,339
+area:online functionality,338
+Invalid,337
+type/performance,336
+typo / visu,336
+priority,336
+Type-CODE,335
+os:macos,334
+Dune 2000,334
+Refactor,332
+Size: Small,331
+ruleset/osu!mania,329
+request,324
+Good first issue,323
+priority:2,321
+modding,319
+Art,316
+distro: Ubuntu,315
+Crash or hang,314
+auto-migrated,313
+balancing,312
+zzz-subviews,310
+Priority: High,304
+40-49,304
+61-64,303
+system: GUI,300
+type/reliability,300
+package request,298
+Type-Bug,298
+type:refactor,298
+system: core,297
+Tiberian Dawn,297
+sourceforge,296
+audio,296
+Type: Change/Feature Request,292
+command: install,288
+Priority-Low,288
+editor,288
+brainstorm,287
+Editor,287
+Status: Needs Discussion,286
+T: Refactor,286
+A: Mapping,284
+category:feature,281
+type/audio,274
+Needs testing,273
+Multiplayer,273
+priority:3,272
+input,271
+minor,271
+os:linux,269
+status: needs test,267
+port,267
+backend,266
+Fixed in BETA,265
+T: Balance Change,260
+📢 Accepting PRs,260
+app center,258
+20-29,257
+rules-broken,257
+Map Editor,256
+Loot,256
+A: Core Tech,256
+cat: general,254
+frontend,253
+❌ Invalid,252
+Engine change needed,252
+lang: c++,251
+CORE,251
+CBOT,250
+Renderer,250
+marketing,248
+2.6,247
+unconfirmed,247
+type: game server request,243
+Feature Request,243
+type:new feature,242
+1846,241
+30-39,241
+to validate,239
+1817,238
+Question,238
+component:content scripting,238
+Scripting,236
+contributor friendly,233
+T: Performance,231
+area:replay,230
+65-69,229
+Minor Bug,229
+command: start,228
+Todo,228
+bounty,228
+status: bug,226
+experimental,225
+cat: mod QAGAME,224
+Q&A；提问与交流,224
+👌good first issue,222
+area:settings,222
+balance,221
+Audio,219
+Packaging,218
+😤Non optimal UI,217
+Type-Enhancement,216
+polish,216
+os:android,215
+Component-Server,215
+Instance - Dungeon - Vanilla,214
+Changes: UI,214
+📝 Task,213
+Topic: Rendering,212
+Help wanted,212
+rules-permissive,211
+macro changes,209
+Documentation,208
+in progress,208
+rebo,206
+stat-issue,206
+Priority: 2-Important,205
+status: enhancement,205
+website,205
+0.9.0,205
+kind: bug,203
+UI/UX,201
+bug report,201
+translation,200
+OS: Linux,199
+Instance - Dungeon - Outland,197
+Category: Build/CI,196
+command,196
+ruleset/osu!catch,195
+1822,195
+core,195
+android,195
+Bolco era ticket,194
+prio: high,193
+Help Wanted,193
+Game mechanics,192
+rtil,192
+ruleset/osu!taiko,190
+design decision,190
+auto-close,190
+changelog mention added,187
+priority: low,187
+T - Bug,187
+Status: Needs Investigation,187
+t:feature,187
+game: iwd2,186
+component:game mechanic,185
+P: normal,184
+Graphics,184
+Linux,184
+outcome: issue resolved,183
+Complexity - Medium,183
+pipeline,183
+review,183
+optimization,182
+A: Roundflow/Antag,182
+Song Select,181
+area:database,181
+os:js,179
+research needed,179
+Balance,177
+epic,177
+Improvement,176
+approved,175
+game: bg2,174
+fix-me,174
+T: enhancement,173
+i18n,172
+-High Priority,172
+non-vanilla,172
+type_story,172
+Where: Game,171
+New Feature,171
+cards,171
+Invalid-Duplicate,170
+Size: Medium,169
+Textures,168
+Invalid-Intended/WontFix/Blizzlike,168
+Instance - Dungeon - Northrend,168
+High Priority,168
+multiplayer,168
+80,168
+os:ios,168
+71-74,167
+just do it,167
+Category: Gameplay Content,167
+new game feature,166
+roadmap,166
+version-patch,165
+game: pst,165
+distro: Debian,164
+Priority-Critical,164
+Low priority,164
+World Event,163
+vNext,163
+small feature,162
+frontend/ui,161
+info: steamcmd,160
+event / mini event,160
+difficulty: medium,160
+T: UI / UX Improvement,159
+database,159
+game/mafia,159
+platform/linux,158
+wanted,158
+game.platform.nes,158
+Type-Feature,158
+Benefit - Medium,157
+major,157
+vanilla,156
+branch: master,156
+BUG,155
+decktracker,155
+engine bug,155
+Player Experience,154
+HasBacktrace,154
+A - MP,153
+area:results,153
+not a bug / invalid,152
+OS: Windows,152
+P4 Low,151
+Utility,150
+type: feature request,150
+Priority: 3-Not Required,149
+stage:multicellular,149
+dev experience,149
+battle,148
+Priority: 1-Urgent,147
+dll,147
+component: webclient,147
+system: scripting,147
+-Enhancement,147
+Type:Defect,145
+2.5,145
+Benefit - Low,145
+P2: High,145
+Won't add,144
+👍 Not A Bug,144
+comp_linguistics,144
+advmap,143
+comp_production,142
+game: iwd1,142
+tools,142
+non technical,142
+Feature - Frontend,142
+T - Enhancement,141
+Internal,141
+usability,141
+artwork,141
+Issue: Map,140
+UI rewrite,140
+rmg,140
+command: update,140
+P3 Medium,140
+platform/android,140
+regression,139
+Complexity - Low,139
+Instance - Raid - Northrend,138
+tracking set,138
+windows,137
+A - SP,137
+comp_politics,136
+💥crash,135
+Milestone-0.95.200,135
+kind: enhancement,135
+area: buildsystem,135
+no action needed,134
+ios,133
+Needs Further Testing,133
+Googlecode,132
+Size: Trivial,132
+Skinning,131
+Input,131
+difficulty:easy,131
+Investigate,131
+feedback required,130
+stats,130
+command: console,130
+R: wontfix,130
+lang: python,130
+Bug: Unconfirmed,130
+Not a bug,130
+Invalid-Can't reproduce,129
+unlikely,129
+area:beatmap parsing,129
+Not confirmed,128
+component:AI,127
+difficulty: easy,127
+priority:low,126
+URGENT,126
+platform/windows,126
+Needs verification,126
+nice new thing ☺,125
+spec-file,125
+Category: Doc,124
+Invalid-Missing Information,124
+Difficulty: Good first issue :cake:,123
+rendering,123
+A: Art,122
+area:storyboard,122
+missing feature,122
+FEATURE,122
+To do,121
+idea,120
+cannot reproduce,120
+puzzles,119
+suggested enhancement,119
+P2,118
+Приоритет: Низкий,117
+Bug / Bugfix,117
+area:server,117
+type_refactoring,116
+2.7,116
+native bug,116
+Proposal/Suggestion,116
+platform/macOS,116
+18CZ,115
+Where: UI,115
+Milestone-0.95,115
+trick；使用技巧,115
+released,115
+Changes: No C#,115
+infrastructure,114
+area: assets,114
+C: Main game,114
+*GOOD FIRST ISSUE*,114
+janitorial,114
+Awaiting Triage,114
+Component-UI,113
+Pathfinding,113
+TR3,113
+Need a game/precise steps to reproduce the issue,113
+ux,112
+game: graphics,112
+area: internal,112
+mod compatibility,112
+area:overlay-chat,111
+status: more info needed,111
+Priority:Medium,111
+Platform: Linux,110
+S: Needs Content PR Merged,110
+pending triage,110
+type:bug,109
+ice box - close and revisit later,108
+Feature - Modder Experience,108
+funding,108
+duplicated,107
+code quality,107
+Hacktoberfest,107
+1867,107
+terrain,106
+Needs Reproduction,106
+dependencies,105
+area:scoring,105
+code-maintenance,105
+18MEX,105
+undecided,104
+Needs Discussion,104
+Feature - Hook,104
+Windows,104
+compendium,103
+help-wanted,103
+need more info,102
+test,102
+Priority: Very Low,102
+🧪feature,101
+assets,101
+UX,100
+Caused by BETA,100
+launcher,100
+area:main menu,100
+Benefit - High,99
+S:Accepted,99
+comp_forum,99
+Blocker,99
+area:skyrim-platform,99
+external,98
+🥶 Low Priority,98
+✅ Одобрено,98
+Possible close,98
+category:tweak,98
+📦 Asset Store submission,98
+license,97
+status:invalid,97
+cont_texts,97
+Harzbahn 1873,96
+cat: mod UI,96
+chore,96
+Complexity - High,96
+platform/iOS,96
+enhancement；功能增强,95
+Dedicated,95
+game.kind.act,95
+VORSCHLAG,95
+game: Rust,95
+Mend: dependency security vulnerability,95
+1862,95
+compatibility,94
+scenedit,94
+Contributions Welcome/Easy,94
+Needs Feedback,94
+75-79,94
+info: docs,93
+Class - Hunter,93
+needs-investigation,93
+Type:Enhancement,93
+Usability,93
+awaiting feedback,93
+P3,93
+p1,92
+Mapgen,92
+difficulty:medium,92
+area:skin-editor,92
+iOS,91
+platform/mobile,91
+to-discuss,91
+category: regression,91
+workaround,90
+Language: Lua,90
+unconstructive,90
+Art Team,90
+2d_art,90
+🐛bug,90
+R: worksforme,90
+Type-DOCS,89
+🟢 easy,89
+Topic: Stabilization,89
+command: monitor,88
+Complexity:Low,88
+low,88
+Priority:Low,88
+Supported by core dev,88
+p0,88
+R: invalid,88
+system: effects,87
+area:installer,87
+priority: high,87
+addition,87
+maintenance,87
+prospect,87
+meta,87
+sound,87
+Priority: 3-Medium,87
+game UI,87
+engine core,86
+comp_cards,86
+type-bug,86
+Support,86
+👾 Есть C#,86
+Приоритет: Средний,86
+low-priority,86
+Game Crash,86
+new-content,86
+area: pkg,86
+design discussion,85
+tracking tasks,85
+type: improvement,85
+os:freebsd,85
+level files,85
+status: wishlist,85
+system: animations,85
+Mod Support,85
+❓ Feedback,85
+A: Game Networking,84
+Component-Logic,84
+version-minor,84
+documentation needed,84
+Meta,83
+tile rendering,83
+R: duplicate,83
+network,83
+Settings,83
+A: Character/Species,83
+Missions,83
+launcher / installation,83
+Important,82
+Binary exact,82
+beginner,82
+map bug,82
+P1: Urgent,82
+Subsystem-UI,82
+saving,81
+overlay,81
+category:refactoring,81
+1841,81
+physics,81
+A: Physics,81
+os:gopherjs,81
+game: bg1,81
+desktop,81
+nullkillerai,81
+engine api,81
+🤞 good first issue 🤞,80
+Milestone-0.94.400,80
+A: Admin Tooling,80
+issue,80
+Feature - User Experience,80
+Android,80
+info: dependency,80
+not end user,80
+new,79
+PvP,79
+Changes: Sprites,79
+S:Reproducible,79
+Category: Performance,78
+type: question,78
+info: alerts,78
+outcome: duplicate,78
+area:overlay-user-profile,78
+impeded,78
+A: Engineering,78
+game.max_player.1,78
+lobby,77
+map,77
+.Idea,77
+18USA,77
+cleanup,77
+module/render,76
+Holy Shit,76
+Needs Developer,76
+good for first timers,76
+dev ops,76
+good-first-issue,76
+SDL2,75
+1822PNW,75
+✨ Feature,75
+deckbuilder,75
+OS: MacOS,75
+Complexity:Medium,74
+Portability,74
+blocked,74
+Type/Blog,73
+Online,73
+macos,73
+trivial,73
+game/core,73
+priority:medium,73
+Priority: 4-Low,73
+scene2d,73
+security vulnerability,73
+Class - Warrior,73
+macOS,73
+prio: medium,73
+1860,73
+P1,72
+decision required,72
+effort: low,72
+Lua,72
+feat,72
+technical debt,72
+locale-ruRU,72
+core-related,72
+volunteers,71
+💰Bounty,71
+game.max_player.2,71
+ui enhancement,71
+Where: Engine,71
+Class - Death Knight,71
+command: mods,71
+Tilemaps,71
+C: Interface,71
+est_hard,71
+Proposal,71
+reso: info needed,71
+💻 FE,70
+breaking-change,70
+A - Mod,70
+🔥 High Priority,70
+1849,70
+A: Integration Tests,70
+Resolution-Fixed,70
+Localization,69
+design,69
+not a bug,69
+A: UI,69
+linux,69
+backlog,69
+original assets,69
+Priority: 2-Before Release,69
+Приритет: Высокий,69
+area:playlists,69
+Modmaker Experience,69
+pixel-precision,68
+medium priority,68
+P5 Future,68
+A: Rendering,68
+command: details,68
+1861,67
+scope: game,67
+h3feature,67
+1828.Games,67
+vanilla-bug,67
+Subsystem-ActorBehavior,67
+Changes: Map,66
+1822MX,66
+comp_quests,66
+Type: Maintenance,66
+topic:core,66
+Maintenance,66
+Class - Warlock,66
+area-gameplay,66
+18Ireland,66
+1840,65
+S: Help Wanted,65
+Translation,65
+ryzom_client,65
+component:network,65
+A: Silicons,65
+🙇‍♀️Careful thinking/design or refactoring needed,64
+vanilla peculiarity,64
+1856,64
+type: refactor,64
+info: website,63
+Support extension；可扩展,63
+cat: other,63
+todo,63
+comp_payments,63
+18NY,63
+controller,63
+hockeyapp,63
+triage,63
+Origin-googlecode,63
+command: backup,62
+area:tournament,62
+plugin,62
+cat: server,62
+dev engine,62
+area-rendering,62
+mesh,62
+Class - Druid,62
+upstream,62
+p2,62
+info: tmux,62
+t:content,62
+.Visual only,62
+campaign,61
+comp_clans,61
+distro: CentOS,61
+18Mag,61
+Size: Large,61
+18SJ,61
+area:client,61
+SatCom,61
+item,61
+big feature,61
+size: sm,61
+Bug Fix,61
+good first contribution,60
+❔support,60
+fixed,60
+Core,60
+Class - Mage,60
+Alpha 3,60
+System18,60
+hard,60
+rust,60
+1870,59
+prio: low,59
+18CO,59
+T: Of Admin Interest,59
+type: ergonomics,59
+dispute,59
+Sound,59
+game-correction,59
+Infrastructure,59
+Linux only,59
+Major Bug,59
+▲,59
+system: audio,59
+build,58
+Class - Shaman,58
+medium,58
+type_optimization,58
+Import,58
+Sounds,58
+cosmetic,58
+type: regression,58
+priority: next milestone,57
+21Moon,57
+kind:bug,57
+gwt,57
+info: being worked on,57
+networking,57
+QAston,57
+vanilla bug,57
+Map: Almayer,57
+site/general,57
+controller-related,57
+t:optimization,57
+compilation,56
+items / new pet / new monster,56
+type-enhancement,56
+18EU,56
+Difficulty: medium :lab_coat:,56
+new-feature,56
+priority: normal,56
+bug-report,56
+Script,56
+non-desktop,55
+Class - Paladin,55
+1822CA,55
+research,55
+Profession,55
+download_new_release,55
+Steam,55
+melhoria,55
+Subsystem-Renderer,55
+Vanilla Bug,55
+🟡 medium,55
+area: renderer,55
+Subsystem-Scripting,55
+patch available,55
+game: quest,55
+1871,55
+difficulty:hard,54
+qt issue,54
+comp_companions,54
+v0.6.4,54
+priority: needs attention,54
+.Needs Repro,54
+area:test coverage,54
+auto actions,54
+status: accepted/WIP,54
+t:bug,54
+priority: p4/minor,53
+Platform: Windows Desktop,53
+T:Regression,53
+priority-3-high,53
+p3,53
+LWJGL3,53
+Scope: Framework,53
+comp_architecture,53
+feature-request,53
+behaviour,53
+area:overlay-beatmap-listing,52
+18India,52
+won't fix,52
+Untriaged,52
+new games,52
+1893,52
+download,52
+python,52
+latest dev only,52
+area:overlay-mod-select,51
+autorouting,51
+GM Commands,51
+V - Needs Input,51
+comp_emissary,51
+Mmaps/Vmaps,51
+broadcasts,51
+High priority,51
+Priority: 2-High,51
+Interactions,51
+S:Investigating,50
+next release,50
+secrets,50
+component:infrastructure,50
+1880,50
+user interface,50
+.Simple,50
+github,50
+$25,50
+framework,50
+UX/UI,50
+os: windows,49
+Issue: Balance,49
+Developers Discussion,49
+▼,49
+Size: M,49
+cont_community,49
+created-by-team-member,49
+area:spectator,49
+👋 Needs confirmation/testing,49
+form submitted,49
+front page,49
+Epic,49
+Milestone-0.96,49
+Artwork,49
+on hold,48
+C:Graphical,48
+A: ECS,48
+C++,48
+site/user,48
+exotic browser,48
+Model system,48
+dev,48
+A: Combat,48
+Atomic,48
+Type: Question,48
+ready,48
+Requires Wobble,48
+outcome: wrong forum,48
+Build issue,48
+Bounty,48
+Upstream Issue,48
+area:localisation,48
+localization,47
+installation,47
+Release Blocker,47
+code work,47
+1882,47
+T: Visual Change,47
+area: simulation,47
+difficulty: hard,46
+Нет C#,46
+important,46
+priority-2-medium,46
+Bug: Specific Spell,46
+game: Valheim,46
+temporary label,45
+game: ARMA 3,45
+Minor,45
+Series/Architecting for the Cloud,45
+system: projectiles,45
+area:overlay-beatmap,45
+Players-feedback,45
+codefest23-24,45
+18Chesapeake,44
+Clear Sky,44
+procedural-crafting,44
+1844,44
+New feature,44
+investigate,44
+P2 High,44
+script,44
+DB Spawns,44
+nvui,44
+tool,44
+Junior Developers,44
+discord,44
+game request,44
+More information required,44
+OS - Linux,44
+18Rhl,44
+Results,44
+0.5 Effort,44
+critical,44
+Type: development,44
+1837,43
+:gear: Tools / Weapons,43
+ci,43
+battlegrounds,43
+command: stop,43
+server: iRO,43
+1825,43
+build system,43
+scope: rendering,43
+confirmed-bug,43
+Scope: Commands,43
+replays,43
+miscellaneous,42
+status:works for me,42
+game: 7 Days to Die,42
+Profile,42
+REMAKE,42
+medium-priority,42
+source,42
+Not Reproduced,42
+system: pathfinding,42
+user-submitted,42
+os: macos,42
+Bug: Confirmed,42
+What: Entity Work,42
+No C#,42
+dialogxml,42
+C: Port-specific,42
+Developer Experience,42
+A: Service,42
+Difficulty: hard :cactus:,41
+asset customization,41
+Requestor-TML Maintainers,41
+Easy first ticket,41
+v0.6.5,41
+mac,41
+filesystem,41
+game log,41
+Wont-Fix,41
+v8,41
+Prioritary,41
+translations,41
+Content,41
+Compat-ZD2,41
+v0.6.14,41
+comp_api,41
+Testing branch,41
+outcome: wontfix,41
+feedback :mega:,41
+challenges,41
+Impact-Visible-To-Players,40
+modelling,40
+priority:high,40
+Battlegrounds,40
+This is a feature :) Not really a bug,40
+D0: Irrational,40
+18ESP,40
+blocker,40
+Multiplayer/Skirmish,40
+consistency - style,40
+Map Page,40
+Outdated,40
+api/graphql,40
+S:Discussion,40
+build-configuration,39
+priority: release blocker,39
+V - Invalid,39
+Mac only,39
+A: Medical,39
+game: Minecraft,39
+external/SDL,39
+A: Serialization,39
+routes,39
+effort: unknown,39
+component:user manual,39
+Subsystem-MapFormat,39
+to be released,39
+S:Duplicate,39
+ability,39
+A: Accessibility,38
+game: Counter-Strike: Global Offensive,38
+tracker:dungeon,38
+needs-research,38
+Movement/MMaps,38
+trash,38
+Critical,38
+linux / macos,38
+Game Logic,38
+auto-evo,38
+core: Mednafen,38
+area:front,38
+art,38
+Bite-sized,38
+Build,38
+game: Garry's Mod,38
+hard-to-implement,38
+Limitation,38
+Type: Improvement,38
+Class - Rogue,38
+should have,38
+cont_content,37
+area: web,37
+command: restart,37
+pending,37
+Platform: macOS,37
+mobile,37
+quality of life,37
+18MS,37
+build-system,37
+Class - Priest,37
+texture work,37
+beta,37
+core engine,37
+environment/code refactor,37
+up for grabs,37
+Major,37
+retest,37
+needs more info,37
+High Priority :grey_exclamation:,37
+investigating,36
+R: fixed (in v4),36
+t:refactoring,36
+Containers,36
+release,36
+size/S,36
+active,36
+Resources - ExampleMod,36
+18RoyalGorge,36
+AuthorNeeded,36
+Issue: Intended Feature,36
+Feature - Backend,36
+area-graphics,36
+area:difficulty,36
+lua,36
+comp_market,36
+A: Cargo/Salvage,36
+patch,36
+Waiting,35
+1848,35
+game: Teamspeak 3,35
+category-engine,35
+😇A workaround exists,35
+os:openbsd,35
+Won't fix,35
+Priority 2,35
+kind: game alignment,35
+info: docker,35
+Type-Change,35
+Compat-ZD1.23,35
+Unconfirmed bug,35
+replay,35
+Modifiers,35
+v4,35
+area-ui,34
+not enough information,34
+Platform: Windows,34
+Category: Security,34
+Labels,34
+scope: tool,34
+oh shit! I need help,34
+campaigns,34
+Milestone-0.93.600,34
+foundational,34
+topic:item,34
+magic,34
+bug 🐛,34
+-Low Priority,34
+misc,34
+area: documentation,34
+0.5.4,34
+architecture,34
+breaking change,34
+xml,33
+docs,33
+done,33
+API,33
+outcome: issue unresolved,33
+OS:Linux,33
+P1 Critical,33
+HD,33
+game: Ark: Survival Evolved,33
+C:SDL2,33
+status:won't fix,33
+game: ees,33
+FAQ,33
+free software,33
+On Hold,33
+priority-1-low,33
+Category: Crash,33
+Bug: Engine,33
+game/other,33
+Type: Refactoring,33
+Urgent,33
+type: documentation,32
+Suggestion,32
+area:ci,32
+Needs Design,32
+area:daily challenge,32
+1866,32
+Priority: high,32
+Series/Main Series,32
+desktop-app,32
+language,32
+controls,32
+download_network_error,32
+Platform Specific,32
+Priority:High,32
+category-ui,32
+Release: 2.0,32
+high,32
+priority: p3/standard,32
+Impact: Bad Game Rules,32
+OS-Linux,32
+:gear: Nodes,32
+fixed or duplicate,32
+ability timing,32
+importer-related,31
+Origin-Bugzilla,31
+v7,31
+visibility,31
+Difficulty: easy,31
+area: visuals,31
+gradle,31
+v0.6.7,31
+dependency bug,31
+mods,31
+Configuration,31
+HIGH PRIORITY,31
+:gear: Maps,31
+can be hard/high effort,31
+Codebase-Reduction,31
+design needed,31
+C:UI,31
+Subsystem-Resources,31
+tech debt,31
+size/M,31
+0.4,31
+wine-bug,31
+a:menus,31
+User Interface,31
+func:Main,31
+portability,30
+🤷‍♀️Unclear documentation or interface,30
+Not reproducable,30
+claimed,30
+:gear: AntiAbuse,30
+topic:entry-gen,30
+🐠 Upstream Bug,30
+Feature: Minor,30
+reproduced,30
+component:art music text assets,30
+need feedback,30
+:gear: Classes,30
+qol,30
+player,30
+PRI 1,30
+dictionaries,30
+scope: card,30
+1 Effort,30
+Milestone-0.93.400,30
+tests,30
+Models,30
+changes-network-protocol,30
+beginner friendly,30
+ux/ui,30
+component: javaclient,30
+lila-search,30
+0.3,30
+more info needed,30
+v0.6.3,30
+Controversial,29
+RollingStock,29
+1824,29
+Low Priority :sleeping:,29
+fixed-for-next-release,29
+Broken,29
+modification,29
+game: demo,29
+ui/low-code,29
+original issue from c3,29
+Статус: Несортированный,29
+Platform-Docker,29
+engine feature,29
+cairo,29
+:gear: Scoring,29
+high-priority,29
+change request,29
+android/mobile,29
+non-gating,29
+no response,29
+comp_pvp,29
+priority: problematic,29
+S:Help wanted,29
+0.6,28
+1836Jr30,28
+1822Africa,28
+godot,28
+component:build system,28
+code review,28
+Classic,28
+A: Audio,28
+Close: done,28
+area:overlay-now-playing,28
+HearthStats,28
+missing characters,28
+v0.6.6,28
+area/user-experiences,28
+QoL,28
+type:feat,28
+needs confirmation,28
+buildpkg,28
+Priority: 5-Whenever,28
+ODHack11,28
+app feature,28
+DevOps,28
+🎨 HTML&CSS,28
+confirmed,28
+3D,28
+waiting response,27
+status: volunteer required,27
+crashbug,27
+stock market,27
+scene graph,27
+non-doom,27
+ideas,27
+priority-4-critical,27
+External (3rd party),27
+a:HUD,27
+deferred,27
+Changes: C#,27
+augment,27
+Module,27
+v0.6.15,27
+area:ruleset-api,27
+map-editor,27
+game.kind.spg,27
+question/general discussion,27
+design-needed,27
+C: Gameplay,27
+DevOps - CICD,26
+P0: Critical,26
+engine(java),26
+data,26
+18NewEngland,26
+tvOS,26
+artifacts,26
+Code Quality,26
+tracker:generally,26
+nel_3d,26
+upstream issues,26
+fixed in next release,26
+needs to be tested,26
+area: ui,26
+build_system,26
+18 Los Angeles,26
+Usability issue,26
+module/physics,26
+Priority 3,26
+Subsystem-Netcode,26
+💻 BE,26
+builder,26
+Prio Low,26
+need info,26
+v0.6.12,26
+area:import,26
+spreadsheet,26
+Портирование,26
+Milestone-0.93.500,26
+OG,26
+Rules,26
+technical,26
+p2-nice-to-have,26
+OS:Mac,26
+debatable,26
+status: please discuss further,26
+Complexity:High,26
+Type-Missing,26
+Out of Scope,26
+18AL,26
+type: user-experience,26
+input-related,26
+WIP,25
+area: Recast,25
+P - High,25
+comp_folclor,25
+fidelity,25
+Type: Performance,25
+topic:documentation,25
+0.5.2,25
+model work,25
+web,25
+area-sound,25
+:gift: Rewarded on Issuehunt,25
+work,25
+v0.6.11,25
+closed source,25
+GUI Tools,25
+nel_misc,25
+18Uruguay,25
+2 Effort,25
+2025:service,25
+kind: design limitation,25
+Project Decision,24
+status: needs verifying,24
+status: accepted,24
+18TN,24
+Campaign,24
+area:overlays,24
+0.7,24
+PRI 2,24
+entity display,24
+obsolete content,24
+lib,24
+topic:ide-plugin,24
+A: Toolshed,24
+needs clarification,24
+Game,24
+comp_world,24
+v0.6.16,24
+Needs Triage,24
+SDL1.2,24
+Type: 优化 Enhancement,24
+deployment,24
+touchscreen,24
+S: Requires Engine PR,24
+reso: duplicate,24
+wz,24
+Undecided,24
+Size: Very Large,24
+deploy infra,24
+area:overlay-changelog,24
+plugin?,23
+closed-for-archiving,23
+Delete game,23
+exploitable,23
+Requires Quaver.API,23
+Lua code,23
+component: server,23
+area: Detour,23
+Issue: Possibly Resolved,23
+Game assets,23
+size: md,23
+reso: won't fix,23
+easy to solve,23
+Changes: YML,23
+animation,23
+finder,23
+Programming,23
+Platform: Mac,23
+18Neb,23
+cba,23
+1868WY,23
+fonts,23
+module/render/gles3,23
+Issue: Accessibility,23
+ryzom_server,23
+topic:perf,23
+C++ code,23
+A: Science,22
+official_feature,22
+command: debug,22
+Size: S,22
+OS:Windows,22
+chunky boi,22
+type: ideas/discussion,22
+unfinished content,22
+ODHack7,22
+0.5.3,22
+EPIC,22
+deployement,22
+scope: script,22
+root:attributes-sync,22
+os: Linux,22
+site/moderation,22
+Needs info,22
+A: Localization,22
+Ребаланс,22
+vulkan-api,22
+charedit,22
+requires feedback,22
+packaging,22
+Bug - Vanilla,22
+onchain,22
+reso: can't reproduce,22
+steam,22
+Fire subsystem,22
+No core dev support long term,22
+train requests,21
+effort: moderate,21
+Type/Chore,21
+1850,21
+V - Won't Fix,21
+cd/ci/testing,21
+interface,21
+engine / rust,21
+escalations,21
+game-proposal,21
+Outcome: Invalid,21
+resolution: invalid,21
+scope: database,21
+G: Feature,21
+web-app,21
+In Development,21
+Comms,21
+greenkeeper,21
+func:Settings,21
+code cleaning,21
+scripts,21
+component: website,21
+A: Tooling,21
+Series/Tales from the real world,21
+P - Medium,21
+Нужны спрайтеры,21
+A: Security,21
+priority: Low,21
+bounty 💰,21
+unrelated,21
+Security,21
+T:Translation,21
+1858,21
+security,21
+0.5,21
+os:nintendoswitch,21
+variant,21
+*HARD*,21
+renderer/directx,21
+:gear: GUI / HUD,21
+S:Upstream,21
+building,20
+fixed in aurora branch,20
+Fixed,20
+LibGDX,20
+game: Project Zomboid,20
+breaking,20
+dev team approved,20
+bug confirmed,20
+Status-ReadyForTesting,20
+Size: Very Small,20
+topic:gui,20
+OS - Mac,20
+multires,20
+caveexpress,20
+Platform: MacOS,20
+Flutter issue,20
+priority: medium,20
+1852: Missouri,20
+1830,20
+3 - Address Soon,20
+Type: 漏洞 Bug,20
+tracker:damagemeter,20
+ocr,20
+Architecture,20
+Won't add :no_entry_sign:,20
+CI/CD,20
+Priority,20
+Blocked,20
+Features not accepted,20
+OpenGL,20
+graphics:Vulkan,20
+Mapping Team,20
+status: wontfix,20
+scope: GUI,20
+勘误,20
+Medium,20
+service required,20
+javascript,20
+Rejected,20
+status: invalid,20
+category-content,20
+game: Don't Starve Together,19
+effort: high,19
+status:duplicate,19
+GL,19
+platform:windows,19
+Blocked: Requires review,19
+:gear: PVP,19
+Status: Accepted,19
+system: combat,19
+no-repro,19
+Priority-High,19
+type: micro-AI,19
+.Complicated,19
+G - JK2,19
+editor2,19
+area:functions-lib,19
+working as designed,19
+V - Duplicate,19
+LegacyTesting,19
+generally,19
+Needs Clarification,19
+server: iRO Re:start,19
+HearthMirror,19
+Severity-Critical,19
+ryzom_gui,19
+T:Re-code,19
+type:non code,19
+Milestone-0.94.200,19
+Non-trivial,19
+devops,19
+distribution,19
+Entities,19
+Series/Cloud Drops,19
+size/L,19
+solo,19
+unexpected-behavior,19
+Complexity: <30min,19
+testing,19
+alpha,19
+optional rules,19
+controversial,19
+platform-specific,19
+18FL,19
+os-android,19
+Main Menu,19
+Testing,19
+Mods,19
+ignore-stale,19
+fix,18
+p3-minor,18
+scope: graphics,18
+cmake,18
+priority-0-trivial,18
+game:app,18
+KotOR,18
+command: update-lgsm,18
+underbaked,18
+accessibility,18
+🔴 hard,18
+area:beatmap change tracking,18
+c:UX,18
+status bar / hud,18
+1889,18
+P0,18
+premium modules,18
+better streams,18
+screenreader,18
+OS-specific,18
+❌ Duplicate,18
+build error,18
+module/render/gles2,18
+module/render/ui,18
+D: Medium,18
+18GA,18
+automation,18
+priority:normal,18
+D: Simple,18
+Call of Pripyat,18
+Not enough information,18
+chargen,18
+area:overlay-wiki,18
+from-discord,18
+General,18
+whisky-bug,18
+SDL-related,18
+FIXXED,18
+entities,18
+Bug: Replicated,18
+Severity2: Major,18
+ltn,18
+P: blocker,18
+feedback wanted,18
+:gear: Inventory,18
+IllegalStateException,18
+category: refactor wishlist,18
+code-complete,18
+server: Private,18
+core: Mupen,18
+os: linux,18
+Balance Tweak,18
+category: touch/mobile,18
+command: fast-dl,18
+Docs,17
+Revive: Keep,17
+game.kind.stg,17
+game-design,17
+tracker:lootlogger,17
+waiting-on-design,17
+ODHack8,17
+Type: Dream,17
+dotnet,17
+Spectator,17
+size/XS,17
+topic:gradle-plugin,17
+size:S,17
+os: macOS,17
+Context: isolated,17
+not our bug,17
+tag: New Contributors  welcome,17
+level editor,17
+battleai,17
+lang: cython,17
+Maintainability,17
+18Norway,17
+Category: Test/QA,17
+EPub Release,17
+collab,17
+C:Map Editor,17
+info: query,17
+MVP,17
+Severity-HardCrash,17
+Cleanup,17
+root:front-constructor,17
+a11y,17
+replicated,17
+game engine example；游戏客户端联调示例,17
+🔀Issue with external dependency,17
+network / connection,17
+type: crash,16
+Tentative,16
+urgent,16
+fix available,16
+requirement,16
+requires OpenRA change,16
+needs investigation,16
+Milestone-0.94,16
+JavaScript,16
+internationalization,16
+kind: needs investigation,16
+A: Chat,16
+Type-Task,16
+type: docs,16
+Think / consider in the future,16
+Compat-Vanilla,16
+module/platform,16
+internal,16
+Playlists,16
+asset conversion,16
+1847AE,16
+Resources - Documentation,16
+Task,16
+component:deployment,16
+ui / react,16
+world,16
+tiles,16
+Network,16
+type: new feature,16
+LINUX,16
+tilemap,16
+gamemod,16
+AP-related,16
+10 Effort,16
+Examine,16
+potential-duplicate,16
+area:tooling,16
+LOTT,16
+3.6,16
+1 - Nice to Have,16
+:gear: MapEditor,16
+resources,16
+profile,16
+Building,16
+$50,16
+comp_discord,16
+battles,16
+requires more info,16
+Feature: Major,16
+good first task,16
+T: Chore,16
+18GB,15
+Milestone-Release1.0,15
+Data incorrect,15
+command: validate,15
+Cannot reproduce,15
+¿,15
+Controller,15
+Fun: Bug of the Year 2022 Candidate,15
+scope: text,15
+18VA,15
+exists-a-mod,15
+needs discussion,15
+Severity3: Minor,15
+Maintenance / Performance,15
+PRI 0,15
+component: webview (android),15
+lang:kotlin-only,15
+Issue: Awaiting Response,15
+scope: assets,15
+18ZOO,15
+Languages,15
+command: send,15
+dev-branch,15
+renderer,15
+Blocked: Needs more info,15
+GDevelop 4,15
+need more information,15
+port-from-freeciv,15
+May support；计划支持，但不紧急,15
+reso: CHPP,15
+P: low,15
+dev-interface,15
+Complexity: 2-6h,15
+gameplay/balance,15
+débito técnico,15
+Crafting subsystem,15
+imperative,15
+new feature documented,15
+contracts mode,15
+need programmer :computer:,15
+func:KeyConfig,15
+Difficulty: intermediate,15
+func:Result,15
+docs & wiki,15
+:gear: Teams,15
+C: Project admin,15
+Compat-MBF21,15
+not reproducible,15
+decks,15
+0.5.1,15
+carthage-release-review,14
+v1,14
+vue3 migration,14
+Нужны маперы,14
+back-port,14
+Status: Deployed,14
+game: Barotrauma,14
+Confirmed on PC,14
+2 - Address Eventually,14
+Milestone-0.98,14
+server: idRO,14
+Difficulty: Hard,14
+file-format-support,14
+nextpatch,14
+effects,14
+management,14
+info page,14
+v0.6.x,14
+Missing info,14
+playground,14
+status:workaround,14
+Component-BuildSystem,14
+moderate priority,14
+difficulty: elusive,14
+4 Effort,14
+Fun: Bug of the Year 2023 Candidate,14
+gameplay enh.,14
+data layer,14
+compatibility change,14
+info: help wanted,14
+Original,14
+system-N64,14
+Simulation oddity,14
+reopened,14
+denied,14
+potentially-fixed,14
+❌ Wontfix,14
+waiting on OP,14
+game: Factorio,14
+team core,14
+A - Engine,14
+A: Guidebook,14
+Panzerfaust-Launcher,14
+A: Atmospherics,14
+=> V.4,14
+game design,14
+info: blocked by other issue,14
+parser,14
+progression,14
+Pre-Release Problem,14
+canvas,14
+needs-info,14
+Can't reproduce,14
+Pending Triage,14
+💭discussion,14
+2/FM,14
+sdl2,14
+carthage-puntable,14
+region,14
+Frontend,14
+Idea,13
+:gear: Matches,13
+game.max_player.4,13
+Milestone-0.97,13
+h2016,13
+hang on,13
+S: Legacy Code,13
+topic:gfx,13
+perf/reliabilty,13
+v0.6.13,13
+Waiting For More Info from Author,13
+game: Counter-Strike 1.6,13
+game.series.mega_man,13
+topic:api-gen,13
+cli,13
+essential,13
+Source Related,13
+PR Open,13
+game: Unreal Tournament 2004,13
+vcai,13
+plugins,13
+topic:asset,13
+ON HOLD,13
+Components,13
+sounds,13
+longterm,13
+easyrtc,13
+part: interaction state,13
+Needs OP Response,13
+T:Wiki,13
+Sound-Effects,13
+G - JKA,13
+awaiting reply,13
+SMBX-38A,13
+Engine change needed :steam_locomotive:,13
+C: Documentation,13
+hack event,13
+runtime-sniper,13
+NEED A TEST,13
+❓question,13
+Size: L,13
+Type: Idea/Concept,13
+doc,13
+type: tasks,13
+site/forum,13
+TextRU,13
+proposed-change,13
+area: devops,13
+core commands,13
+area:comments,13
+players,13
+Status: Needs Author Input,13
+townscreen,13
+feature_request,13
+module/math,13
+oddity,13
+What: Renderer,13
+In Progress,13
+new assets,13
+GBC,13
+area:toolbar,13
+Resolution-Wontfix,13
+Fun: Bug of the Year 2024 Candidate,13
+OS - Windows,13
+Subsystem-Input,13
+Type-bug,13
+Статус: Требует Рассмотрения,13
+func:Title,13
+tracking,13
+study,13
+area-window,13
+Leaderboard,13
+Revive: Convert,13
+dependent,13
+Project:Windows,13
+platform:mac,12
+component:dashboard,12
+18Ardennes,12
+reso: invalid,12
+VoDT,12
+Context: intricated,12
+Exploits and Security,12
+npc-ai,12
+18Carolinas,12
+scope: filters,12
+new-mod,12
+maybe-critical,12
+ci/cd,12
+music/sound effects,12
+Type-enhancement,12
+Will Do,12
+Health,12
+cant_reproduce,12
+bugfix,12
+polishing,12
+for: chartmaker,12
+Bash,12
+build_pipeline,12
+Дубль,12
+cantfix,12
+A: View Variables,12
+Physics,12
+forum discussion,12
+Status: Untriaged,12
+Protocol,12
+Severity-Trivial,12
+system-PSX,12
+priority: urgent,12
+A - Client,12
+Wont be fixed,12
+topic:vulkan,12
+Changes: Sprite,12
+Platform-Linux,12
+Biggie,12
+Feature - Simulation,12
+Resources - Wiki,12
+Compat-Boom,12
+SDK,12
+Difficulty: Medium,12
+scripting,12
+Type: feature,12
+module: training,12
+Type-TOOLING,12
+Minimal differences,12
+💨 Technical debt removal,12
+user-interface,12
+chat,12
+Open for contribution,12
+area: infrastructure,12
+enhancement 🚀,12
+low prio,12
+a:control,12
+distro: Fedora,12
+agent,12
+the empire,12
+almost a bug,12
+topic:render,12
+Rendering,12
+legal,12
+Topic: WorldGen,12
+jenny,12
+Wontfix,12
+DirectX,11
+Topic: Physics,11
+game: npc,11
+blocking,11
+Priority: medium,11
+UI-Layout,11
+Asset Issue,11
+sound-issues-on-windows,11
+nice to have,11
+game state api,11
+game: Minecraft Bedrock,11
+group,11
+Patron request,11
+module/core,11
+not implemented,11
+Project:OpenGL,11
+Engine Issue,11
+discontinued,11
+SMBX2,11
+front end,11
+vocaluxe,11
+code,11
+root:damage-sync,11
+upstream issue,11
+game:core,11
+rfc,11
+OS-Mac,11
+v0.6.8,11
+confirmed-fix,11
+accepted,11
+resolved,11
+pri-1,11
+rules-ambiguity,11
+Priority 1,11
+area/tests,11
+need discussion,11
+C: Build,11
+Map Search Page,11
+Required for other issues,11
+config options,11
+vr-feature,11
+bugsnag,11
+need game,11
+Homepage,11
+game: Unreal Tournament 99,11
+▪ 游戏机制 Design mechanics,11
+the undead hordes,11
+PRI 3,11
+comp_textgen,11
+kobolds,11
+server-related,11
+Outcome: Won't Do,11
+Asset Browser,11
+artifact,11
+component:technical docs,11
+🐞 BugFix,11
+blocked by engine,11
+P - Low,11
+events-managment,11
+combat,11
+assert,11
+Нужна помощь,11
+area-io,11
+Floordata,11
+Information-Display,10
+status:wip,10
+area: network,10
+mob,10
+ui tweak,10
+status: help-wanted,10
+General Management,10
+scope: text-bitmap,10
+Subsystem-Sound,10
+area: DetourTileCache,10
+Launcher,10
+Lobby,10
+planned,10
+Feature - Performance,10
+cavepacker,10
+not a goal,10
+topic:build,10
+need an analys,10
+help welcome,10
+asset,10
+renderer/legacy-gl,10
+game: Squad,10
+resolution: wontfix,10
+game: world,10
+Releases,10
+game: Insurgency: Sandstorm,10
+ready for testing,10
+interactive docs,10
+h2,10
+Unclaimed bounty,10
+Feature: Patch,10
+Clean/Refactor,10
+offline bots,10
+Documentation request / missing / error,10
+Obscure,10
+experiment,10
+1888,10
+type: saving / loading,10
+game.series.nekketsu,10
+won't fix :-(,10
+G: Bug,10
+tracker:trademonitoring,10
+env: webgpu,10
+math,10
+part: ui,10
+Requires TombEditor changes,10
+area-tools,10
+area:overlay-dashboard,10
+Type/Video,10
+game:server,10
+comp_achievements,10
+stage:macroscopic,10
+long-term,10
+repo feature,10
+post-release,10
+Type: Feature Request,10
+repeating,10
+Reflection,10
+G: API,10
+🛸 X-Files,10
+KEIN BUG,10
+Lua API,10
+Bounty: 15 dollars :moneybag:,10
+hacktoberfest-accepted,10
+Cannot Reproduce,10
+Component-Launcher,10
+Fix,10
+controllers,10
+p1-chore,10
+May revisit,10
+bug_report,10
+category-infra,10
+Status: Stale,10
+sound work,10
+Solved,10
+not-planned,10
+renderer/veldrid-gl,10
+Closed: Won't Fix,10
+Mission,10
+Priority: 草案 Draft,10
+type: installer,10
+Alpha 4,9
+nation,9
+Next,9
+Requires Artwork,9
+Skirmish,9
+Feature - Map,9
+demo player,9
+blocking release,9
+party mode,9
+Project:Multiplayer,9
+faithfulness,9
+Requires Server,9
+game.series.ninja_gaiden,9
+dialog,9
+dialogs/menus,9
+game.series.tmnt,9
+pins,9
+highly requested!,9
+module territory,9
+Not a Bug,9
+level submission,9
+no-priority,9
+outcome: pr accepted,9
+feature ✨,9
+platform:linux,9
+Waiting for author,9
+Where: Tool,9
+online,9
+original behaviour,9
+WIP Concept,9
+temporarily unsupported,9
+bad parsing 🧩,9
+game: Counter-Strike 2,9
+deferred: dependent on other issues,9
+distro: Arch Linux,9
+LTTA,9
+competitive,9
+driver bug,9
+DUPLIKAT,9
+iCade,9
+Priority: LOW,9
+Blocked: Needs UX / Design,9
+V10 Issue,9
+cluster,9
+settings,9
+S: Needs Discussion,9
+game: Call of Duty 4,9
+Combat,9
+Topic: Concurrency,9
+dataset,9
+game-blocked,9
+widgetry,9
+outcome: unconfirmed,9
+game play,9
+need confirmation,9
+Bounty: 30 dollars :moneybag:,9
+the future,9
+scope:small,9
+wine bugs,9
+info: systemd,9
+area-macOS,9
+Code Improvement,9
+Blocked: Needs testing & verification,9
+wont fix,9
+inconsistency,9
+Song Format,9
+1817WO,9
+has workaround,9
+SweetPie,9
+command: wipe,9
+S:Info-given,9
+M: UI,9
+aurora,9
+demo,9
+Feature: Refactor,9
+Shadow of Chernobyl,9
+clarification,9
+state: needs more info,9
+All Platforms,9
+share size,9
+engagement,9
+future,9
+RHI,9
+import,9
+root-task,9
+spike,9
+brawl,9
+Needs Reproduction method,9
+game: Satisfactory,9
+os: Windows,9
+v0.8.0,9
+need-re,9
+18Hiawatha,9
+mdbook,9
+distro: AlmaLinux,9
+ship,9
+branch: stable,9
+toyz,9
+area: tooling,9
+Premium,9
+works as intended,8
+emscripten,8
+human,8
+game.series.contra,8
+Autopilot,8
+AI Agent/Copilot,8
+Prio Medium,8
+scope: NT,8
+Complexity: <2h,8
+boomsday,8
+vr,8
+18NL,8
+critical priority,8
+text,8
+Subsystem-Music,8
+Mapmaker,8
+spx-gui,8
+Playtest,8
+suggested policy,8
+game: Eco,8
+Needs Review,8
+low impact / nice to have,8
+🔨 Refactor,8
+Release: Next,8
+特性请求,8
+3.0,8
+user experience,8
+Codebase,8
+server: cRO,8
+promotion-2025,8
+Can't fix,8
+Extended protocol,8
+LWJGL2,8
+requires review,8
+18Texas,8
+unity issue,8
+actorz,8
+Priority:Critical,8
+patreon request,8
+yellow,8
+semantic-release,8
+A: MIDI,8
+blocks,8
+character,8
+lang:java-or-kotlin,8
+checklist,8
+part: building,8
+fix in progress,8
+A: Graphics,8
+TODO,8
+network/poseidon,8
+autogenerated,8
+graphics:DirectX,8
+Nicht Behebbar,8
+command: post-details,8
+area: nyan,8
+UI Component,8
+driver issue,8
+web_ingame,8
+kind:tracking,8
+font,8
+Status: In Progress,8
+Easy,8
+1858Switzerland,8
+removal,8
+spam/abuse,8
+Technology,8
+18MT,8
+Continuous Integration,8
+arena,8
+HiDPI,8
+What: Movement,8
+⚙ Setting,8
+1817NA,8
+scope: installer,8
+emergency funding,8
+Enhancement-code quality,8
+accessibilty,8
+🚀 optimization,8
+not script related,8
+Zach Feedback,8
+topic:ui,8
+In Review,8
+valuable,8
+leader,8
+Tutorial,8
+Fun: Bug of the Year 2021 Candidate,8
+scope: HOserver,8
+game.kind.rpg,8
+refacter,8
+Scheduled,8
+inaccuracy,8
+Call of Chernobyl,8
+Needs Pictures/Videos,8
+Rounds,8
+-Save for Later,8
+externalization,8
+critical X64 bug,8
+Resolution-Duplicate,8
+need testing,8
+gltf,8
+Navbar,8
+area: networking,8
+Mac,8
+upkeep,8
+icebox,8
+wishlist,8
+TextEN,8
+area: GUI,8
+peripherals,8
+area: RecastDemo,8
+the legions of the damned,8
+status: needs triage,8
+part: pathing,8
+standby,8
+pending-discussion,8
+1822 Family,8
+html,8
+jvm,8
+Concept approved,8
+Feature - Flags,8
+area: DetourCrowd,8
+LSS-Bug,8
+in-progress,8
+Needs 'before problem' Savegame,8
+0.6.1,8
+comp_masters,8
+Priority: 中 Medium,8
+helprequest,8
+topic:scene,8
+new-renderer,8
+testing automation,8
+java,7
+movement,7
+code analysis issue,7
+FrameGraph,7
+Stability,7
+status: duplicate,7
+List of issues,7
+▪ UI/UX,7
+Priority 4,7
+priority: important,7
+Can't Reproduce,7
+on-hold,7
+KotOR.js,7
+help_needed,7
+area: api,7
+Discussion Needed,7
+1836jr56,7
+robustness,7
+⚙️ Addition required in GDevelop.js/GD Core (C++),7
+os:xbox,7
+1.0 Release,7
+Paint,7
+Shaders,7
+third-party?,7
+OpSys-Linux,7
+song editor,7
+A: Platform Integration,7
+M,7
+Difficulty: hard,7
+Tools,7
+status: needs information,7
+▪ 重要 IMPORTANT,7
+On hold,7
+Отказано,7
+Severity1: Critical,7
+simple,7
+webserver-related,7
+duels,7
+build-env,7
+refector,7
+A - Server,7
+gl21,7
+REFramework limitation,7
+Release,7
+p4-important,7
+wip,7
+game: Unturned,7
+A - CMake,7
+🪄 Баг Визов 🪄,7
+V - Verified,7
+nel_sound,7
+powerupz,7
+NICHT REPRODUZIERBAR,7
+Radar,7
+Type: Documentation,7
+scouting leader,7
+Type: Todo,7
+:gear: Chat,7
+Help Needed,7
+PVE,7
+data logs,7
+p0-on-hold,7
+wont-do-submit-pr,7
+Basic game mechanic,7
+Living document,7
+repo/AirtestIDE,7
+建议,7
+question ❓,7
+status: needs more info,7
+M: Electricity,7
+very low priority,7
++help,7
+pro:high,7
+status:help wanted,7
+:tiger:,7
+completed in Galaxy,7
+core: Genesis-Plus GX,7
+js,7
+ldtk,7
+students,7
+UI/Menu,7
+game: Natural Selection 2,7
+normal,7
+playtest,7
+Team Page,7
+(Feat) Multiplayer,7
+v0.6.1,7
+little or no coding,7
+TESTING,7
+spx,7
+needs-testing,7
+mediawiki-export,7
+stage:space,7
+needs-triage,7
+Steam Over Holland,7
+topic:debug,7
+topic:editor,7
+distro: Rocky Linux,7
+Confirmed on Mac,7
+Duration: 1 day,7
+Type: annoyance,7
+Will Implement,7
+file-formats,7
+PR welcome,7
+os-windows,7
+Project:Evocation,7
+MacOS,7
+tweak,7
+tests / feedback needed,7
+component:translation,7
+renderer/metal,7
+missing,7
+area:templates,7
+Fun: Bug of the Year 2025 Candidate,7
+Difficulty: Average,7
+Pipeline,7
+needs testing,7
+v0.6.17,7
+topic:grc,7
+NPC,6
+backlogged,6
+orbits,6
+game.series.tank,6
+info needed,6
+New Widget,6
+Subsystem-Demos,6
+web socket,6
+glfw-awt-macos,6
+nel_gui,6
+pdf export,6
+Type: Chore,6
+rejected,6
+Won't Fix,6
+gl33,6
+1877: Stockholm Tramways,6
+사용자는 개설된 게임 방을 확인할 수 있다.,6
+Enhancement-architectural,6
+system-SFC/SNES,6
+bug-performance,6
+Project:Plugins,6
+Auto-build,6
+go,6
+status:superseded,6
+OSX,6
+evergreen,6
+positions,6
+ui-ux,6
+A - Filesystem,6
+priority task,6
+priority request,6
+type: performance,6
+NWN2,6
+Priority: 低 Low,6
+Bug: Needs Replicating,6
+sprikipedia,6
+collection,6
+design required,6
+textures,6
+Weaver,6
+area: launcher,6
+armies,6
+considerations,6
+c:tool,6
+Compatibility,6
+part: entity,6
+Rework required,6
+hotseat,6
+T - Cleanup,6
+game: Unreal Tournament 3,6
+Animation,6
+D: Complex,6
+discussion-needed,6
+Series/Cloud Gaming Notes,6
+Document；文档补充,6
+OS-Windows,6
+v0.6.9,6
+visual,6
+Look at for next main release,6
+unsure,6
+unofficial feature,6
+Status-HelpWanted,6
+Formats,6
+missing-feature,6
+BeamNG Issue,6
+Novice Issue,6
+game: Starbound,6
+topic:project,6
+ignore-for-release-note,6
+github_actions,6
+completed,6
+status: cannot reproduce,6
+Still a problem?,6
+Movement,6
+blocking bug,6
+Feature - Network,6
+status-waiting-answer,6
+implementation,6
+component: webview (desktop),6
+extractor,6
+game: Insurgecy,6
+os-linux,6
+game: Left 4 Dead 2,6
+angle,6
+first-timers-only,6
+touch-related,6
+area-linux,6
+THIS SUCKS BAD!!!!,6
+Mac OS,6
+stage:awakening,6
+future release,6
+skill,6
+vulnerability,6
+T - Documentation,6
+2.2.0,6
+interface: Wx,6
+could not reproduce,6
+misuse；误用,6
+melody mania,6
+before 1.0,6
+P: Low,6
+server: tRO,6
+irrelevant,6
+Construction,6
+area: physics,6
+codec,6
+A: Testing,6
+version-major,6
+priority: p2/important ⚠️,6
+auto-skip,6
+Release-blocker,6
+bot,6
+Idea/Wish list,6
+App/Webserver,6
+announcement,6
+Convention,6
+4 - Urgent,6
+game: audio,6
+new_feature_discussion,6
+email,6
+🔍 platform,6
+hardware,6
+pro:middle,6
+graph,6
+Type: bug,6
+scala,6
+📈 scaling,6
+memory issues,6
+Subsystem-Video,6
+In progress,6
+topic:graphics,6
+New game mode,6
+game: Dayz,6
+size: xs,6
+Project:Language,6
+Crash (player triggered),6
+orc,6
+qa,6
+Difficulty: Rocket science :rocket:,6
+empathy,6
+bridge package docs,6
+area: CMake,6
+t:task,6
+repo/poco,6
+release blocker,6
+MFi,6
+IDE,6
+Deferred,6
+examples,6
+quick,6
+linux: ubuntu,6
+remove-dependency,5
+high effort,5
+web_admin,5
+Impact-Visible-To-Admins,5
+core: VisualBoyAdvance,5
+Umgesetzt,5
+Revive: Move,5
+needs more testing!,5
+also in lichess,5
+gl14,5
+kind: wontfix,5
+status-help-wanted,5
+VFX,5
+S: Stale,5
+Эволюция [Тестирование],5
+config,5
+dictionary-en,5
+unreproducable,5
+style,5
+iwoc,5
+Environment (Weather),5
+custom skin,5
+Input:Mouse,5
+Feature - Stats,5
+사용자는 게임방의 참가자를 확인할 수 있다.,5
+game: Avorion,5
+candidate for closure,5
+example needed,5
+"자신의 차례가 된 참가자는 주어진 목표 음정에 맞게 ""안녕 클로바 파트라""를 부른다.",5
+significant bug,5
+mage leader,5
+CMake,5
+memo,5
+Close-Issue-As-Temporary,5
+G: Tooling,5
+Factorio 2.0,5
+effect,5
+Close: out of scope,5
+module/platform/android,5
+sourverse,5
+C: Borg,5
+Accessibility,5
+comp_news,5
+[M],5
+archive_alpha_games,5
+waiting for reply,5
+lastest mod release,5
+1894,5
+jwoc,5
+v0.6.2,5
+env: webgl,5
+🖌 Piskel related issue/bug/feature,5
+kludged,5
+P4,5
+game: player,5
+Prio High,5
+Planet-Simulation,5
+Bounty: 60 dollars :moneybag:,5
+ARM,5
+Scope: Notifications,5
+Status: Needs Testing,5
+exception,5
+new-game-mode,5
+arcade,5
+tracker:storagehistory,5
+high impact,5
+alf,5
+Changes: Localization,5
+Lua Scripting,5
+root:death-sync,5
+potion,5
+Changes: Audio,5
+platform:web,5
+Arch.Extended,5
+retestMe,5
+sniper assassin,5
+Duration: 0.5 day,5
+thread-safety,5
+status: backport,5
+the elven alliance,5
+system-SS,5
+item:crafting,5
+speedrun,5
+opengl,5
+server: fRO,5
+A: Command,5
+need-to-fix-supportVer.,5
+stockskis,5
+platform specific,5
+language-specific,5
+area/performance,5
+protocol support,5
+CLI Tools,5
+Instance - BattleGrounds,5
+missing core feature,5
+G: Optimization,5
+K: DOM design,5
+Build System,5
+inventory,5
+Performance improvement：性能提升,5
+type: code cleaning,5
+must-have,5
+graphics:Render Pass,5
+steamvr issue,5
+mod conflicts,5
+system: movies,5
+Difficulty: Senior assisted,5
+uikit,5
+1849 variants,5
+prototype,5
+Type: roadmap,5
+area: backend,5
+scope: text-html,5
+Investigation,5
+T: Content Removal,5
+Roadmap,5
+Release blocker,5
+0.7.1,5
+classic,5
+logger,5
+low effort,5
+wont fix/do,5
+Feature - AI,5
+topic:game,5
+wzapi,5
+Other_People_Bug,5
+game: Stationeers,5
+MixinExtras,5
+netplay,5
+not-in-this-game,5
+typo,5
+investigation,5
+C:AnimView,5
+inherited problem,5
+BBS,5
+Wishlist,5
+requires client changes,5
+ring,5
+Type: Wishlist,5
+client-rewrite,5
+meta:user-experience,5
+Area: Vessels,5
+new version,5
+Needs re-testing,5
+Windows only,5
+What: Command/Var,5
+size/XL,5
+Design complete,5
+Confirmation needed.,5
+topic:io,5
+game.series.adventure_island,5
+Status: On Hold,5
+status:optional,5
+templar leader,5
+Vulkan,5
+1877,5
+pymug,5
+Fix Released,5
+Help Wanted!,5
+1822nrs,5
+no-asm,5
+CI,5
+mod,5
+Controls,5
+tracker:gathering,5
+pr welcome,5
+Platform-Windows,5
+top-priority,5
+What: Lobbies,5
+Footer,5
+sentry,5
+Maybe,5
+func:Loading,5
+information,5
+deathz,5
+ideas wanted,5
+new-core,5
+:fox_face:,5
+someday-maybe,5
+Normal Priority,5
+Release: 1.2,5
+scope: app,5
+Area: Contracts,4
+locale-esES/MX,4
+Chat,4
+code-quality,4
+scope: advanced-blend-modes,4
+component:discord-api,4
+game.series.double_dragon,4
+pro:lowhigh,4
+69 Jelly Beans Reward,4
+area:plugins,4
+topic:engine,4
+troubleshooting,4
+needs verification,4
+type: optimization,4
+priority:High,4
+Priority: MEDIUM,4
+game-specific,4
+green,4
+waiting release,4
+ouput-related,4
+Code Cleanup,4
+at:editor,4
+RenderGraph,4
+box2d,4
+translate,4
+project,4
+code cleanup,4
+S: Conceptual Approval,4
+game: Day of Infamy,4
+skill::smithing,4
+type:perf,4
+concept,4
+Area: Economy,4
+Type: enhancement,4
+wishful thinking.. might not happen,4
+P: Normal,4
+S: Needs Review,4
+upstream release,4
+waiting for other feature,4
+ready for test,4
+upgrade,4
+📬 API,4
+for: player,4
+cleaning up,4
+A: Database,4
+cosmetical,4
+game: Quake 3,4
+logos,4
+Priority: 高 High,4
+waiting for input,4
+high-prio,4
+WINDOWS,4
+interaction,4
+低优先度,4
+gsl,4
+Lighting/FOV,4
+Trivial,4
+tracker,4
+quality-of-life,4
+type:build,4
+area:overlay-rankings,4
+modded,4
+patcher,4
+near future,4
+dependency,4
+module: Youth,4
+comp_services,4
+Bounty Candidate,4
+Not original,4
+scheduled-build-failure,4
+type: addition,4
+text - short,4
+phase-1,4
+file handling,4
+Tablet,4
+topic:mod,4
+won't do,4
+maintainer needed,4
+S,4
+mercenaries,4
+difficulty: extreme,4
+area/build-tools,4
+size:M,4
+core-content,4
+core: Stella,4
+module/cv,4
+Need Update,4
+waiting-for-response,4
+S: DO NOT MERGE,4
+game: Sven Co-op,4
+far lands,4
+A: Roslyn Components,4
+pending package,4
+p5-urgent,4
+integration,4
+core: PicoDrive,4
+io,4
+system-GBC,4
+requires migration,4
+discuss,4
+duplicate-status,4
+high prio,4
+overlays,4
+bugfix/workaround,4
+Bugfix,4
+status: needs review,4
+S: Needs Engine Update,4
+Pre Release,4
+K: GLSL,4
+Request Character,4
+game: Killing Floor,4
+module/ime,4
+priority: showstopper,4
+Nostalgic Paradise,4
+Bugjang,4
+switchez,4
+component: postman,4
+scores,4
+Planning Needed,4
+area: 3D,4
+options,4
+Type: Good First Issue,4
+stupidai,4
+multiplatform,4
+model-viewer,4
+p:med,4
+unittests,4
+tech,4
+jules,4
+Long-term goal,4
+X: Tracking issue,4
+Material,4
+GOG,4
+partially implemented,4
+community enhancement,4
+core: SNES9x,4
+What: Hammer,4
+overview,4
+misc-itemz,4
+ODHACK,4
+os:monogame,4
+figures,4
+multiplayer server,4
+📦event codes,4
+non-code,4
+Project:Starfield,4
+server: twRO,4
+Entity,4
+Complexity: 6h+,4
+big stuff,4
+elevators,4
+Status: Denied,4
+game: Post Scriptum,4
+scenario-compatibility,4
+DevOps - Observability,4
+Atmos,4
+topic:learning,4
+unclear,4
+game: QuakeWorld,4
+resolve immediately,4
+future；将要提供,4
+game: Multi Theft Auto,4
+counter,4
+等待,4
+Platform: Android,4
+Level: Moderate,4
+NWN,4
+unreproducible,4
+freeze,4
+Type:Task,4
+reporting,4
+⚙️ interop,4
+fsalker fsalking,4
+18JP-T,4
+d3dm-bug,4
+topic:levels,4
+NEW-BUG,4
+marketplace,4
+game:client,4
+game.kind.ftg,4
+system-GBA,4
+defect,4
+reso: dependency,4
+Cheats,4
+housing,4
+/framework,4
+platform,4
+Test-when-live,4
+Latest engine release,4
+other,4
+phase-3,4
+Tasks list,4
+Milestone-L0.35,4
+Priority:  High,4
+:books: Doc Improvement,4
+metaprogramming,4
+BuzzingCars,4
+IllegalArgumentException,4
+transfer,4
+language-server,4
+distfiles,4
+gameplay idea,4
+CTF Server,4
+Worgen,4
+Web Request,4
+quickwin,4
+skill: configs,4
+Type: Ongoing,4
+Install,4
+status: support request,4
+topic:editor-plugin,4
+Investigating,4
+game.kind.rcg,4
+platform: Windows,3
+state: please discuss,3
+게임 페이지 UI 구현,3
+status-wontfix,3
+Campaign-Editor,3
+M: Liquid,3
+preparation,3
+topic:plugins,3
+topic:ecs,3
+dev-task,3
+Not OpenKH,3
+special,3
+fxgl-editor,3
+ugly,3
+ZombLib,3
+not-our-bug,3
+status: cant-reproduce,3
+Platform-OSX,3
+bots,3
+comp_personal_messages,3
+boardgame,3
+editor tool,3
+for rewrite branch,3
+Audio subsystem,3
+What: Zoning,3
+Design pending,3
+animationz,3
+Bounty: 90 dollars :moneybag:,3
+needs description,3
+vfs,3
+b:Mac,3
+🔥 hot,3
+ESI bug,3
+Type-Other,3
+story,3
+query engineering,3
+3rd-party bug,3
+game: No More Room in Hell,3
+HIGH PRIORITY !!!,3
+Multiplayer Game Listing,3
+Blocked: Needs further work,3
+type: card request,3
+awaiting-user-reply,3
+LONG-TERM,3
+game: ET: Legacy,3
+module/render/vulkan,3
+scope:tiny,3
+kind:chore,3
+lang: cmake,3
+0.7.2,3
+Project:Replays,3
+decompile,3
+os:playstation5,3
+game: Blade Symphony,3
+p:high,3
+comp_cms,3
+Outcome: Spam,3
+components,3
+ai,3
+logs,3
+:gear: > 2 teams,3
+module/physics/animation,3
+:gear: Modes,3
+meta:nit-pick,3
+area: core,3
+2025:tech debt,3
+high_prio,3
+package,3
+area:overlay-volume,3
+Hotfixed,3
+Map Issue,3
+Severity4: Inconvenient,3
+dev-tool,3
+Platform: Other,3
+System,3
+mappack,3
+os-macos,3
+packaged_app,3
+scope: compressed-textures,3
+type: parity,3
+Others,3
+🌏 Deploy,3
+사용자는 게임방에 입장하면 닉네임을 설정할 수 있다.,3
+ammunition,3
+Needs submitter,3
+NeedMoreInfo,3
+Compat-MBF,3
+thief leader,3
+Volunteers Needed,3
+gardenshed,3
+external library issue,3
+Level: Breaking,3
+needs research,3
+$75,3
+zombie,3
+CD2000,3
+사용자는 게임방의 참가자들과 실시간 통화를 할 수 있다.,3
+server-infrastructure,3
+scope: text-canvas,3
+A: Rules,3
+Context: coupled,3
+priority: critical,3
+:gear: Traps,3
+core foundry,3
+Contest,3
+qualified system,3
+no ticket,3
+status:blocked,3
+lord leader,3
+Has-Russian,3
+system-SMS,3
+Type: documentation,3
+game: Wurm Unlimited,3
+Unity Issues,3
+comp_docker,3
+dx,3
+non-rewarded,3
+scope: security,3
+component:engine,3
+ZKR,3
+Type: announcement,3
+S: Needs Engine PR Merged,3
+known issue,3
+Client: OpenAI Compatible,3
+buildings,3
+memory,3
+stage:society,3
+postponed,3
+IOS,3
+economy,3
+Изменения: Локализация,3
+🔺 Upstream,3
+shaders,3
+core: Gambatte,3
+game: tutorial,3
+Showcase,3
+toolz,3
+exiled issue,3
+Long term,3
+iPhone,3
+v0.6.10,3
+mpq viewer,3
+vachement stretch goal,3
+TTS,3
+api/rpc,3
+Hard,3
+topic:debugging,3
+documentation 📚,3
+👑 sponsor,3
+meh,3
+testing-required,3
+dictionary,3
+game: Battalion 1944,3
+TombEditor,3
+develop_60FPS,3
+work-in-progress,3
+B: Debugged,3
+size:L,3
+Area: Stations,3
+Raspberry Pi,3
+files,3
+Milestone-0.99,3
+drawing-lib,3
+device:computer,3
+Client: mistral.ai,3
+Level: Minor,3
+module/yosemite,3
+Difficulty: Easy,3
+v2,3
+File System,3
+type:performance,3
+cyconf candidate,3
+server: kROZero,3
+Milestone-1.01,3
+Skill,3
+scope: events,3
+Feature - Test,3
+devtool,3
+iPad,3
+Alan Wake,3
+stat,3
+Requires Quaver.Resources,3
+area: mechanics,3
+steam cloud,3
+needs save,3
+▪ 文档 Documentation,3
+Compat-ID24,3
+Resolution-Invalid,3
+Area: Persistence,3
+game.series.mario,3
+up-for-grabs,3
+need research,3
+area: util,3
+game: commerce,3
+T: Prediction,3
+amm,3
+wasm,3
+saves,3
+new overlay,3
+system-FC/NES,3
+Priority/High,3
+new-animations-needed,3
+next-up,3
+references,3
+$100,3
+browser compat,3
+special flag；特殊记号,3
+:package: Feature,3
+dev-workflow,3
+quick-win,3
+Component-Documentation,3
+K: Mathematics,3
+homepage,3
+migration,3
+can't replicate,3
+Demark: new release,3
+无效,3
+blue,3
+A: PVS / GameState Networking,3
+Examples,3
+Component-Master,3
+godot4,3
+JUnit,3
+A:UI,3
+*HELP WANTED*,3
+item:generally,3
+Project:Cleanup,3
+notabug,3
+New element,3
+Milestone-L0.33,3
+Traits,3
+auction,3
+plugin idea,3
+priority: High,3
+Эволюция [Реализация],3
+fighter leader,3
+invalid-status,3
+authentication,3
+Needs more info,3
+GitHub Actions,3
+사용자는 게임방을 생성할 수 있다.,3
+💬 Discussions,3
+comp_chat,3
+game.kind.tbg,3
+comp_graphics,3
+hooks,3
+K: Algorithm,3
+scope: container,3
+game: Battlefield 1942,3
+one-click,3
+mystery,3
+area/examples,3
+area-controllers,3
+Bug fix,3
+Advice,3
+:books: documentation,3
+update,3
+CI/Tooling,3
+scrapped,3
+adventure,3
+renderer/vulkan,3
+system-SMD/SG,3
+Type-Question,3
+Übernommen,3
+net,3
+area-core,3
+deprecation,3
+unconfirmed bug,3
+Pandoc,3
+item:marketprices,3
+게임방을 생성할 수 있는 UI 구현,3
+phase-2,3
+real-time,3
+os: ios,3
+free-res,3
+at:installation,3
+video,3
+Internal/ Improvement,3
+Update/Finish Feature,3
+Serialization,3
+20 Effort,3
+pending-ruffle-support,3
+game: item,3
+bleedingedge,3
+✅ Test,3
+wontfixnow,3
+mpq,3
+needs extra feedback,3
+player movement,3
+求助,3
+Crash (spontaneous),3
+Duration: 2 days,3
+solver,3
+Input:Gamepad,3
+status: poll implementation,2
+T: Documentation,2
+tooling,2
+trivial change,2
+Needs Mobile Testing,2
+confusing,2
+after 1.0,2
+fatal,2
+reso: week 16,2
+2015.01.06.1295,2
+status: awaiting pull request,2
+system-PCE/TG16,2
+Priority: 紧急 URGENT,2
+Невалид,2
+Map,2
+env: mobile,2
+awaiting game approving,2
+S: Awaiting Changes,2
+Ponder,2
+physics theory question,2
++good,2
+22Mars,2
+Community,2
+Изменения: Карты,2
+phase-4,2
+fixed in options,2
+Possible Close,2
+Area: Overmap,2
+waiting documentation,2
+FlowFieldAi,2
+discussion needed,2
+Unity,2
+topic:shader,2
+Needs IE Testing,2
+platform: macOS,2
+meta-builds,2
+developer-experience,2
+bug-pc,2
+Experimental,2
+Type: refactor,2
+tracker:dashboard,2
+Engine Feature,2
+Enhancement-content,2
+Planets,2
+bug of content,2
+Skill and consumable,2
+need UI layouter or artist :art:,2
+area:unit,2
+18 Christmas Eve,2
+board,2
+suspended-status,2
+monitoring,2
+med-priority,2
+external help wanted,2
+Component-Scripts,2
+hacktoberfest-special,2
+Smart Scripts,2
+game: Zombie Master Reborn,2
+lab,2
+Diplomacy,2
+game: Half-Life,2
+does not compile,2
+manual,2
+type: desync,2
+LGSL7,2
+WinShell,2
+scope: dom,2
+Cocos2d-x,2
+archive,2
+waiting uptream,2
+:gear: Translations,2
+stage:ascension,2
+fixed for next release,2
+⛔ wontfix,2
+Breakin' limits,2
+Area: Database,2
+invalid 🚫,2
+area:scripts,2
+module/platform/macos,2
+Arch:arm,2
+graph editor,2
+vote,2
+Language,2
+helm,2
+Action / change needed :exclamation:,2
+design-ready,2
+cont_analytics,2
+stage:aware,2
+os: OS X,2
+game: Soldat,2
+update bug,2
+projectile,2
+cvm,2
+inputs,2
+p:low,2
+stage:industrial,2
+Improvement needed,2
+scope: culling,2
+clean,2
+Lua 5.3,2
+64-bit Problem,2
+scope: accessibility,2
+mechanic,2
+Reopen,2
+:gear: Nade fight,2
+priority: won't fix,2
+Chemistry,2
+end_m01aa,2
+G: Documentation,2
+New,2
+system-GC,2
+awaiting verification,2
+Priority/Critical,2
+Mount&Blade,2
+spam,2
+Changes: Documentation,2
+프로젝트 세팅,2
+iteration-plan,2
+requires-webgl,2
+S: Requires,2
+Wasm,2
+1/FM,2
+engine: source,2
+module/platform/ios,2
+Doesn't compile,2
+Extensive testing needed :computer:,2
+skill: Lua,2
+game: Team Fortress 2,2
+Dependency Injection,2
+DDD,2
+POST MVP,2
+administrative,2
+smoothness,2
+pref,2
+gameplay_question,2
+18Tokaido,2
+type: 2nd team,2
+changelog,2
+Demark: nofixes,2
+os: mac os x,2
+Direct3D,2
+R: Fixed (in main),2
+Эволюция [Некритично],2
+part: world-gen,2
+Duration: 3 days,2
+system-JAG,2
+18DE,2
+database issue,2
+docker,2
+not ready,2
+To be verified,2
+Upstream issue,2
+first steps,2
+Priority/Medium,2
+component:render,2
+Component-Docs,2
+app,2
+💰 fund,2
+PnP,2
+cheating prevention,2
+C: Port Specific,2
+web api,2
+type-meta,2
+3rd party,2
+high-frame-rate,2
+bug fix,2
+config:tfe,2
+What: Timer,2
+game core,2
+metrics/feedback,2
+Client: OpenAI,2
+C:Debugger,2
+game: Mordhau,2
+difficulty: impossible,2
+CI Build bug,2
+Existing functionality.,2
+java version,2
+Player,2
+pyramidz,2
+game: label missing,2
+game: Terraria,2
+skill: 2D art,2
+need writer,2
+Action / change needed,2
+Scores,2
+controller color,2
+technical_support,2
+Schematics,2
+Surmap,2
+Platform-Console,2
+:broom: Housekeeping,2
+Website,2
+area:songselect,2
+📃 Docs,2
+API addition,2
+extension,2
+Задача Взята,2
+Game request,2
+game version,2
+game: Hurtword,2
+game: Call of Duty: United Offensive,2
+GitHub Issue,2
+game: Assetto Corsa,2
+server: rRO,2
+Not Reproducable,2
+A: WebView,2
+:speech_balloon:  UCI,2
+r2,2
+data-quality,2
+module/report,2
+audio design,2
+distro: openSUSE,2
+Deployment,2
+Completed,2
+hypothetical,2
+wait Playnite,2
+Workspaces,2
+dependency update,2
+status:work in progress,2
+embedded,2
+LSSMAQL,2
+need sound designer :sound:,2
+Status: Investigation,2
+topic:pfx,2
+sponsors needed,2
+Friends,2
+communication,2
+SE,2
+osu! bugs,2
+third party issue,2
+needs reproduction,2
+Client: LM Studio,2
+S: Derelict,2
+backboard,2
+Photon Server,2
+wip-status,2
+severe crashing,2
+long-term-goal,2
+Component-Persistence,2
+game: Soldier of Fortune 2,2
+FrontEnd,2
+Technical,2
+content tweak,2
+5 - Critical,2
+game: San Andreas Multiplayer,2
+size: lg,2
+/ui,2
+실시간 통화 기능 및 UI 구현,2
+mysql-memory-errors,2
+module: team analyser,2
+code-refactoring,2
+tech-debt,2
+module/adb,2
+Type: performance,2
+diagrams,2
+keep-open,2
+weekly-digest,2
+x-platform,2
+Graphical,2
+writing,2
+Winter Of Code 4.0,2
+Beta Feedback,2
+Crafting,2
+S: Undergoing Discussion,2
+▪ 需要协助 Help wanted,2
+Level: Major,2
+topic:platform,2
+server: bRO,2
+Tracking issue,2
+topic:patches,2
+Temporarily closed,2
+revert,2
++unsure,2
+os: android,2
+Waiting for other issue,2
+status:merged,2
+dev team rejected,2
+A:Audio,2
+import/export,2
+游戏需求,2
+Need steps to Repro,2
+Needs Upstreaming,2
+dcs,2
+Optimization / 优化,2
+game: Teeworlds,2
+far future,2
+Breaking change,2
+Scope: Out of Scope,2
+SFX,2
+platform/cloudflare-workers,2
+info: email,2
+touch device,2
+team physics,2
+Export,2
+skill: unskilled,2
+S: Approved,2
+typescript,2
+system-VB,2
+system-GB,2
+QUESTION,2
+tutorial,2
+Project:Money,2
+breaks-compat,2
+Game: Breakout,2
+Optimalisation,2
+appstore,2
+Вопрос,2
+Demark: nocontent,2
+Code Refactor,2
+hardfork,2
+Client: KoboldCpp,2
+board-managment,2
+scope:medium,2
+TO FIX IN NON-DEBUG,2
+module: Lineup,2
+18ka,2
+Idea/Wish List,2
+server: pRO,2
+wizard,2
+A: Forks/Downstreams,2
+awaiting game update,2
+Scope: Website,2
+A: Roleplay/Lore,2
+cgame,2
+For Video,2
+official bug,2
+area: game-design,2
+Game Engine,2
+game: Mumble,2
+Priority High,2
+M: Graph,2
+compliance,2
+Component-Installer,2
+area: input,2
+need help,2
+gui element should be world,2
+phase-6,2
+converter,2
+Render,2
+C:Level Editor,2
+1 - Ready,2
+M1,2
+Font,2
+wontfix-status,2
+PAID BOUNTY,2
+help,2
+tModCodeAssist,2
+items,2
+team editor,2
+DA2,2
+Scope: Automation,2
+Help,2
+qt-bug,2
+2025:security,2
+V- Externally Blocked,2
+add-on support,2
+needs info,2
+broken-dev-version,2
+game: Return to Castle Wolfenstein,2
+fixing,2
+*BSD,2
+0.8,2
+win32,2
+locale-deDE,2
+Type/Livestream,2
+scope: webworker,2
+QA,2
+🧐Breaking change,2
+Type: survey,2
+broken deps,2
+B: Reproduced,2
+build package,2
+dialogue-editor,2
+type:docs,1
+bridgez,1
+:dollar: Funded on Issuehunt,1
+Trainer,1
+avoidAutoClose,1
+ptr,1
+A: Robust.Native,1
+A: Sandboxing,1
+Confirmation Needed,1
+game-support,1
+A:Deps,1
+multithreading,1
+spade,1
+requirements-testing,1
+18FR,1
+gideros,1
+Documentation / 文档,1
+iPhone X,1
+observing,1
+not-reproducable,1
+Enhancement / 强化,1
+metaserver,1
+module: Statistics,1
+D: Typo,1
+won't reproduce,1
+thirdparty,1
+waiting-for-author,1
+Topic: AI,1
+module/platform/sdl2,1
+component: desktop client,1
+stations,1
+Behaviour change,1
+Misc,1
+module/platform/linux,1
+level,1
+Area: User Safety,1
+Game: Asteroids,1
+Upstream / Dependacies issue,1
+os:plan9,1
+perf-sweep,1
+overdue,1
+priority/low,1
+wontimplement,1
+locale-zhCN/TW,1
+$200,1
+🔥 🔥 🔥 priority,1
+module/platform/wasm,1
+자신의 결과를 확인할 수 있다,1
+Cannot Replicate,1
+Gossip,1
+InProgress,1
+info,1
+flatpack,1
+@Linux,1
+os:mac,1
+meta discussion,1
+to be verified,1
+unsupported,1
+orb,1
+up next,1
+system-DC,1
+system-Wii,1
+status:testing requested,1
+system-32X,1
+C:SDL2-compat,1
+under consideration,1
+Client: Anthropic,1
+topic:gi,1
+externally blocked,1
+arrowz,1
+18Scan,1
+ZKB bug,1
+i18n & Translation,1
+dependencies issue,1
+uwp,1
+Arch:x86_64,1
+Nintendo Switch,1
+ReactOS,1
+게임이 시작되면 참가자 각각 자신의 진행 순서를 알 수 있다.,1
+install,1
+pbft,1
+difficulty:high,1
+scope: sprite-animated,1
+GoLang,1
+🏆 Best,1
+18Dixie,1
+switch,1
+topic:thirdparty,1
+Jade Empire,1
+ECS,1
+Marketing,1
+wurderer,1
+awaiting submitter action,1
+missing old feature,1
+ticks,1
+padpack,1
+:gear: Classic,1
+repo-admin,1
+optional,1
+requirement system,1
+acknowledged,1
+Status: Won't Fix,1
+notice,1
+game: The Front,1
+no-any-response,1
+needs documentation,1
+game: Call of Duty 2,1
+invalid or external issue,1
+oof,1
+Needs-Clarification,1
+A:Refactor,1
+raspberry,1
+Assembler,1
+GoG,1
+qa-test,1
+b:Firefox,1
+Prio: high,1
+status:on-hold,1
+Request Feature,1
+Arch:powerpc,1
+Tips,1
+game.platform.universal_js,1
+scope: mesh,1
+scope: spritesheet,1
+scope: prepare,1
+server: mRO,1
+Scope: Documentation,1
+Close: wontfix,1
+challenging,1
+nightly,1
+1854,1
+game: Black Mesa: Deathmatch,1
+???,1
+mobile-issues,1
+the mountain clans,1
+os:playground,1
+item-effects,1
+browser-based-client,1
+Memory Agent,1
+Platform-macOS,1
+part: input,1
+Ready to be Reviewed,1
+cannot currently be fixed,1
+answered,1
+not important,1
+game: Pavlov VR,1
+DA:O,1
+flame_3d,1
+partially done,1
+area/security,1
+brickz,1
+AoS compatibility,1
+awaiting changes,1
+help wanted/question,1
+infra,1
+status: stale,1
+core: Reicast,1
+banner,1
+V3,1
+build-process,1
+status: not a bug,1
+A: Packaging/Distribution,1
+platform-support,1
+Upcoming,1
+WIP :building_construction:,1
+gallery,1
+profile settings,1
+code-scan security,1
+needs:triage,1
+observability,1
+needs checking,1
+area:onboarding,1
+GDExntension,1
+Milestone-L0.34,1
+freazed,1
+👮 PC,1
+A: Resources,1
+UIOverhaul,1
+AdityaDhavale 2,1
+사용자는 게임 종료를 알 수 있다,1
+game.kind.slg,1
+닉네임 설정 UI 구현,1
+Runtime,1
+Area: Lore,1
+savecompatibility,1
+18OE,1
+COM,1
+engineering,1
+dictionary-ru,1
+A:Art,1
+description needed,1
+scope:large,1
+Tournament,1
+hearthstone-bug,1
+system-PCECD/TGCD,1
+JIT,1
+Mod requiring update.,1
+topic:gameplay,1
+Scope: i18n,1
+A: Packaging,1
+area-samples,1
+Type: Support,1
+discusson,1
+ci-cd,1
+Duplicated,1
+tests-needed,1
+VisionOS,1
+game.platform.universal_wasm,1
+Visual,1
+Type: redundant,1
+▪ 有误 Invalid,1
+What: Backend,1
+OS:Win,1
+Rescaling Bug,1
+ImprovementIdea,1
+blitz,1
+redacted,1
+test-harness,1
+Game: Tempest,1
+status:art-needed,1
+need repro,1
+window system,1
+Area: Chat,1
+compiler: MSVC,1
+game.platform.arcade,1
+xfce,1
+Visual Studio 2022 17.6,1
+3 - Review,1
+nice,1
+SPM,1
+game: Counter-Strike: Source,1
+openxr,1
+DONE,1
+env: node,1
+Other Project,1
+game: Rising World,1
+Asset system,1
+game: Just Cause 3,1
+OpSys-OSX,1
+角色卡,1
+good first issue 🌱,1
+speech,1
+b:rmb panning,1
+suggest,1
+game-servers,1
+Question / 疑问,1
+bug-amiga,1
+system-PS2,1
+spectator-mode,1
+Xcode 12.5+,1
+Changes: Shaders,1
+D0: Very High,1
+lang:java-only,1
+ops,1
+Test ROM,1
+BB,1
+three.js,1
+1807,1
+Needs Help!,1
+module/ios,1
+PlayStation Vita,1
+triggerz,1
+season,1
+Needs Bounty,1
+patchable,1
+Branch: Staging,1
+:chart_with_upwards_trend: benchmark,1
+working-on-it,1
+game.kind.tbs,1
+nvidia (novideo) issue,1
+funded,1
+Premium Content,1
+Sample,1
+B: Alternative,1
+scope: utils,1
+scope: maths,1
+Client: Cohere,1
+Difficulty: Newcomers,1
+▪ 待审阅 To be reviewed,1
+Type: Information,1
+Lua 5.4,1
+game: Squad 44,1
+Game: Space Invaders,1
+Type: Discussion,1
+bisected,1
+self-hosted-server,1
+engine: goldsrc,1
+mod limitation,1
+priority/high,1
+fixed-in-beta,1
+无关,1
+gamemode,1
+60fps,1
+NWN:EE,1
+scope: unsafe-eval,1
+rpe,1
+scope: sprite-nine-slice,1
+음성 처리 기능 구현,1
+참가자는 현재 단계를 수행중인 참가자의 화면과 동일한 화면을 볼 수 있다.,1
+airbrake,1
+system-PSP,1
+1826,1
+Shikoku 1889,1
+status:needs save,1
+Client: Groq,1
+Allocator,1
+MSSP,1
+darwin,1
+S: Draft,1
+random-algorithm,1
+not-a-bug,1
+game: BATTALION: Legacy,1
+Savegame bump,1
+A: Preferences,1
+evaluation,1
+Workflow,1
+Spam,1
+UnitTests,1
+sev2,1
+Mechanic overhaul.,1
+system-NDS,1
+feedback,1
+P:Low,1
+PR: Help wanted,1
+solver_api,1
+needs-more-information,1
+module/minitouch,1
+4.5,1
+Reading statistics；阅读数据统计,1
+$200 bounty!!!,1
+savebreaking,1
+Type-Patch,1
+Изменения: Аудио,1
+game.kind.other,1
+sponsors goal achieved,1
+bug-original-game,1
+team rendering,1
+reverse-engineering,1
+사용자는 게임방에서 나갈 수 있다.,1
+low-prio,1
+Role,1
+api,1
+TSL,1
+Electricity,1
+ticket for ryzom forge,1
+hyprland,1
+norepro,1
+module/minicap,1
+Testing Required,1
+Priority: low,1
+A: Helpers,1
+A: Replays,1
+Status: Help Wanted,1
+branch: deprecated,1
+game.series.street_fighter,1
+waiting for response,1
+Has PR to address Issue,1
+Type:unclear,1
+Close: invalid,1
+out of scope,1
+distro: RedHat,1
+meta:bug,1
+game: Killing Floor 2,1
+All timer,1
+2 - Working <= 5,1
+upstream bug,1
+Unreal Engine,1
+template,1
+not reproducible 🕵️‍♂️,1
+browser-compatibility,1
+Not our fault,1
+deprecated,1
+quest,1
+map feature,1
+perf-drop,1
+server: vRO,1
+server: kRO,1
+Incomplete,1
+Dark mode rendering,1
+Testing in Progress,1
+Mono,1
+Waiting to be Tested,1
+OpSys-Windows,1
+Linux Problem,1
+NEEDS RESEARCH,1
+under-development,1
+package-management,1
+📝Needs Poll,1
+Difficulty Calculation,1
+player camera,1
+game.series.kof,1
+What: Art,1
+metrics,1
+webgl,1
+Type: dev side problem,1
+Type: STAY SAFE,1
+snapshot,1
+abandoned,1
+scope: sprite-tiling,1
+workaround applied,1
+CRYSTAL,1
+scope: layers,1
+models,1
+conflict,1
+game.kind.rts,1
+Area: Characters,1
+game.platform.wasm4,1
+Одобрено,1
+Изменения: Спрайты,1
+priority-unassigned,1
+Achievements,1
+external lib/jdk issue,1
+A: WSI,1
+Hack Fix,1
+samples,1
+area: game-mechanic,1
+Requires: Other PR,1
+Firefox / FF Preview,1
+P: Others,1
+x64,1
+state-management,1
+rewards,1
+Need Help,1
+song suggestion,1
+Status: Blocked,1
+big idea,1
+core: Flycast,1
+Math,1
+spoilers,1
+wontfix 😢,1
+bullet,1
+:bullettrain_front:  optimization,1
+Test,1
+T: Tests,1
+waiting,1
+topic:scripting,1
+即将修复,1
+demo and case,1
+👀 Needs review,1
+core: Virtual Jaguar,1
+game: Red Orchestra: Ostfront 41-45,1
+Needs reproducing,1
+main music,1
+Priority: Critical,1
+status: on hold,1
+func:MusicSelector,1
+very important,1
+~migrated,1
+pygame-crash,1
+WASM,1
+no coding,1
+Breaking Change,1
+kind:dashboard,1
+platform: Linux,1
+sockets,1
+DXLibrary,1
+module: Matches,1
+scenarios,1
+UnrealEngine4,1
+core: FCEUX,1
+Ranking,1
+deeper issue,1
+topic:rdg,1
+bug_fix,1
+hack compat,1
+Duration: 1 week,1
+unable to replicate,1
+hard to match osu!stable,1
+ongoing,1
+needs-review,1
+Type: Needs Cleanup,1
+DevOps - Infrastructure,1
+module/platform/windows,1
+awaiting response,1
+Admin,1
+dictionary-es,1
+investigation-needed,1
+help wanted 🙋‍♂️,1
+:bug: bug,1
+Video,1
+:rabbit:,1
+utils,1
+quality,1
+module: Player Details,1
+game: Death Match Classic,1
+WIKI,1
+b:falling actions,1
+:warning: submitter action required,1
+config:tse,1
+Priority: Middle,1
+poonam-kumawat 1,1
+Type: Test,1
+Closed: Duplicate,1
+M: Cargo,1
+waiting on user,1
+joust,1
+outcome: pr rejected,1
+G: Security,1
+external issue,1
+One approval :white_check_mark:,1
+sev3,1
+maptools,1
+LSSM-API,1
+Now,1
+1835,1
+module/javacap,1
+remaster,1
+Goblin,1
+40 Effort,1
+contribution,1
+Visual Agent,1
+component:data,1
+Not Tested,1
+multiplayer turn based,1
+Anyone,1
+mod request,1
+Gamemode,1
+locale-koKR,1
+hotkeys,1
+phase-5,1
+Bug / 错误,1

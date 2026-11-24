@@ -1,0 +1,101 @@
+\section{Discussion and Practical Improvements}\label{sec:implications}
+
+Two central empirical findings shape the practical implications of this study. First, multi-PR bug issues close substantially later in raw calendar time (\S\ref{sec:primary}), but the vast majority of secondary PR links appear only near the conclusion of the issue's lifespan (\S\ref{sec:timing}). Second, when the time-accumulation channel is blocked via a fixed landmark, having multiple PRs introduces essentially zero additional delay (\S\ref{sec:landmark})—whereas issues with \emph{no} linked PR by day~30 endure prolonged delays. Consequently, accumulating multiple pull requests is primarily a \emph{symptom} of a long-lived issue rather than a causal driver of resolution difficulty. The primary operational warning sign is not "multiple PRs submitted," but "an open defect with zero reviewable contributions."
+
+Table~\ref{tab:recommendations} summarizes five grounded practical recommendations for open-source game maintainers. Each recommendation connects an empirical finding to an operational maintainer action, while explicitly delineating the analytical boundaries of what our observational data can and cannot prove.
+
+\begin{table*}[htbp]
+\centering
+\caption{Summary of practical recommendations for open-source game maintainers. ``What the study cannot show'' delineates the empirical boundaries of observational data; none of these proposals has been evaluated as an active intervention.\label{tab:recommendations}}
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}
+  >{\raggedright\arraybackslash}p{3.6cm}
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}p{3.0cm}@{}}
+\toprule
+\textbf{Recommendation} & \textbf{Motivating Finding} & \textbf{Maintainer Action} & \textbf{What the Study Cannot Show} \\
+\midrule
+\textbf{1. Enforce Link Hygiene}\newline
+Differentiate closing keywords (\texttt{Fixes}) from references (\texttt{Ref}); log linking events. &
+8{,}961 duplicate link rows; cross-reference creation timestamps are unrecorded in repository metadata. &
+Reserve auto-closing keywords for verified fixes; deploy automation to log timestamped linking events. &
+That cleaner issue--PR linking directly accelerates bug resolution. \\
+\addlinespace
+\textbf{2. Flag PR Accumulation}\newline
+Monitor open issues that accumulate multiple PRs over extended timeframes. &
+\vallmShareB{} of multi-PR issues acquire their 2nd PR after day~30; final PR lands at \valtMedLast\% of lifetime. &
+Trigger triage alerts upon a 2nd linked PR or unmerged PR; re-verify reproducibility and ownership. &
+That triage intervention accelerates resolution or prevents abandonment. \\
+\addlinespace
+\textbf{3. Decouple PR Count from Difficulty}\newline
+Treat PR multiplicity as workflow noise rather than defect complexity. &
+Landmark analysis gap $\approx 0$ days; PR review durations remain short despite long calendar life. &
+Do not use linked PR count or commit churn as triage proxies for defect difficulty or effort. &
+Actual developer debugging effort or cognitive task complexity (unmeasured). \\
+\addlinespace
+\textbf{4. Decompose Closure Time}\newline
+Deconstruct calendar time into operational phases; closure $\neq$ verified fix. &
+Durations are severely right-skewed (mean $\gg$ median); issues often close administratively. &
+Track triage latency, review turnaround, and post-closure reopenings separately in dashboards. &
+That faster issue closure implies superior software quality. \\
+\addlinespace
+\textbf{5. Game-Aware Telemetry}\newline
+Instrument tracking to distinguish code fixes from game asset changes. &
+Game bug fixes frequently span compiled source code, 3D models, shaders, audio, and levels. &
+Classify PRs by affected artifact type (asset-only, code-only, hybrid) to isolate domain bottlenecks. &
+Empirical efficacy of domain-specific triage tooling (future work). \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\subsection{Standardizing PR Traceability and Granular Linking Telemetry}
+\textbf{Empirical motivation.} In the underlying corpus, 69,099 unique link rows connect issues to PRs, but 8,961 duplicate references occur, and 3,694 link records fail to resolve to valid issue entities (Table~\ref{tab:inventory}). Furthermore, GitHub stores issue--PR associations as static relational tuples without event timestamps recording \emph{when} the cross-reference was established.
+
+\textbf{Operational problem.} When multiple PRs associate with a single issue, maintainers and process miners cannot readily determine whether secondary PRs represent planned sub-tasks, competing implementations submitted by independent contributors, or post-hoc linkages created long after code was merged.
+
+\textbf{Maintainer action.} Project maintainers should enforce structured linking conventions in issue templates and CI bots. Specifically, PR descriptions should use auto-closing keywords (\texttt{Fixes \#123}) exclusively for verified primary resolution attempts, and non-closing reference keywords (\texttt{Ref \#123}) for partial, exploratory, or regression-tracking PRs. Repository bots should automatically log timestamped linkage events in issue comment streams to preserve the audit trail of triage decisions.
+
+\textbf{Evidence boundary.} Our dataset cannot prove that enforcing link hygiene shortens issue lifetime; it demonstrates that descriptive link noise and unrecorded link timing obscure the true timeline of developer collaboration.
+
+\subsection{Active Monitoring and Triage Alerts for Accumulating PRs}
+\textbf{Empirical motivation.} Multi-PR issues (Group B) exhibit a median observed duration of \valmedB{}~days compared to \valmedA{}~days for single-PR issues (Table~\ref{tab:descriptives}). Critically, \vallmShareB{} of multi-PR issues acquire their second PR only after day~30, and the last linked PR appears at a median of \valtMedLast\% of the issue's total lifespan (\S\ref{sec:timing}).
+
+\textbf{Operational problem.} In open-source games—where volunteer developers frequently rotate and multidisciplinary assets complicate debugging—issues that remain open for extended periods risk falling into dormancy. When a second or third PR appears months after the initial report, it frequently signals reviewer churn, abandoned prior solutions, or unresolved regressions.
+
+\textbf{Maintainer action.} Maintainers should configure automated triage bots to flag open bug issues whenever a second linked PR is registered, or when a linked PR is closed unmerged. Rather than assuming that repeated PR submissions represent healthy progress, triage leads should re-examine the ticket to diagnose coordination friction, clarify component ownership, or verify whether the bug remains reproducible against current master branches.
+
+\textbf{Evidence boundary.} The data demonstrates that multi-PR status is assembled late in calendar time, but it cannot establish whether active maintainer intervention would accelerate resolution or whether delayed closure stems from inherently intractable architectural defects.
+
+\subsection{Decoupling PR Multiplicity from Bug Difficulty in Triage}
+\textbf{Empirical motivation.} Group-B issues accumulate significantly more commits (median 5 vs.\ 2, Cliff's $\delta=0.537$) and PR comments (median 3 vs.\ 1, $\delta=0.487$, Table~\ref{tab:exploratory}). However, the median duration of individual PRs remains modest (2.05~days for B vs.\ 0.78~days for A), and 96.5\% of Group-B issues ultimately merge at least one PR. Once time accumulation is blocked, the landmark gap is $\approx 0$ days.
+
+\textbf{Operational problem.} Project managers and automated triage algorithms often treat PR counts or commit volume as direct proxies for defect complexity or debugging effort. This conflates implementation churn and social coordination overhead with intrinsic computational difficulty.
+
+\textbf{Maintainer action.} Triage teams should treat PR multiplicity as an indicator of \emph{workflow complexity} (e.g., modular decomposition, review rework, or scope creep) rather than defect difficulty. When estimating triage priorities or backlog complexity, maintainers should evaluate the technical footprint of the defect (e.g., subsystem interdependencies, asset requirements) rather than assuming that an issue with multiple PR attempts represents a deeply buried bug.
+
+\textbf{Evidence boundary.} The dataset does not track developer work logs or time spent in IDEs; consequently, it cannot quantify actual debugging effort. High commit and comment counts indicate heightened activity but do not directly measure cognitive difficulty.
+
+\subsection{Decomposing Calendar Duration into Operational Sub-Phases}
+\textbf{Empirical motivation.} Observed issue lifetimes exhibit severe right skew (mean \valmeanA{} vs.\ median \valmedA{} days for Group A). Across all seven robustness checks (Table~\ref{tab:robustness}), the rank-based gap remains stable, yet calendar duration incorporates extensive dormancy, review latency, and queueing delays.
+
+\textbf{Operational problem.} Open-source project dashboards often rely on mean time to closure (MTTC) as a key performance indicator. MTTC heavily penalizes projects maintaining open bug backlogs and creates perverse incentives to prematurely close complex issues or discourage thorough multi-PR refactoring.
+
+\textbf{Maintainer action.} Maintainer dashboards should separate calendar age into distinct operational intervals: triage latency (creation to first PR), review turnaround time (PR creation to merge/close), and post-merge verification latency. Furthermore, dashboards should track whether closed issues represent verified defect corrections rather than administrative closures (e.g., closed as stale or obsolete).
+
+\textbf{Evidence boundary.} Because OSSGameBench does not capture post-closure bug reopenings or user satisfaction, our analysis cannot determine whether projects with shorter closure durations produce more reliable software.
+
+\subsection{Domain-Specific Telemetry: Disentangling Asset vs.\ Code PRs}
+\textbf{Empirical motivation.} Video game development is characterized by tightly coupled dependencies between compiled source code (e.g., C++, Rust, C\#) and heterogeneous binary assets (3D meshes, textures, audio, shaders, level data)~\cite{marsad2026ossgamebench}. Current repository miners and issue trackers treat asset changes and source-code modifications under a single undifferentiated PR abstraction.
+
+\textbf{Operational problem.} When game bugs require changes to both code logic and game assets, fixes are frequently split across separate pull requests due to repository storage limits (e.g., Git LFS) or distinct contributor specializations (programmers vs.\ technical artists). Standard tracking fails to capture this multidisciplinary dependency.
+
+\textbf{Tooling proposal.} Mining tools and game-development harnesses should introduce domain-aware telemetry:
+\begin{enumerate}
+    \item Explicitly distinguishing asset-only PRs, code-only PRs, and hybrid PRs in linking tables.
+    \item Recording fine-grained timestamps for every cross-referencing event, commit cherry-pick, and issue status transition.
+    \item Tracking automated regression test runs and shader compilation verification directly tied to linked PRs.
+\end{enumerate}
+
+\textbf{Evidence boundary.} Our study evaluates existing GitHub metadata in OSSGameBench; evaluating the effectiveness of asset-aware tracking tools requires prospective deployment and controlled tool evaluation.

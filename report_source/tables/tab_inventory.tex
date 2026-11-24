@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Selected inventory and data-quality findings for the OSSGameBench dataset (Version v2).\label{tab:inventory}}
+\small \begin{tabular}{@{}ll@{}}
+\toprule
+Item & Value \\\midrule
+Projects (project.parquet) & 970 \\
+Issues & 326,182 (unique composite keys) \\
+Issue comments & 853,302 \\
+Pull requests & 396,048 \\
+PR comments & 689,749 \\
+issue\_pr link rows & 78,060 raw / 69,099 unique (8,961 exact duplicates) \\
+pr\_commit rows & 1,565,625 \\
+Commits in per-project detail files & 2,796,851 across 973 files \\
+Distinct issue labels & 4,273 \\
+Issues with no labels & 109,326 \\
+Issue creation range & 2000-12-12 to 2025-10-12 \\
+PR merge range & 2010-10-16 to 2025-10-12 \\
+Links not resolving to issue.parquet & 3,694 \\
+Links not resolving to pr.parquet & 137 \\
+Malformed timestamps (all 5 datetime columns) & 0 \\
+PRs with closed\_at $<$ created\_at & 1 \\
+Comment tables expose created\_at? & no (see \S\ref{sec:threats}) \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,27 @@
+\section{Introduction}\label{sec:intro}
+
+Open-source game development represents a distinct engineering domain characterized by multidisciplinary assets (game logic, graphics, audio, shaders, and level data) and predominantly volunteer-driven development cycles~\cite{marsad2026ossgamebench}. When users and contributors encounter defects, issues are tracked in repository issue trackers, investigated, and addressed through pull requests (PRs)~\cite{gousios2014pull}. While many bug reports are resolved with a single PR, a subset accumulates multiple linked PRs over time. This multi-PR pattern can arise from various development workflows: modular decomposition of fixes across subsystems, abandoned initial attempts replaced by subsequent patches, or separate fixes for newly introduced regressions.
+
+From a project management and triage perspective, maintainers naturally seek diagnostic signals: if issues attracting multiple PRs are systematically slower to close, observing a second PR could serve as an actionable trigger for maintainer re-triage. However, interpreting this relationship requires caution due to a fundamental methodological challenge: \emph{reverse causality via time-dependent link accumulation}. Because pull requests can only be linked to an issue while that issue remains open, longer-lived issues have substantially more calendar opportunity to accumulate PR references. An observed statistical association between multi-PR issues and prolonged closure times might simply reflect the passage of time rather than higher intrinsic defect difficulty.
+
+Furthermore, empirical repository studies must rigorously separate observable trace data from unmeasured operational concepts:
+\begin{enumerate}
+  \item \textbf{Calendar Duration vs.\ Debugging Effort}: The elapsed calendar duration ($\texttt{closed\_at} - \texttt{created\_at}$) measures wall-clock time, which conflates active debugging with triage queues, contributor dormancy, review latency, and volunteer availability~\cite{mockus2002two}.
+  \item \textbf{Issue Closure vs.\ Verified Fix}: Issue closure indicates an administrative state transition, which does not guarantee that the defect was successfully resolved or verified against regressions; issues are also closed due to obsolescence, duplicates, or lack of reproducibility~\cite{herzig2013not}.
+  \item \textbf{Reported Bugs vs.\ Actual Defect Occurrence}: Issue trackers record reported and labelled defects, omitting unfiled bugs or informal patches.
+\end{enumerate}
+
+\textbf{Research Question (RQ).} We formulate our central inquiry:
+\begin{quote}
+\emph{Among closed, labelled bug issues in open-source games, is multi-PR resolution associated with longer issue closure times, and does this relationship reflect genuine workflow delay or time-dependent link accumulation?}
+\end{quote}
+
+\textbf{Contribution beyond prior work.} While the original OSSGameBench publication~\cite{marsad2026ossgamebench} introduced the dataset and described high-level repository distributions, it did not investigate bug resolution dynamics. This coursework study provides:
+\begin{itemize}
+  \item A rigorous cohort filtering pipeline isolating 63,688 closed strict bugs across 970 repositories.
+  \item A rank-based comparison of single-PR vs.\ multi-PR closure times with project-clustered uncertainty estimation.
+  \item An empirical PR-arrival timing analysis demonstrating that secondary PRs accumulate predominantly at the end of issue lifespans.
+  \item A fixed-landmark survival analysis ($L=30$ days) that blocks the link-accumulation channel and evaluates the residual association.
+  \item A 100-issue random sample audit evaluating bug-label precision.
+  \item Actionable, grounded recommendations for open-source game maintainers, with explicit empirical boundaries.
+\end{itemize}

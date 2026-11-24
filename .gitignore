@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Scratch intermediates recreated by the pipeline on every run
+outputs/intermediate/_*.parquet
+
+# Stale root-level working copies (canonical copies live under outputs/)
+/figures/
+/tables/
+
+# OS / editor noise
+.DS_Store
+*.swp

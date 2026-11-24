@@ -1,0 +1,6 @@
+2026-11-20 16:05:09,827 INFO PRIMARY: median A=7.99d B=35.27d U=6.07e+06 p=3.31e-35 d=0.284 (small) CIcluster=[13.9,51.4]
+2026-11-20 16:05:09,845 INFO project-level: 117 projects with both groups, B higher in 88 (sign p=4.28e-08)
+2026-11-20 16:05:10,429 INFO FE regression: coef=0.9055 (clustered CI 0.6709..1.1400), ~147% multiplicative for long durations
+2026-11-20 16:05:10,495 INFO timing: B last-PR at 95.3% lifetime median; determined-exposure n_A=4271 n_B=108 diff=8.6d p=6.44e-12
+2026-11-20 16:05:11,504 INFO supplementary KM/log-rank: chi2=43.81 p=3.62e-11
+2026-11-20 16:05:11,506 INFO analyze complete

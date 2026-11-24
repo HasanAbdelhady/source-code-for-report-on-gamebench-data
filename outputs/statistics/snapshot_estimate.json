@@ -1,0 +1,5 @@
+{
+  "snapshot_estimate_utc": "2025-10-12 22:28:19+09:00",
+  "method": "max of all event timestamps (issue/pr created, closed, merged); a lower bound on the true collection date",
+  "seed": 20261120
+}

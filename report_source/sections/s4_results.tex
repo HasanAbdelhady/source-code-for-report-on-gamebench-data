@@ -1,0 +1,66 @@
+\section{Results}\label{sec:results}
+
+\subsection{Descriptive Duration Profiles}\label{sec:descriptives}
+Observed issue-to-closure durations exhibit pronounced right skew (Table~\ref{tab:descriptives} and Fig.~\ref{fig:ecdf}). For single-PR issues (Group A), the median duration is \valmedA{}~days (mean \valmeanA{}~days), with the 90th percentile reaching \valpNinetyA{}~days. In contrast, multi-PR issues (Group B) exhibit substantially higher durations across all percentiles: median \valmedB{}~days (IQR \valqOneB--\valqThreeB~days, mean \valmeanB{}~days), and a 90th percentile extending to \valpNinetyB{}~days.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=.62\linewidth]{figures/fig1_cohort.pdf}
+\caption{Cohort construction pipeline: sequential exclusion stages (panel a) and grouping into Groups A, B, and C (panel b).\label{fig:cohort}}
+\end{figure}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=.58\linewidth]{figures/fig2_ecdf.pdf}
+\caption{Empirical cumulative distribution function (ECDF) of issue closure duration on a log scale. The multi-PR distribution (Group B) is consistently shifted rightward relative to Group A.\label{fig:ecdf}}
+\end{figure}
+
+For context, closed strict bugs without any resolvable linked PR (Group C, 76.5\% of the cohort) have a median duration of 7.8~days, comparable to Group A. Many Group C tickets reflect trivial reports, user configuration issues, or stale tickets closed administratively without code modifications.
+
+\input{tables/tab_descriptives}
+
+\subsection{Primary Comparative Analysis: Single-PR vs.\ Multi-PR Bugs}\label{sec:primary}
+Table~\ref{tab:main} presents the primary comparative findings: multi-PR issues close systematically later than single-PR issues. The observed median difference is \valmedDiff{}~days, and the Hodges--Lehmann location shift is \valhlShift{}~days, confirming that the entire duration distribution is shifted rightward rather than merely the central tendency.
+
+\input{tables/tab_main}
+
+The Mann--Whitney $U$ test confirms stochastic dominance ($p=\valpPrim$). The Cliff's delta effect size is $\delta = \valcliffsD$ (small-to-medium magnitude), indicating that in roughly 64\% of all random pairings between a Group-B ticket and a Group-A ticket, the multi-PR ticket closed later. 
+
+Crucially, when accounting for project-level clustering, the 10{,}000-draw project-clustered bootstrap 95\% confidence interval spans \valciCluster{}~days. Because this interval comfortably excludes zero, the observed association cannot be dismissed as an artifact of issue clustering across the \valnProjAB{} contributing repositories.
+
+\subsection{Within-Project Consistency}\label{sec:projlevel}
+To test whether the observed gap simply reflects multi-PR issues concentrating within chronically slow projects, we examined the \valnProjBoth{} repositories that contribute issues to both Group A and Group B.
+
+\input{tables/tab_projects_top}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=.58\linewidth]{figures/fig4_projects.pdf}
+\caption{Pairwise project comparison: median duration for single-PR ($x$) vs.\ multi-PR ($y$) issues across the \valnProjBoth{} projects containing both groups. Most projects lie above the equality line ($y=x$).\label{fig:projects}}
+\end{figure}
+
+A two-sided sign test across these \valnProjBoth{} projects reveals that multi-PR bugs have a higher median closure duration in \valnBhigher{} projects, while closing faster in only \valnBlower{} ($p=\valsignP$, median within-project difference \valmedProjDiff{}~days; Fig.~\ref{fig:projects}). Furthermore, a multivariate regression model predicting $\log(1 + \text{duration})$ with project fixed effects and creation-year fixed effects yields a highly significant Group-B coefficient ($\hat\beta = \valfeCoef$, 95\% CI \valfeCI{}, $p=\valfeP$), representing approximately a \valfePct\% increase in expected closure duration within the same repository and year. Table~\ref{tab:projects-top} summarizes the top 15 contributing projects; the complete list of all 117 projects is archived in the replication package.
+
+\subsection{Dose-Response: Increasing PR Count}\label{sec:trend}
+Treating the linked PR count $k$ as an ordinal metric, Spearman rank correlation between $k$ and closure duration is $\rho = \valrho$ ($p=\valrhoP$). As shown in Table~\ref{tab:categories} and Fig.~\ref{fig:category}, median duration increases from \valmedA{}~days at $k=1$, to 33.4~days at $k=2$, and 86.8~days at $k=3$. However, counts beyond $k=3$ represent rare outliers ($n=1$ for $k=4$, $n=2$ for $k \ge 5$); we caution against extrapolating trends into these sparse cells.
+
+\input{tables/tab_categories}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=.58\linewidth]{figures/fig3_kcategory.pdf}
+\caption{Median closure duration categorized by linked PR count $k$, with sample counts annotated.\label{fig:category}}
+\end{figure}
+
+\subsection{Temporal Dynamics: When Do Linked PRs Arrive?}\label{sec:timing}
+Evaluating the arrival timing of pull requests relative to issue lifespans provides critical insight into the underlying mechanism. Fig.~\ref{fig:timing} plots the relative creation time of each linked PR as a fraction of total issue lifetime ($0.0 = \text{creation}$, $1.0 = \text{closure}$).
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=.68\linewidth]{figures/fig5_timing.pdf}
+\caption{Creation timing of linked pull requests as a fraction of issue lifespan ($0.0 = \text{opened}$, $1.0 = \text{closed}$). Dashed lines denote group medians.\label{fig:timing}}
+\end{figure}
+
+In Group A, the single resolving PR appears at a median of \valaFracMed\% of the issue's total lifespan. In Group B, the initial PR appears early (median \valtMedFirst\% of lifespan), but the \textbf{last linked PR arrives at a median of \valtMedLast\% of the issue's lifespan}. For \valtNinety\% of multi-PR issues, the final PR is submitted during the terminal 10\% of the issue's lifetime. This demonstrates that multi-PR issues are tickets where the PR link set continued to accumulate across the ticket's active open period—strongly pointing toward reverse causality and time accumulation.
+
+\subsection{Label Classification Validation}\label{sec:validation}
+Table~\ref{tab:validation} summarizes the validation audit of the strict-bug classification rule. Among the $\valvN$ randomly sampled cohort tickets, \valvConf{} were confirmed as genuine defects, \valvRej{} were rejected, and \valvUnc{} were classified as uncertain.
+
+\input{tables/tab_validation}
+
+Among decided cases, strict-tier precision is \valvPrec{} (95\% Wilson score CI \valvCI). If every uncertain case is conservatively counted as misclassified, precision remains \valvPrecAll{} (95\% CI \valvCIAll). The two rejected tickets represented internal refactoring and CI infrastructure maintenance that had received automated bug labels. Uncertain tickets involved borderline subjective reports, such as gameplay difficulty tuning and ambiguous UX preferences. We reiterate that this audit evaluated precision via single-reviewer LLM-assisted screening; unlabelled defects omitted from the corpus cannot be detected via this protocol.

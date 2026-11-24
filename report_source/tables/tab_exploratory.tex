@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Exploratory resolution-path profile by group (Holm-adjusted within this family). Comment and commit counts are activity proxies, not effort measures.\label{tab:exploratory}}
+\small \begin{tabular}{@{}llllll@{}}
+\toprule
+Measure (B vs.\ A) & Med.\ A & Med.\ B & Cliff's $\delta$ & $p_{\text{raw}}$ & $p_{\text{Holm}}$ \\\midrule
+Distinct linked-PR authors & 1.00 & 1.00 & 0.419 & $<10^{-300}$ & $<10^{-300}$ \\
+Median per-PR duration (days) & 0.78 & 2.05 & 0.262 & $4.51\times 10^{-30}$ & $9.01\times 10^{-30}$ \\
+Commits via linked PRs & 2.00 & 5.00 & 0.537 & $1.13\times 10^{-133}$ & $5.64\times 10^{-133}$ \\
+Comments on linked PRs & 1.00 & 3.00 & 0.487 & $7.55\times 10^{-113}$ & $3.02\times 10^{-112}$ \\
+Comments on the issue & 1.00 & 2.00 & 0.261 & $7.03\times 10^{-32}$ & $2.11\times 10^{-31}$ \\
+Issue has $\geq$1 merged linked PR (\%) & 97.2 & 96.5 & -- & $0.386$ & $0.386$ \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,5 @@
+\section{Conclusion}\label{sec:conclusion}
+
+This study investigated bug resolution dynamics in open-source video games using the OSSGameBench dataset (Version v2). While multi-PR bug issues close substantially later than single-PR issues in observational calendar time (median 35.3 vs.\ 8.0 days, Cliff's $\delta = 0.284$), this gap is predominantly an artifact of time-dependent link accumulation. In multi-PR issues, secondary pull requests appear at a median of 95.3\% of the issue's lifetime. When reverse causality is eliminated through a 30-day fixed-landmark analysis, the closure duration gap between one-PR and multi-PR issues drops to $-0.8$ days (95\% CI $-22.5$ to 29.2 days). 
+
+Rather than indicating intrinsic algorithmic difficulty, pull request multiplicity serves as a diagnostic symptom of prolonged open tickets. Open-source game maintainers should not treat PR count as a triage proxy for debugging effort, but should instead monitor accumulating PRs as a signal for stalled consensus, reviewer churn, or unresolved regressions.

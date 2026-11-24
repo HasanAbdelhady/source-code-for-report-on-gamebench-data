@@ -1,0 +1,33 @@
+\section{Dataset and Approach}\label{sec:data}
+
+\subsection{The OSSGameBench Corpus}\label{sec:corpus}
+We analyze the public \textbf{OSSGameBench} dataset~\cite{marsad2026ossgamebench}, a comprehensive empirical benchmark of contributor and development activities across 970 open-source video games and game development engines on GitHub. The dataset provides relational Apache Parquet tables capturing projects, issues, pull requests, comments, and commit associations, as well as an \texttt{issue\_pr} cross-reference table. In total, the corpus records \valSzero{} reported issues and 396,048 pull requests.
+
+The dataset captures \emph{reported} issues and developer activity traces. Bugs fixed directly without corresponding issue tracker tickets, or issues opened as general questions or feature proposals, reflect maintainer workflow conventions. Consequently, the dataset enables empirical evaluation of the lifecycle of reported, labelled bug tickets.
+
+\subsection{Dataset Version and Provenance Verification}\label{sec:provenance}
+This study is conducted strictly on the **OSSGameBench dataset (Version v2)**, hosted under Zenodo record \texttt{17553539} (DOI: \texttt{10.5281/zenodo.17553539})~\cite{zenodo_ossgamebench_v2}. Before undertaking any data processing, the integrity of the downloaded corpus archive was verified against the cryptographic digest published in the Zenodo record:
+\begin{equation}
+\text{MD5}(\texttt{OSSGameBench.zip}) = \texttt{40fd064b56ec327b6284039b18b19ea1}
+\end{equation}
+The local archive verified as an exact cryptographic match. All Parquet tables were extracted and verified against their stored CRC-32 integrity records. Throughout the entire analysis pipeline, all raw dataset tables were accessed in read-only mode to guarantee complete reproducibility and eliminate any risk of data mutation.
+
+\subsection{Data-Quality Inventory and Snapshot Boundaries}\label{sec:inventory}
+Repository mining datasets inevitably encounter collection boundaries and metadata hygiene anomalies. Because GitHub snapshots do not include a formal cutoff header, we determine the effective snapshot boundary from the data: the latest observed event timestamp across all entity tables is \valsnapshot{} (UTC). Events occurring after this date cannot be observed, establishing the right-censoring boundary for issues still open at the snapshot date.
+
+Timestamps follow the ISO-8601 standard with explicit timezone offsets; all dates were parsed using strict datetime conversions, routing unparseable records to an explicit exclusion ledger (\S\ref{sec:cohort}). Table~\ref{tab:inventory} presents verified entity counts and data-quality findings. Notably, the \texttt{issue\_pr} link table contains 8,961 exact duplicate link tuples and 3,694 link records referencing issue identifiers absent from the main issue entity table. Critically, GitHub's cross-referencing model records link relationships as static relational associations without event timestamps indicating \emph{when} a PR was linked to an issue. This data limitation directly motivates the design of our landmark analysis in \S\ref{sec:landmarkdesign}.
+
+\input{tables/tab_inventory}
+
+\subsection{Methodological Pipeline}\label{sec:approach}
+The investigation follows a fully scripted, reproducible execution workflow:
+\begin{enumerate}
+  \item \textbf{Data Ingestion \& Hygiene Audit}: Schema validation, timestamp consistency checks, and relational integrity verification.
+  \item \textbf{Label Classification}: Categorization of all \vallabelsTotal{} distinct issue labels into deterministic taxonomy tiers.
+  \item \textbf{Cohort Construction}: Multi-stage exclusion filtering of closed bug issues with unambiguous PR linkages.
+  \item \textbf{Statistical Comparison}: Non-parametric hypothesis testing, robust effect sizes, and project-clustered bootstrap uncertainty intervals.
+  \item \textbf{Survival and Landmark Modeling}: Decomposition of calendar delay vs.\ PR arrival timing, followed by a fixed-landmark analysis at $L=30$ days to isolate reverse causality.
+  \item \textbf{Classification Validation}: A 100-issue sampled audit evaluating bug label precision.
+  \item \textbf{Robustness Suite}: Seven sensitivity checks evaluating stability across classification, linkage, and project clustering definitions.
+\end{enumerate}
+All reproduction code and instructions are available in the replication package repository~\cite{replication_repo}.

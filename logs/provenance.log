@@ -1,0 +1,33 @@
+OSSGameBench v2 — provenance verification log
+Date: 2026-11-20 (UTC local)
+======================================================================
+Archive structure on this machine:
+  ./OSSGameBench.zip            65,816,061,871 bytes  (mtime 2025-09-04)
+      = THE original Zenodo artifact for record 17553539 (DOI 10.5281/zenodo.17553539)
+      MD5 (computed): 40fd064b56ec327b6284039b18b19ea1
+      MD5 (published): 40fd064b56ec327b6284039b18b19ea1  -> MATCH (VERIFIED)
+  ../OSSGameBench.zip           65,816,582,051 bytes  (mtime 2026-11-19 18:56)
+      A locally re-packaged container created Nov 19 2026; contains
+      {README.md, OSSGameBench.zip (inner), online-appendix.pdf}.
+      MD5 (computed): 29ade6b7e31911d6127097861b31633d  (differs from the
+      published Zenodo value because it is NOT the original download).
+  ./OSSGameBench/               extracted inner archive (files dated 2025-11-09)
+
+Integrity of the extracted entity tables vs the verified archive
+(CRC-32 of archive central-directory entry vs extracted file):
+  issue.parquet         f107b397 == f107b397  MATCH
+  pr.parquet            74c2237d == 74c2237d  MATCH
+  issue_comment.parquet d285f0c0 == d285f0c0  MATCH
+  pr_comment.parquet    8650b71f == 8650b71f  MATCH
+  pr_commit.parquet     f931309b == f931309b  MATCH
+  issue_pr.parquet      bb0ea222 == bb0ea222  MATCH
+  commit_metadata.parquet e9e95a1b == e9e95a1b MATCH
+  project.parquet       400e8235 == 400e8235  MATCH
+=> The extracted tables used by this study are byte-identical (CRC-verified)
+   to the contents of the checksum-verified original Zenodo archive.
+
+Deviations from official distribution:
+  - The outer container in the parent directory is a local repackaging
+    (its listing lacks the data_collection/ and analysis/ folders that the
+    README mentions); it is NOT used for analysis and NOT deleted.
+  - No dataset files were modified or deleted; analysis reads them read-only.

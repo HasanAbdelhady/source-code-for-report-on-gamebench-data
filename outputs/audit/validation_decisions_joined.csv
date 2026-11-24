@@ -1,0 +1,1466 @@
+project,issue_number,title,strict_labels,body,decision,reason
+2DGD-F0TH/2DGD_F0TH,102,6.1.3 Writer - Simple Typo,Bug,"Bug Report
+----------
+
+It's a simple typo.
+
+**Where:** [6.1.3 Writer]
+
+#### Describe briefly the issue
+
+[...]
+A good writer must have good language skills, as well as creativity. The**y** must be able to use planning programs [...]
+
+#### If necessary, describe the issue in detail
+
+It's simply missing the **y** on _they_.",confirmed,title/description report unintended or incorrect software behaviour
+Big-Onche/Tesseract-Sauerbraten,4,quad damage and health boost message spam,bug,"",confirmed,title/description report unintended or incorrect software behaviour
+ChrisNeedham24/microcosm,13,Some Overlay cookery,bug,"`Traceback (most recent call last):
+File ""/home/suttono/tmp/microcosm/[game.py](http://game.py/)"", line 182, in on_update
+self.board.selected_settlement.current_work = Construction(self.board.overlay.selected_construction)
+AttributeError: 'NoneType' object has no attribute 'current_work'`
+Happened when Ollie was choosing a construction for his settlement and he clicked away before choosing, deselecting his settlement.
+
+I've noticed a similar thing happening when you're choosing a blessing and you press shift before choosing one, and the standard overlay disappears.
+
+Seems like there are a few deselections that can occur in the overlay at the wrong times.",confirmed,title/description report unintended or incorrect software behaviour
+CorsixTH/CorsixTH,2207,[Bug] Mission doesn't end when victory conditions are met,bug,"### Describe the issue
+
+The Briefing states you need 400 reputation, 200 patients cured and $50.000 in the bank account. 
+
+I have 821 reputation, 213 cures and $158.041 in the bank, so the mission should be won.
+
+### Steps to Reproduce
+
+1. *Load save game attached to this ticket*
+
+### Expected Behaviour
+
+You should see a window that lets you progress to the next level.
+
+### Save Game
+
+Save game attached to report: Yes
+
+[neverendingstory.zip](https://github.com/CorsixTH/CorsixTH/files/9127604/neverendingstory.zip)
+
+
+### CorsixTH Version
+
+3a4f98374a9e15c4a84125a04f071be926d0e578
+
+### Operating System
+
+Arch Linux
+
+### Theme Hospital Version
+
+GOG.com
+
+### Gamelog.txt
+
+```bash
+Compiled with api_version: 2682, arch: x86_64, audio: true, os: unix
+SDL renderer: opengl
+Lua 5.4 run with api version: 2682, game version: Trunk, savegame version: 172
+Created game with savegame version 172.
+Error in callback handler: 
+/home/jsimek/Development/CorsixTH/CorsixTH/Lua/audio.lua:586: Could not load music file 'Sound/Midi/DOCTOR.XMI' (Couldn't open timidity.cfg)
+stack traceback:
+	[C]: in function 'coroutine.yield'
+	/home/jsimek/Development/CorsixTH/CorsixTH/",confirmed,title/description report unintended or incorrect software behaviour
+Crownicles/Crownicles,526,les dms ne marchent plus,bug,"",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,125,Harpoon guns (And other ranged weaponry) no longer log hits from players,Bug,"This is really easy to fix though I don't have a branch to make a pull request from on this right now (I'll set something up for submitting bug fixes at some point).
+
+In Rangedweapon.cs's Use (Which fires the projectile) it calls the projectile's use function.
+Before doing this it sets the User of the projectile however this should also be included in the Use send (as character will be equal to null, and then the user is set from character on use, setting the user to null)
+
+Simple fix is in Barotrauma Shared -> Items -> Components -> Holdable -> RangedWeapon -> line 114
+Projectile.Use(deltaTime); -> Projectile.Use(deltaTime, character);",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,2868,Bots with Diving Knives prioritizes defending itself against aliens with Welding Tool,Bug,"- [x] I have searched the issue tracker to check if the issue has already been reported.
+
+**Description**
+I still think this is silly. So the bot had a empty SMG, got chomped by an alien, Instead of using the diving knife it has, went to collect a welding tool to weld it to death (not a good idea). I would've fought to the death with a knife.
+
+![Capture](https://user-images.githubusercontent.com/5086682/82387459-18371b00-9a05-11ea-834f-c245f2730b7a.PNG)
+
+**Version**
+0.9.1001.0
+",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,4182,[0.1100.0.1] - Trouble cutting doors/hatches in/out if ballast flora is in the way.,Bug,"
+**Description**
+There's some trouble where you're locked in/out of the ballast because some part of the ballast flora branch is blocking the cutter from cutting the hatch, resulting at times making it impossible to get in due to ballast flora controlling the pumps. Current way around this is to cut in from the outside which is not ideal.
+
+**Version**
+[0.1100.0.1]
+
+**Additional information**
+Not exact demonstration of the description.
+![troublecutting](https://user-images.githubusercontent.com/72674994/97784534-39b64880-1bda-11eb-9c4d-398192532c58.jpg)
+
+",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,5318,Batteries connected to each other seem to generate power out of nowhere,Bug,"***TRANSLATE:***
+**Description**
+I invented the perpetual motion machine
+
+**Steps To Reproduce**
+Everything is quite simple. I did it quite unconsciously, and I don't even know if it's true.
+
+1. First, we need a simple power source. I took the reactor and threw the rod into it for about 10 seconds.
+2. From him, the current went in a simple cable box.
+3. The box itself is connected to a bunch of batteries. About this now in more detail.
+Battery construction:
+     I took 4 batteries, but I'm sure that 2 or more are enough(maybe even one)
+     Battery connections:
+            1 -> 2
+            2 -> 3
+            3 -> 4
+            4 -> 3
+            3 -> 2
+            2 -> 1
+The cable from the box is connected to the first battery.
+It is also worth noting that each battery has a value of ""Battery recharge"" set to 100%
+
+4. After that, you should also power something else from this box(for example, a couple of lamps).
+5. The battery charge will not change, and the lamps will shine
+
+**Version**
+12.0.3 Windows (just like that)
+
+**Additional information**
+I know that the editor is still not in its proper form right now(it is more likely not for the game, but f",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,5757,MP crash after host went to lobby,Bug,"[crashreport (202).log](https://github.com/Regalis11/Barotrauma/files/6461644/crashreport.202.log)
+
+**Version**
+Unstable
+
+**Additional information**
+-we purchased a laser at the outpost",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,9517,Cannot open Toxin Cabinet in the Barsuk as the Medical Doctor,Bug,"### Disclaimers
+
+- [X] I have searched the issue tracker to check if the issue has already been reported.
+- [ ] My issue happened while using mods.
+
+### What happened?
+
+This happened in version v0.18.12.0, vanilla.
+
+From the start of the campaign, as the Medical Doctor, I have had no access to the Toxin Cabinet even with my Medical ID equipped. The only way I can interact with it is with the Captain's ID.
+
+I am not the host.
+I have not tried to reproduce this on another campaign.
+
+### Reproduction steps
+
+1. Start multiplayer campaign
+2. Be the medical doctor
+3. Have the medical ID
+4. Click the toxin cabinet
+5. Unauthorised access
+
+### Bug prevalence
+
+Happens every time I play
+
+### Version
+
+0.18.12.0
+
+### -
+
+_No response_
+
+### Which operating system did you encounter this bug on?
+
+Windows
+
+### Relevant error messages and crash reports
+
+_No response_",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,10316,Piezo crystals have gone missing,Bug,"### Disclaimers
+
+- [X] I have searched the issue tracker to check if the issue has already been reported.
+- [ ] My issue happened while using mods.
+
+### What happened?
+
+Piezo crystals no longer spawn in the Great Sea.
+
+In the <LevelResource> block for pizeo crystals at the bottom of minerals.xml, the leveltype should be ""greatseabasic"" but is currently set to ""thegreatsea"".
+
+### Reproduction steps
+
+1. enter the level editor
+2. generate a ""greatseabasic"" level
+3. observe that there are no piezo crystals
+
+### Bug prevalence
+
+Happens every time I play
+
+### Version
+
+0.19.14.0
+
+### -
+
+_No response_
+
+### Which operating system did you encounter this bug on?
+
+Windows
+
+### Relevant error messages and crash reports
+
+_No response_",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,11860,"""Engineers are special"" event doesn't have an npc to talk to",Bug,"### Disclaimers
+
+- [X] I have searched the issue tracker to check if the issue has already been reported.
+- [ ] My issue happened while using mods.
+
+### What happened?
+
+When triggered, the event ""Engineers are special"" doesn't mark any npc for the conversation, making the event uncompleteable.
+![image](https://user-images.githubusercontent.com/115734437/232438813-50ccb7e3-c4d7-4c34-a5d1-37a1157ab29d.png)
+
+
+### Reproduction steps
+
+1. In an outpost: `triggerevent Engineers_are_special`
+2. Check outpost for npc with mission marker
+
+### Bug prevalence
+
+Happens regularly
+
+### Version
+
+v1.0.9.0
+
+### -
+
+_No response_
+
+### Which operating system did you encounter this bug on?
+
+Windows
+
+### Relevant error messages and crash reports
+
+_No response_",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,12612,[Unstable] Circuit box eats component when full,Bug,"### Disclaimers
+
+- [X] I have searched the issue tracker to check if the issue has already been reported.
+- [ ] My issue happened while using mods.
+
+### What happened?
+
+When you try to put a component in the circuit box while it already has max components, it makes a console message and doesn't put the component in but removes it from your inventory.
+
+![image](https://github.com/Regalis11/Barotrauma/assets/42877449/ea6e3219-5fda-4219-936c-ba4b8df8ace8)
+
+
+### Reproduction steps
+
+1. Spawn a circuit box and put it down
+2. Spawn 5 stacks of components and attempt to put all of them into the circuit box
+3. Notice how once it's full, it still removes the items.
+
+### Bug prevalence
+
+Happens regularly
+
+### Single player or multiplayer?
+
+Single player
+
+### -
+
+_No response_
+
+### Version
+
+Unstable (v1.1.11.0)
+
+### -
+
+_No response_
+
+### Which operating system did you encounter this bug on?
+
+Windows
+
+### Relevant error messages and crash reports
+
+_No response_",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,13378,[Unstable] Selecting Holographic Display item crashes the game (SerializableEntityEditor.CreateStringField),Bug,"### Disclaimers
+
+- [X] I have searched the issue tracker to check if the issue has already been reported.
+- [ ] My issue happened while using mods.
+
+### What happened?
+
+Place this in sub editor and select it
+
+![image](https://github.com/FakeFishGames/Barotrauma/assets/73229309/abb5e6ed-a76b-4482-96a6-4afec9ebe989)
+
+[crashreport (39).log](https://github.com/FakeFishGames/Barotrauma/files/14144715/crashreport.39.log)
+
+Other items of the same type (decorative with light component) also crash the game 
+![image](https://github.com/FakeFishGames/Barotrauma/assets/73229309/8543b70a-6396-4a24-bc02-11b6eb31d3d6)
+
+
+### Version
+
+v1.2.10.0 (unstable)
+",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,13492,[Sub Editor][English] Hull Name Presets Missing,Bug,"### Disclaimers
+
+- [X] I have searched the issue tracker to check if the issue has already been reported.
+- [ ] My issue happened while using mods.
+
+### What happened?
+
+Apparently there's a bug in the sub designer causing the presets for hull object names to just not load for the english language localization
+if you switch to any other they show up correctly
+
+Additionally if manually typed into the hull name, they show correctly in game. Only the list appears broken.
+They, additionally, do still exist in EnglishVanilla.XML. It seems to just be a loading issue for specificlaly english
+
+### Reproduction steps
+
+1. Switch to English localization
+2. Open the sub editor
+3. select or place a hull object
+4. attempt to select a preset
+5. the list is blank
+6. switch to any other language
+7. the list is not blank
+
+### Bug prevalence
+
+Happens every time I play
+
+### Single player or multiplayer?
+
+Other
+
+### -
+
+Sub Editor; no effect in gameplay
+
+### Version
+
+v1.2.8.0 (Winter Update hotfix 2)
+
+### -
+
+_No response_
+
+### Which operating system did you encounter this bug on?
+
+Windows
+
+### Relevant error messages and crash reports
+
+_No response_",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,13907,Thalamus fleshspike causes a crash in multiplayer,Bug,"### Discussed in https://github.com/FakeFishGames/Barotrauma/discussions/13906
+
+<div type='discussions-op-text'>
+
+<sup>Originally posted by **Jasontti** April 30, 2024</sup>
+### Disclaimers
+
+- [X] I have searched the issue tracker to check if the issue has already been reported.
+- [ ] My issue happened while using mods.
+
+### What happened?
+
+When fleshspike from thalamus wreck fires, it causes server to crash.
+MP save file for testing:
+[thalamus-fleshspike-crash-MP-save.zip](https://github.com/FakeFishGames/Barotrauma/files/15160184/thalamus-fleshspike-crash-MP-save.zip)
+
+
+### Reproduction steps
+
+1. Start multiplayer sandbox game or use included save file
+2. Look for thalamussed wreck with fleshspike
+3. Get in the range of the fleshspike
+
+### Bug prevalence
+
+Happens every time I play
+
+### Single player or multiplayer?
+
+Multiplayer hosted from the in-game menu (= using a listen server)
+
+### -
+
+_No response_
+
+### Version
+
+v1.4.5.0 (Blood in the Water Update, hotfix 1)
+
+### -
+
+_No response_
+
+### Which operating system did you encounter this bug on?
+
+Linux
+
+### Relevant error messages and crash reports
+
+```shell
+Process terminated. Asser",confirmed,title/description report unintended or incorrect software behaviour
+FakeFishGames/Barotrauma,15391,Entering a biome gate outpost with insufficient reputation and gaining enough reputation at said outpost doesn't unlock the path to the next biome,Bug,"### Discussed in https://github.com/FakeFishGames/Barotrauma/discussions/15359
+
+<div type='discussions-op-text'>
+
+<sup>Originally posted by **NotWendy** December 13, 2024</sup>
+### Disclaimers
+
+- [X] I have searched the issue tracker to check if the issue has already been reported.
+- [ ] My issue happened while using mods.
+
+### What happened?
+
+My crew docked to a Coalition colony at the edge of Cold Caverns with 29 reputation. At the outpost, I completed an event which gave us extra Coalition reputation. Enough to meet the biome gate requirement. The person who was supposed to unlock the gate for us did not acknowledge this and demanded a bribe, until we undocked and redocked.
+I'm marking this bug as happening ""just once"" and being multiplayer-specific, because that's the first time it happened to me. But I suspect that it can happen consistently in any mode. The conditions required for it are just rare.
+
+![602960_20241213001404_1](https://github.com/user-attachments/assets/09142e90-8653-41aa-bd5b-41a418a10a91)
+![602960_20241213001448_1](https://github.com/user-attachments/assets/8e5fa116-d59e-417e-95f8-62af2aeada82)
+
+
+### Reproduction steps
+
+1. Enter a biome g",confirmed,title/description report unintended or incorrect software behaviour
+Helco/zzio,321,Nothing is being released,bug,"ComponentRemovedHandler are not called, system dispose are not called, resources are not freed. Since forever....",confirmed,title/description report unintended or incorrect software behaviour
+RMC-14/RMC-14,5279,No Way To Clear Tunnels Of Corpses,Issue: Bug,"## Description
+<!-- Explain your issue in detail. Issues without proper explanation are liable to be closed by maintainers. -->
+When two parasites/lesser drones die in a xeno tunnel, you are unable to fast travel from that spot unless an admin's around to delete the dead.",confirmed,title/description report unintended or incorrect software behaviour
+UltraStar-Deluxe/USDX,86,Song screen fade out shows image even if video was used,bug,"Start a song with a video and an image set. Verify options like `VideoEnabled=On`, `Oscilloscope=Off` (or something similar) and `ScreenFade=On`.
+
+Once you press Escape (in order to return to previous screen and abort the singing), the background image is shown during the fade. This can be irritating.
+
+![animation60](https://cloud.githubusercontent.com/assets/6833006/17028158/e89bf2fe-4f66-11e6-8d4a-55700b5688c3.gif)
+",confirmed,title/description report unintended or incorrect software behaviour
+WandererXII/lishogi,927,Study Names not Visible,bug,"<!-- Thank you for reporting an issue. Please respond to the following questions if relevant; feel free to skip those that are not. -->
+When I tried to add a game to a study, the names of all my previous studies were in white on a grey background and barely readable.
+
+(instead of the usual white on blue)
+
+MacOS, Firefox 142.0
+
+<img width=""2518"" height=""1704"" alt=""Image"" src=""https://github.com/user-attachments/assets/9f27ebf4-18be-4c90-9966-810ebe7b48dd"" />
+",confirmed,title/description report unintended or incorrect software behaviour
+akarnokd/open-ig,880,The additional alien-skirmish ships are out of balance with the campaign ships,Type-Defect,"```
+The new alien ships (except the Garthog's) available for research and 
+production in skirmish are not properly balanced with the existing campaign 
+ships. For example, the dargslan default battleship is immediately available 
+for production and outperforms the Mk1-Mk2 battleships, making them practically 
+unnecessary.
+
+How to fix:
+- Chain the battleship prerequisites to each other
+- Keep the campaign battleships unresearched in skirmish, but make them 
+available
+in the campaign
+- pace out the HP/DPS of the new ships with the campaign ships.
+
+```
+
+Original issue reported on code.google.com by `akarn...@gmail.com` on 25 Aug 2014 at 12:47
+",uncertain,"game-balance complaint about new content tuning, not a clear malfunction"
+angband/angband,3743,"In the roguelike keyset, no keypress or command works to toggle squelch.",T: bug,"**Reported by myshkin on 18 Sep 2012 02:58 UTC**
+Reported on IRC by tlp. The problem is that, for the roguelike keyset, cmd0.c assigns KTRL('G') to both toggling squelch and doing autopickup, and the latter wins in cmd_init(). As a consequence, not even keymaps can assign a keypress to the command to toggle squelch. I propose changing the default roguelike keypress for this to O, which is currently unused. Unfortunately, there is no workaround for 3.4.0 users, other than recompiling.",confirmed,title/description report unintended or incorrect software behaviour
+angband/angband,4188,Weapons display damage for temporary brands etc?,T: bug,"**Reported by NickMcConnell on 30 Jun 2019 13:12 UTC**
+Needs some thought",uncertain,"vague design question ('needs some thought'), defect status unclear"
+ashteki/ashteki,1073,Bluff prompt at end of round,bug,Not allowed,confirmed,title/description report unintended or incorrect software behaviour
+azuriom/azuriom,203,"""Zend OPcache API is restricted by the ""restrict_api"" configuration directive."" error",bug,"### Bug description
+
+Hello,
+
+
+I think OVH shared hosting does not support adding plugins and sends the following error:
+
+Zend OPcache API is restricted by the ""restrict_api"" configuration directive.
+
+It seems to me that this is due to the fact that OVH does not allow all access.
+There is also an error when you remove a plugin the redirection url is not well redirected.
+
+This is the only error I've seen so far, and all these errors are during an installation, although I wanted to transfer directly from another host
+
+### Step to reproduce
+
+Basic installation
+
+### Errors / Logs
+
+_No response_
+
+### Web server
+
+Other
+
+### Database type
+
+MySQL
+
+### PHP version
+
+8.1
+
+### Additional context
+
+_No response_",confirmed,title/description report unintended or incorrect software behaviour
+c7-game/prototype,343,Cities that Can't Supply Enough Food Grow Negatively Forever,bug,"Best illustrated with a screenshot:
+
+![image](https://user-images.githubusercontent.com/5287977/185180034-5a776aef-2b6c-4e52-b63a-744849569812.png)
+
+Rome grew to size 2 but couldn't supply enough food, so every turn the counter of how long until it grows decreases by 1.  Instead it should shrink to size 1.",confirmed,title/description report unintended or incorrect software behaviour
+colobot/colobot,440,"Crash ""When dying at mission 3.1"" (CCamera instance == nullptr)",bug,"```
+Program received signal SIGSEGV, Segmentation fault.
+0x081f71c4 in Gfx::CCamera::GetControllingObject (this=0x0)
+    at /home/user/colobot/src/graphics/engine/camera.cpp:236
+236         return m_cameraObj;
+
+(gdb) backtrace
+#0  0x081f71c4 in Gfx::CCamera::GetControllingObject (this=0x0)
+    at /home/user/colobot/src/graphics/engine/camera.cpp:236
+#1  0x08152bd5 in CObject::DeleteObject (this=this@entry=0xa3b9c58,
+    bAll=bAll@entry=true) at /home/user/colobot/src/object/object.cpp:394
+#2  0x0815db2b in CRobotMain::DeleteAllObjects (this=this@entry=0x8af6ab8)
+    at /home/user/colobot/src/object/robotmain.cpp:1921
+#3  0x0817a895 in CRobotMain::ChangePhase (this=this@entry=0x8af6ab8,
+    phase=phase@entry=PHASE_WIN)
+    at /home/user/colobot/src/object/robotmain.cpp:441
+#4  0x0817c51a in CRobotMain::ProcessEvent (this=0x8af6ab8, event=...)
+    at /home/user/colobot/src/object/robotmain.cpp:1009
+#5  0x080ba743 in CController::ProcessEvent (this=0x8af6ab8, event=...)
+    at /home/user/colobot/src/app/controller.cpp:87
+#6  0x080b649a in CApplication::Run (this=this@entry=0x8334ae0)
+    at /home/user/colobot/src/app/app.cpp:999
+#7  0x080aeda9 in main (argc=3, argv=0xbffff4b4)
+    at ",confirmed,title/description report unintended or incorrect software behaviour
+colobot/colobot,547,"""this"" is broken",bug,"The following code does not compile:
+
+``` C++
+point p = this.position;
+```
+
+Probably caused by 38c64940a5bf36fe7087c57fd461314c51fcd84b or 7c421b715164cdae89ec4f4a92a017a3d620d3b8
+",confirmed,title/description report unintended or incorrect software behaviour
+cozuya/secret-hitler,820,Replay Viewing Bug,bug,"When viewing a replay that I clicked on earlier (Replay next to player ""YourBoy"") the icon of currently viewing a replay does not appear next to my name:
+![screen_shot_2018-02-27_at_5 16 47_pm](https://user-images.githubusercontent.com/30970584/39303345-d9165d8c-4966-11e8-9edd-a0dd951b9977.png)
+I tested the icon next with multiple people and refreshed my page as well just to see if it was a situational error, but it never shows the icon next your name when viewing a replay that another player is currently looking at. It is only minor but it still holds a point in my opinion.",confirmed,title/description report unintended or incorrect software behaviour
+draftbot-a-discord-adventure/draftbot,2009,[BUG]: race condition on bonusligue,bug,"### Description du bug.
+
+Bonjour,
+Dans le même style que le  #1866 ,j'ai eu un bug de duplication mais cette fois avec la commande bonusligue (ligue or) le 18/06/2023 ,ce qui s'est traduit par l'obtention de:
+--1000 xp
+-1000 argent
+-des points
+-2 objets
+J'ai bien eu 2 objets car mon profile m'indique que les ventes de ces dernières m'ont toutes rapporté de l'argent .Il me semble pas avoir avoir recu de points,d'expérience ou d'argent en double.
+Néanmoins je ne sais pas si c'est une problème de connexion personnelle ou un du bot.Il me semble pas avoir avoir recu de points,d'expérience ou d'argent en double.
+Cordialement,
+BananePlantain
+
+### Selon vous, quelle est l'importance de ce bug ?
+
+🤔 Je ne sais pas
+
+### Reproduction du bug.
+
+je ne sais pas comment le reproduire,2 commandes se font envoyées et ont toutes 2 abouties
+
+
+### Captures d'écran
+
+![bonusligue1](https://github.com/DraftBot-A-Discord-Adventure/DraftBot/assets/126412670/61814943-d0db-4449-a6d2-f7ebb0334c70)
+![bonusligue2](https://github.com/DraftBot-A-Discord-Adventure/DraftBot/assets/126412670/2d1ffd3e-f696-455d-b286-165a2c9aa574)
+
+
+### Sur quel shard avez vous rencontré le bug ?
+
+Tous",confirmed,title/description report unintended or incorrect software behaviour
+ekolis/freee,137,Can't load legacy saves from prior to .NET Core conversion,bug,"**Describe the bug**
+Can't find the mscorlib assembly.
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Load an old save.
+
+**Expected behavior**
+The save loads.
+
+**Actual behavior**
+Crash saying mscorlib can't be found.
+
+**Screenshots**
+N/A
+
+**Additional context**
+N/A
+",confirmed,title/description report unintended or incorrect software behaviour
+endless-sky/endless-sky,502,Hai water bug forced to have 2 anti-missile turret,bug,"Noticed when I tried to change turrets to have 2 pulse and 1 heavy a-m. Even if I sell all the turrets I still have 2 a-m equipped.
+
+Bug or balancement?
+",uncertain,reporter explicitly unsure whether bug or balance decision
+endless-sky/endless-sky,5435,"intro missions.txt: mission ""Intro [2 Transport]"": Inconsistent usage of verb tense",bug,"In the ""Intro [2 Transport]"" mission in the [intro missions.txt](https://github.com/endless-sky/endless-sky/blob/master/data/intro%20missions.txt) file a sentence is written in the past tense when it should instead be in the present tense. The sentence:
+
+""As you made the final landing descent to the surface of Earth, Chuck and Sarah were staring out the window in rapt attention, pointing out landmarks on the planet's surface.""
+
+should be changed to
+
+""As you make the final landing descent to the surface of Earth, Chuck and Sarah stare out the window in rapt attention, pointing out landmarks on the planet's surface.""
+
+ - OS: Devuan 3.0 Beowulf
+ - Game Source: Downloaded from https://mentors.debian.net/debian/pool/main/e/endless-sky/ and compiled locally
+ - Version: 0.9.12-1
+",confirmed,title/description report unintended or incorrect software behaviour
+esports-manager/esports-manager,60,[bug] New teams on debug match freezes and consumes too much memory,bug,"**Describe the bug**
+Opening the Debug Match menu and clicking New teams too many times causes the entire game to freeze and memory consumption skyrockets.
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to Debug Game Mode
+2. Click on Debug Match
+3. Click New Teams a couple of times until the game freezes over
+
+**Expected behavior**
+New Teams should always produce new teams and should not freeze. Memory consumption should not be an issue
+
+**Screenshots**
+No screenshots.
+
+**Desktop (please complete the following information):**
+ - OS: Windows 10
+ - Version: Commit bb474a317c71838b053f6d8582cee594eb6f2f59
+",confirmed,title/description report unintended or incorrect software behaviour
+foundryvtt-starfinder/foundryvtt-starfinder,1144,Prototype Token Resources ,bug,"**Describe the bug**
+in V11.299 when you edit the resource bars on the prototype token (HP/SP etc).  if you close and go back in,  the options previously chosen no longer show up
+
+**To Reproduce**
+Amend bars on prototype token,  update token,  and re-open settings and go back to resouce tab
+
+**Expected behavior**
+Should display the previous choices
+
+**Screenshots**
+Screenshot shows what happens when you re-open the resource tab after choosing bar settings (Always display HP/SP on Navasi)
+
+**Technical details (please complete the following information):**
+ - OS: Windows 11
+ - Browser: Electron App
+ - Foundry Version: V11.299
+ - SFRPG Version: 0.25.0 Dev
+
+**Additional context**
+Add any other context about the problem here.
+![v11299_resource_bug](https://github.com/foundryvtt-starfinder/foundryvtt-starfinder/assets/83959698/bce8030e-a590-434f-8538-063c0bd894b2)
+",confirmed,title/description report unintended or incorrect software behaviour
+freeorion/freeorion,3822,Client crashes when joining MP game,category:bug,"Bug Report
+==========
+<!--
+Please fill in a a meaningful and concise title in the field above.
+It helps us to classify the issue even  before reading the body and handling the
+issue a bit better.
+
+Examples:
+  * Great: ""Unable to select fleet in galaxy map""
+  * Good: ""Unable to click fleet""
+  * Not really okay: ""Issue with fleets""
+  * Horrible: ""HELP!!!""
+-->
+
+
+Environment
+-----------
+<!--
+You don't need to provide the information in section when they are not useful in
+the context of this issue.  For example a crashing hosted server may not need
+information about the graphic card, but maybe depend on the operating system you
+use.  When in doubt provide all information you have available.
+
+You can find the FreeOrion version number in the lower right corner of the game
+main screen.
+
+When stating the operating system also note the version of the operating system
+so, `Windows 8 Pro` instead of `Windows` or `Mac OSX Mountain Lion` instead of
+`OSX`.
+-->
+
+* **FreeOrion Version**: 2022-05-03.3df6aca
+* **Operating System**: Linux Debian testing
+* **Graphic card used**: Intel
+* **Fetched as** <!-- delete lines below that don't apply -->
+  * Compiled from sour",confirmed,title/description report unintended or incorrect software behaviour
+gameservermanagers/linuxgsm,319,[TF2] Server not updating after update-restart,type: bug,"Started server in debug mode.
+
+MasterRequestRestart
+Your server needs to be restarted in order to receive the latest update.
+
+./tf2server update
+No Update Available. Current version: 529790 Available Version: 529790
+
+Deleted /functions/ and tried to update again, same result.
+",confirmed,title/description report unintended or incorrect software behaviour
+gameservermanagers/linuxgsm,2637,Monitor function for UT99 broken,type: bug,"## User Story
+
+Monitor function broken for UT99, the monitor function cannot detect server status correctly, so in the end lgsm killed the server and restart it
+
+## Basic info
+
+* **Distro:** [Debian Buster]
+* **Game:** [Unreal tournament 99]
+* **Command:** [Monitor]
+* **LinuxGSM version:** [v19.12]
+
+## Further Information
+
+> ut99@dev:~$ ./ut99server monitor
+[ INFO ] Monitor ut99server: Check IP: 192.168.1.189
+[  OK  ] Monitor ut99server: Checking session: OK
+[ FAIL ] Monitor ut99server: Querying port: gsquery: 192.168.1.189:7778 : 60/5: FAIL
+[  OK  ] Stopping ut99server: Graceful: CTRL+c: 1: OK
+[  OK  ] Starting ut99server: LinuxGSM
+
+
+## To Reproduce
+
+run monitor command on running server
+
+## Expected behaviour
+
+detect server status correctly",confirmed,title/description report unintended or incorrect software behaviour
+gemrb/gemrb,483,[bug] IWD1 & BG2: nothing grants racial infravision,bug,"**Description**
+I can't seem to get Infravision working on those two games, double-checked my ini settings, even tried deleting them. Could someone check if it's working for you, please?
+
+**GemRB version**
+0.8.6-git master
+",confirmed,title/description report unintended or incorrect software behaviour
+genaray/arch.extended,56,`[Data]` parameter always have the default value on generated queries,bug,"Not sure if this is the expected behavior, but the following code will not have the same output, as the second one will ignore the data parameter.
+
+I'm calling `MovementSystem.Update(deltaTime)` and this works fine:
+
+```cs
+public partial class MovementSystem : BaseSystem<World, float> {
+
+    public MovementSystem(World world) : base(world) {
+    }
+
+    public override void Update(in float t) {
+        UpdateSystemQuery(World, t);
+    }
+
+    [Query]
+    [All(typeof(VelocityComponent), typeof(TransformComponent))]
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public void UpdateSystem([Data] in float dt, ref VelocityComponent velocity, ref TransformComponent transform) {
+        transform.Position += velocity.Velocity * dt;
+    }
+}
+```
+
+However, if I omit the `Update` function (so that it's automatically generated) `UpdateSystem` will always have a zero `dt`:
+
+```cs
+public partial class MovementSystem : BaseSystem<World, float> {
+
+    public MovementSystem(World world) : base(world) {
+    }
+
+    [Query]
+    [All(typeof(VelocityComponent), typeof(TransformComponent))]
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public void U",confirmed,title/description report unintended or incorrect software behaviour
+genshinsim/gcsim,402,add icd to xingqiu c2 mod,kind: bug,"![image](https://user-images.githubusercontent.com/906239/159592200-8318e280-d743-485c-b439-d00cef8259ae.png)
+
+it's applying 5 times because attack landed 5 times",confirmed,title/description report unintended or incorrect software behaviour
+hajimehoshi/ebiten,977,buffered: pendingPixel are never reset when the image is used as a render source,bug,"And this causes unnecessary calls of `ReplacePixels` :-/
+",confirmed,title/description report unintended or incorrect software behaviour
+hajimehoshi/ebiten,1429,uidriver/glfw: OpenGL is used instead of Metal unexpectedly on macOS Big Sur,bug,"",confirmed,title/description report unintended or incorrect software behaviour
+idmarinas/lotgd-game,689,"CVE-2018-19838 (Medium) detected in opennms-opennms-source-22.0.1-1, node-sass-4.14.1.tgz - autoclosed",bug,"## CVE-2018-19838 - Medium Severity Vulnerability
+<details><summary><img src='https://whitesource-resources.whitesourcesoftware.com/vulnerability_details.png' width=19 height=20> Vulnerable Libraries - <b>node-sass-4.14.1.tgz</b></p></summary>
+<p>
+
+<details><summary><b>node-sass-4.14.1.tgz</b></p></summary>
+
+<p>Wrapper around libsass</p>
+<p>Library home page: <a href=""https://registry.npmjs.org/node-sass/-/node-sass-4.14.1.tgz"">https://registry.npmjs.org/node-sass/-/node-sass-4.14.1.tgz</a></p>
+<p>Path to dependency file: /tmp/ws-scm/lotgd-game/package.json</p>
+<p>Path to vulnerable library: /lotgd-game/node_modules/node-sass/package.json</p>
+<p>
+
+Dependency Hierarchy:
+  - :x: **node-sass-4.14.1.tgz** (Vulnerable Library)
+</details>
+
+<p>Found in HEAD commit: <a href=""https://github.com/idmarinas/lotgd-game/commit/a68ef33093518f30b58ce6afc7b54944a697f707"">a68ef33093518f30b58ce6afc7b54944a697f707</a></p>
+</p>
+</details>
+<p></p>
+<details><summary><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20> Vulnerability Details</summary>
+<p>  
+  
+In LibSass prior to 3.5.5, functions inside ast.cpp for IMPLEMENT_AST_OPERATORS expansion allow attac",uncertain,"automated dependency CVE alert, not a functional-defect report"
+ja2-stracciatella/ja2-stracciatella,176,Several mercs occupy the same tile on on entering a sector,bug,"Originally reported by: **JAsmine-ja2 (Bitbucket: [JAsmine-ja2](http://bitbucket.org/JAsmine-ja2), GitHub: [JAsmine-ja2](http://github.com/JAsmine-ja2))**
+
+---
+
+Sector A1 was entered from strategic view. Several mercs ended up on the same tile (Screenshot).
+Funny addition: I saved the game imediately. Loading the savegame results in a normal situation (=no two mercs on the same tile). So, this ""bug"" can only be seen in the screenshot.
+
+---
+- Bitbucket: https://bitbucket.org/gennady/ja2-stracciatella/issue/176
+",confirmed,title/description report unintended or incorrect software behaviour
+jdoleary/Spellmasons,606,Mods need to be updated to meet new types ,-Bug,"particularly for takeDamage
+and flameStrike",uncertain,internal maintenance task to update bundled mods to new API types
+jonthysell/mzinga,40,Remove unnecessary abstraction in pieces by position,bug,"Rely on Dictionary and the position's good GetHashCode to store pieces by position (remove stack-less key, store piece directly by position, get top by trying to walk up the stack).
+",rejected,"internal refactoring task (remove unnecessary abstraction), not a defect report"
+leek-wars/leek-wars,462,"[trophée] Trophée Baron, Adapté et compteur de tournois bogués",bug,https://leekwars.com/forum/category-3/topic-9160,confirmed,title/description report unintended or incorrect software behaviour
+libgdx/libgdx,604,"Box2D collision, broken",bug,"_From [rtaylor205@gmail.com](https://code.google.com/u/rtaylor205@gmail.com/) on June 17, 2010 19:37:14_
+
+Collision is not working, objects simply overlap.
+
+The changes in contactFilter always returns false.
+
+Attached is a hack that makes it work, but I don't know whether this is the correct way. For now it will have to do for me :)
+
+_Original issue: http://code.google.com/p/libgdx/issues/detail?id=16_
+",confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,9497,Rematch Option Does Not Grey-Out After Opponent Leaves,bug,"<!-- Thank you for reporting an issue. First, please search for duplicate existing issues. -->
+
+**Exact URL where the bug happened**
+n/a - I have noticed this happening across multiple games
+
+**Steps to reproduce the bug**
+To reproduce this bug, the opponent needs to offer a rematch. The rematch button then 'highlights' where it becomes blue and becomes animated. After some time, if you do not accept the rematch and the opponent joins another game, the rematch button still remains 'activated' but when you try to click on it, the click action is blocked.
+
+**What did you expect to happen?**
+When an opponent offers a rematch and then leaves, I expect the rematch button to become greyed-out, similar to what happens when an opponent leaves before you can offer them a rematch. 
+
+**What happened instead?**
+The rematch button remained active. 
+
+**Operating system and browser version**
+Firefox 90.0.2 (32-bit)
+Windows 10 x64
+
+<!-- Add one or more screenshots if possible -->
+",confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,10516,Team join requests not disappearing,bug,"<!-- Thank you for reporting an issue. First, please search for duplicate existing issues. -->
+
+There is a bug where the number of join requests for teams that you have to review doesn't go away in some cases. Here are screenshots from 2 of my friends as examples:
+
+![image (3)](https://user-images.githubusercontent.com/99364463/153288096-937292d7-4025-4bfa-96b3-91cedcdca693.png)
+![image (4)](https://user-images.githubusercontent.com/99364463/153288110-ad104d52-3df9-4708-8fa4-9d67c6ccb989.png)
+
+In this example, JoshHiban says he has had a notification for 4 team join requests for around a year, even though when he clicks on them, it says there are 0 requests to review. He does not know what initially caused this to occur, but he speculated that they were join requests for an old team that got closed. 
+
+
+![](https://media.discordapp.net/attachments/465265546095624216/941060511947194428/unknown.png)
+
+This example happened recently to both myself and djchessdog. There was a titled player who had requested over a year ago to join one of our teams, but not long after, his account got closed. For the past year, we let his join request sit in our queue to review (it was still s",confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,11926,Featured bots are missing,bug,"<!-- Thank you for reporting an issue. First, please search for duplicate existing issues. -->
+
+**Exact URL where the bug happened**
+https://lichess.org/player/bots
+
+**Steps to reproduce the bug**
+1. Load page
+
+**What did you expect to happen?**
+Online featured bots such as maia1 exist
+
+**What happened instead?**
+No featured bots are shown, even maia bots which are currently online and playing games
+
+**Operating system and browser version**
+Windows 10 MS Edge latest
+
+<!-- Add one or more screenshots if possible -->
+![image](https://user-images.githubusercontent.com/1834123/203288677-9a698a30-3a6d-4ae6-a379-b8c92693bbbf.png)
+",confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,11936,Ublog forum back arrow gives a 404,bug,"For example on https://lichess.org/forum/community-blog-discussions/ublog-iqUqgB6l , if you try to navigate back by pressing the < symbol, you will get a 404 error ( GET https://lichess.org/ublog/iqUqgB6l/redirect 404 ) 
+
+
+
+
+",confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,11974,CAPTCHAs are not working,bug,"The bug happens, when trying to open a new topic in the forum:
+https://lichess.org/forum/lichess-feedback/form
+
+To reproduce:
+1. Go to https://lichess.org/forum/lichess-feedback/form
+2. Write some text to the Subject and Message fields
+3. Try to solve the chess CAPTCHA
+4. Moving the pieces doesn't work, so the CAPTCHA cannot be solved
+
+Expected result:
+Solving the CAPTCHA works.
+
+OS and browser:
+Microsoft Windows 10 Home 10.0.19045
+Google Chrome 107.0.5304.122
+
+![image](https://user-images.githubusercontent.com/8778170/204749746-d1f8db23-3511-433c-8272-e18811679d71.png)
+In the image above, I tried to move Qxf7#, but it is not allowed.
+
+Please note, that this bug prevents sending ANY bugs reports via the forum, because opening a topic requires solving the CAPTCHA.",confirmed,title/description report unintended or incorrect software behaviour
+lichess-org/lila,16442,White is unable to castle (w/ Rook-King-side + King: not in check & neither piece having been moved),bug,"### Exact URL of where the bug happened
+
+**Game parameters:** ""PLAY WITH THE COMPUTER"", 'Standard' game, 'Stockfish': Level 8
+**Game reference:** https://lichess.org/RbxsaFc6/white
+
+**Screenshot (White King attempting to castle, King-side)**
+<img width=""823"" alt=""image"" src=""https://github.com/user-attachments/assets/d028f68b-79f3-452b-bb1c-818930e3bff0"">
+
+
+### Steps to reproduce the bug
+
+1. Initiate 'Standard' game: 'bakerj4' (White) vs. 'Computer' (Black, 'Stockfish': level 8)
+2. e3, d6
+3. d4, Nf6
+4. Nc3, Nbd7
+5. e4, e5
+6. b3, d5
+7. Nf3, Nxe4
+8. Nxe4, dxe4
+9. Nxe5, Nxe5
+10. dxe5, Qxd1+
+11. Kxd1, Bg4+
+12. Be2, O-O-O+
+13. Bd2, Be6
+14. White to move, attempt to castle King-side
+
+### What did you expect to happen?
+
+White is able to castle (King-side) 
+
+### What happened instead?
+
+White King was restricted to standard pattern of move options and not offered option (ability) to castle on the King-side
+
+### Operating system
+
+Windows 10 Pro 64-bit, Version: 22H2, OS Build: 19045.5131
+
+### Browser and version (or alternate access method)
+
+Brave Version 1.73.89 Chromium: 131.0.6778.69 (Official Build) (64-bit)
+
+### Additional information
+
+_No res",confirmed,title/description report unintended or incorrect software behaviour
+luanti-org/minetest_game,1193,4 glitches in Minetest version 0.4.14,Bug,"I found 4 glitches.
+1. Any falling sand entities will stuck forever or going to be despawning at any opened fence gate. Must be on NON-SOLID block for all any opening fence gates!
+   [EDIT by paramat: Now fixed by #1231 ]
+2. Removing a invisible block on all 4 mesh doors (I don't like new mesh doors) and any falling sand entities will stuck forever or going to be despawning.
+   [EDIT by paramat: Cannot reproduce the bug]
+3. You can break obsidian glass door with bare hand, but on obsidian glass block don't.
+   [EDIT by paramat: Now fixed by #1194 ]
+4. Any ghost slabs.
+   [EDIT by paramat: Now fixed by new slab code]
+
+How to reproduce: https://www.youtube.com/watch?v=WvlIkifyJy4 
+",confirmed,title/description report unintended or incorrect software behaviour
+lxgr-linux/pokete,279,SyntaxWarning: invalid escape sequence '\ ' at start,bug,"**Checklist**
+I have:
+- [x] Searched the Issues page for my problem/feature request
+- [x] Updated all related software and Pokete it self
+
+**Describe the bug**
+Players get a `SyntaxWarning: invalid escape sequence '\ '` warning, when starting the game
+",confirmed,title/description report unintended or incorrect software behaviour
+magefree/mage,332,TableController.watchTable NPE,bug,"FATAL [2013-09-19 18:45 [52:280]] MageServerImpl[WorkerThread#75[46.127.146.114:49166]]: 
+java.lang.NullPointerException
+    at mage.server.TableController.watchTable(TableController.java:292)
+    at mage.server.TableManager.watchTable(TableManager.java:235)
+    at mage.server.game.GamesRoomImpl.watchTable(GamesRoomImpl.java:189)
+    at mage.server.MageServerImpl$34.execute(MageServerImpl.java:649)
+    at mage.server.MageServerImpl$34.execute(MageServerImpl.java:645)
+    at mage.server.MageServerImpl.executeWithResult(MageServerImpl.java:943)
+    at mage.server.MageServerImpl.watchTable(MageServerImpl.java:645)
+    at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:601)
+    at org.jboss.remoting.transporter.TransporterHandler.invoke(TransporterHandler.java:87)
+    at org.jboss.remoting.ServerInvoker.invoke(ServerInvoker.java:967)
+    at org.jboss.remoting.transport.socket.ServerThread.completeInvocation(ServerThread.java:791)
+    at org.jboss.remoting.transport.socket.ServerThread.processInvocation(ServerThread.java:744)
+    at",confirmed,title/description report unintended or incorrect software behaviour
+magefree/mage,3509,"Shattering Spree ""cannot be regenerated"" clause?",bug,"https://snag.gy/YTsSVB.jpg
+
+The official gatherer page doesn't have this clause:
+
+Card Name:
+Shattering Spree
+Mana Cost:
+Red
+Converted Mana Cost:
+1
+Types:
+Sorcery
+Card Text:
+Replicate Red (When you cast this spell, copy it for each time you paid its replicate cost. You may choose new targets for the copies.)
+Destroy target artifact.
+Watermark:
+Izzet
+Expansion:
+Guildpact (Uncommon) Guildpact
+Rarity:
+Uncommon
+Card Number:
+75
+Artist:
+Pat Lee",confirmed,title/description report unintended or incorrect software behaviour
+magefree/mage,3554,Downloader uses wrong url for akh mps,bug,"It should use
+`http://magiccards.info/scans/en/mpsakh/x.jpg`
+instead of
+`http://magiccards.info/scans/en/mps-akh/x.jpg`",confirmed,title/description report unintended or incorrect software behaviour
+magefree/mage,3705,NPE during PlayPriority,bug,"```
+java.lang.NullPointerException
+at mage.player.human.HumanPlayer.priority(HumanPlayer.java:667)
+at mage.game.GameImpl.playPriority(GameImpl.java:1274)
+at mage.game.turn.Step.priority(Step.java:87)
+at mage.game.turn.Phase.playStep(Phase.java:210)
+at mage.game.turn.Phase.play(Phase.java:115)
+at mage.game.turn.Turn.play(Turn.java:153)
+at mage.game.GameImpl.playTurn(GameImpl.java:822)
+at mage.game.GameImpl.play(GameImpl.java:731)
+at mage.game.GameImpl.start(GameImpl.java:695)
+at mage.server.game.GameWorker.call(GameWorker.java:60)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+at java.lang.Thread.run(Thread.java:745
+```",confirmed,title/description report unintended or incorrect software behaviour
+mapeditor/tiled,1558,Zoom hotkey should zoom focused window,bug,"When using the tile collision editor, using `CMD + -` doesn't zoom the collision editor window. Rather it zooms the tile editor window which is in the background.",confirmed,title/description report unintended or incorrect software behaviour
+maxilevi/project-hedra,594,[Bug] Fix pet does not spawn when switching worlds,bug,"",confirmed,title/description report unintended or incorrect software behaviour
+minetest/minetest_game,1359,New shelf overlays don't line up,Bug,"@sofar are you having a laugh?  :)
+
+![screenshot_20161031_023050](https://cloud.githubusercontent.com/assets/1761623/19845951/2920b99a-9f12-11e6-8252-3932e79c0e1c.png)
+![screenshot_20161031_023054](https://cloud.githubusercontent.com/assets/1761623/19845952/292c9d64-9f12-11e6-86b5-ed056f622fa4.png)
+
+![big1](https://cloud.githubusercontent.com/assets/1761623/19845989/6aec7706-9f12-11e6-94ec-2bb17e4a2f60.png)
+![big2](https://cloud.githubusercontent.com/assets/1761623/19845988/6aeac8ca-9f12-11e6-8639-09e330253dc0.png)
+
+In my own personal opinion, 0acd9a2ccb2f766de5237964a5da046148075d79 is distasteful.",confirmed,title/description report unintended or incorrect software behaviour
+nroutasuo/level13,303,[JS Error] TypeError: Cannot read properties of null (reading 'get'),bug,"Details:
+I'm right at the beginning of the game, I got a map piece, went to the bag to use it, and got the error message 
+![image](https://github.com/nroutasuo/level13/assets/6714216/9e517501-ab99-4a7b-8c50-ad44891652d6)
+
+
+Seed: 4360
+Position: 13.3.0 (inCamp: false)
+Stacktrace:
+TypeError: Cannot read properties of null (reading 'get')
+    at constructor.updateMap (https://nroutasuo.github.io/level13/src/game/systems/ui/UIOutMapSystem.js?v=0.5.2:207:37)
+    at constructor.selectMapStyle (https://nroutasuo.github.io/level13/src/game/systems/ui/UIOutMapSystem.js?v=0.5.2:195:9)
+    at constructor.onTabChanged (https://nroutasuo.github.io/level13/src/game/systems/ui/UIOutMapSystem.js?v=0.5.2:782:9)
+    at https://nroutasuo.github.io/level13/src/game/GlobalSignals.js?v=0.5.2:97:15
+    at r.execute (https://nroutasuo.github.io/level13/lib/ash/ash.min.js?v=0.5.2:14:4611)
+    at n.Signal.dispatch (https://nroutasuo.github.io/level13/lib/ash/ash.min.js?v=0.5.2:14:6738)
+    at constructor.selectTab (https://nroutasuo.github.io/level13/src/game/UIFunctions.js?v=0.5.2:677:36)
+    at onTabClicked (https://nroutasuo.github.io/level13/src/game/UIFunctions.js?v=0.5.2:652:29)
+    at",confirmed,title/description report unintended or incorrect software behaviour
+openhv/openhv,1058,Scouts are not lifting off after starting matches,bug,"",confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,5652,Replayviewer slows down,Bug,"When I watch a replay in fast forward mode, after a while it slows down below normal play speed. I have to pause it and wait a bit before it can play fast again. When it slows down, it already is in fast forward mode, when i click >> it shows max speed text.
+",confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,7000,Bazooka vs bazooka can be an infinite fight if they are in front of each other,Bug,"![bazooka vs bazooka](https://cloud.githubusercontent.com/assets/8930382/5189309/ca1edd0c-74dc-11e4-951b-0bed359e8ca5.png)
+I don't know if it should be considered as a bug but missiles' physics can randomly prevent missiles from reaching their target if the target is in an adjacent subcell to the bazooka.
+Is it possible to ignore physics if a bazooka has to shoot in a subcell next to him ?
+",confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,12018,"Traits Documentation Page ""Won't Render""",Bug,"This happens when trying to load traits page...
+
+![screen shot 2016-09-12 at 12 21 00 pm](https://cloud.githubusercontent.com/assets/14940856/18443653/d73fc480-78e3-11e6-9560-b9fb685ed4c4.png)
+
+My internet and web pages are loading fine so i doubt it's an issue with my CPU.
+
+Edit: a word
+",confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,14081,Units on defend stance trying to attack.,Bug,"When on defend stance units are attempting to attack despite their current stance and their range.
+
+To see what I mean have an army of any kind. Let the enemy attack your army and with your own units selected hold down ALT. You will see target lines appearing on enemy units.
+
+This is also apparent from current release.",confirmed,title/description report unintended or incorrect software behaviour
+openra/openra,18332,"Something about ""Codacy/PR Quality Review"" ",Bug,"It is not the game bug report here, but the code testing bot on PR checking in OpenRA.
+
+In OpenRA code standard it is said the ""{}"" is ignored when there is only one line in code block. However,
+
+<img width=""421"" alt=""note"" src=""https://user-images.githubusercontent.com/13763394/85847220-9a231c80-b7d9-11ea-9c08-0a222436077a.png"">
+
+
+<img width=""355"" alt=""note2"" src=""https://user-images.githubusercontent.com/13763394/85847229-9e4f3a00-b7d9-11ea-9e8b-252a5ffeaa4e.PNG"">
+
+""Codacy/PR Quality Review"" give me red cross because of this. Although PR quality checking bot here is pretty amazing and help me optimaze the code at certain point, it makes me confused when comes to this problem.
+",rejected,complaint about external CI bot behaviour; reporter states it is not a game bug
+openra/openra,21197,Selecting a ready building with a hotkey doesn't work properly with too many buildings in sidebar,Bug,"## Issue Summary
+
+If you have enough structures to make 2 pages in your sidebar and you try to select a ready building from a later page without it on screen, it will not work. It does work if the building is on screen though, although it scrolls up to the first page where you don't see the ready structure. This bug is a little rare as you normally don't have many buildings in your sidebar, but it is possible.
+
+
+## Reproduction
+
+This is the map I played to reproduce the bug I experienced (https://resource.openra.net/maps/54879/).
+1: Play as the Fremen subfaction
+2: Reach your highest tech level. The silo building should then be in the second page.
+3: Build the silo, and get the silo icon off-screen, by going to a page that doesn't have it or go to another category.
+4: Attempt to select the building with a hotkey once ready. You may also select the building with a hotkey while the building is on-screen to experience the other bug.
+
+## Expected behavior
+The ready building should be in your cursor no matter what, if you use a hotkey. The hotkey should also scroll to the page that has the ready building.",confirmed,title/description report unintended or incorrect software behaviour
+pcgen/pcgen,6708,[BUG] Twinned Presence does not apply Intimidate trait bonus,bug,"**Describe the bug**
+The Twinned Presence trait does not currently give the Intimidate skill a +1 trait bonus. 
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Have at least 1 level in Summoner
+2. Have Ultimate Campaign loaded
+3. Select Twinned Presence as a Trait
+4. Look at character sheet and see that Intimidate bonus is not applied.
+
+**Expected behavior**
+Intimidate should get a +1 trait bonus from Twinned Presence, and it does not.
+
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
+
+**Desktop (please complete the following information):**
+ - OS: Windows x64
+ - Version: 6.08.00
+
+**Character File**
+[Magnus Kinser.zip](https://github.com/PCGen/pcgen/files/8692505/Magnus.Kinser.zip)
+
+**Additional context**
+None
+",confirmed,title/description report unintended or incorrect software behaviour
+piqueserver/piqueserver,188,"""Incompatible client protocol version""",bug,"Not sure if this is a bug or I'm just missing something, but I can't figure out how to get listed on the server list. Furthermore, when attempting to connect manually (via 127.0.0.1 or the aos:// identifier) I immediately get a message saying I was disconnected due to an ""Incompatible client protocol version"". Screencap below:
+
+<img width=""772"" alt=""screen shot 2017-12-19 at 12 53 31 am"" src=""https://user-images.githubusercontent.com/6157706/34135220-22969e10-e457-11e7-98b8-0edaa4851561.png"">
+",uncertain,support question; reporter unsure whether a bug exists
+piqueserver/piqueserver,504,OpenSpades crashes when sent id 60 (extinfo) before end of map transfer,bug,"**Describe the bug**
+OpenSpades receiving ExtInfo confuses the heuristics it used to determine in versions 0.1.3 and before.
+
+This is not our bug, but we need to work around this with existing openspades clients.
+
+As OpenSpades <= 0.1.3 does not support ExtInfo anyway, we should only send ExtInfo when we have made sure that the client is not OpenSpades <= 0.1.3, not unconditionally.
+",confirmed,title/description report unintended or incorrect software behaviour
+pixijs/pixijs,2598,canvas object (drawing/text...) size extra large on screen with window.devicePixelRatio of 1.5,🕷 Bug,"I use a sony vaio note book, which has an unsual pixelRatio of 1.5.
+
+I retrieved this value from window.devicePixelRatio and assigned it to the resolution property of options parameter when I created the renderer.
+
+It turned out everything on screen was enlarged, but PIXI was supposed to automatically adjust the size.  ( The same code worked on mobile devices with PixelRatio of 2 or larger. )
+
+I forced the ratio to 1, then everything was fine as expected.
+
+Any explanation to that? 
+
+For now I had to use a short cut with my code: force the ration to 1 when it is less than 2.
+
+By the way, i tested on chrome, edge and i.e. All the same.
+",confirmed,title/description report unintended or incorrect software behaviour
+pixijs/pixijs,10603,Bug: TilingSpritePipe crashes on updating tilePosition in invisible TilingSprite,🕷 Bug,"### Current Behavior
+
+Pixi 8 throws an exception when trying to update tilePosition in invisible TilingSprite after a few frames from start:
+[https://www.pixiplayground.com/#/edit/enpcvvfKNmXWyM9Sn-cxF](https://www.pixiplayground.com/#/edit/enpcvvfKNmXWyM9Sn-cxF)
+Call stack:
+`Uncaught TypeError: batchableMesh is undefined
+    validateRenderable TilingSpritePipe.ts:65
+    validateRenderables validateRenderables.ts:18
+    render RenderGroupSystem.ts:77
+    emit SystemRunner.ts:70
+    render AbstractRenderer.ts:295
+    render Application.ts:154
+    emit TickerListener.ts:64
+    update Ticker.ts:461
+    _tick Ticker.ts:163`
+    
+Works fine when tiling sprite is visible:
+[https://www.pixiplayground.com/#/edit/i5bMLqdrO87YNNqzoM2Yf](https://www.pixiplayground.com/#/edit/i5bMLqdrO87YNNqzoM2Yf)
+
+Also works fine when tilingSprite is invisible but updating tilePosition starting from first frame:
+[https://www.pixiplayground.com/#/edit/i1aBshgnrbr5NNxrvmOeP](https://www.pixiplayground.com/#/edit/i1aBshgnrbr5NNxrvmOeP)
+
+The same code in pixi 7 works without a problems:
+[https://www.pixiplayground.com/#/edit/Uk_SLNZYVV71z-hWcW5y_](https://www.pixiplayground.com/#/edit/Uk_SLN",confirmed,title/description report unintended or incorrect software behaviour
+quaver/quaver,189,Audio and image files with all caps file extension will fail import,Bug,"Map:  https://osu.ppy.sh/beatmapsets/440089/#mania/958619
+",confirmed,title/description report unintended or incorrect software behaviour
+quaver/quaver,1281,[redesign] There should not be an animation of the chat message container when resizing up,Bug,"It looks weird. Resizing up should just ""reveal"" messages above without any additional animation.",uncertain,"UX preference about resize animation, not a malfunction"
+quaver/quaver,2578,No audio (Arch Linux),Bug,"**Describe the bug**
+While playing the game there is no audio whatsoever
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Open the game
+
+**Expected behavior**
+You can interact with the menus but there is no audio. Levels do not play.
+
+**Desktop (please complete the following information):**
+ - OS: Arch Linux x86_64
+ - Linux Kernel: 5.8.1-arch1-1
+",confirmed,title/description report unintended or incorrect software behaviour
+reactivedrop/reactivedrop_public_src,595,Combat flares and incendiary mines collide with fire walls,bug,"I don't recall any other equipment that'd collide with firemine fire, so doubt this is intentional.",confirmed,title/description report unintended or incorrect software behaviour
+relativitymc/vmp-fabric,33,Adorn incompatible ,bug,"**Describe the bug**
+Adorn with VMP is bugged
+
+everything about that is in this issue: https://github.com/Juuxel/Adorn/issues/287
+
+**Checklist**
+<!-- put ""x""s into these brackets to check the checkbox like `[x]` -->
+ - [x] I am using the official version of the mod. 
+ - [x] I tried the latest development version but the issue persists. 
+ - [x] I searched for similar open issues and could not find an existing bug report on this. 
+
+",confirmed,title/description report unintended or incorrect software behaviour
+relativitymc/vmp-fabric,57,Memory Leak Fix & VMP conflict on 1.20.1 fabric,bug,"**Describe the bug**
+Game in 1.20.1 crashes with only both the latest memory leak fix mod (1.1.4) + VMP (0.2.0+beta.7.102) and the associated fabric apis.
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Get fabric 1.20.1 loader and apis
+2. Get memory leak fix + very many players
+
+**Runtime info (please complete the following information):**
+ - OS: windows
+ - Minecraft version: 1.20.1 
+ - Mod version: 0.20+beta.7.102
+
+**Crash reports / logs**
+https://pastebin.com/raw/F8X1SYaV
+
+
+**Checklist**
+ - [x] I am using the official version of the mod. 
+ - [x] I tried the latest development version but the issue persists. 
+ - [x] I searched for similar open issues and could not find an existing bug report on this. 
+
+**Additional context**
+This seems to only occur after the recent updates in memory leak fix, it occurs with both 1.1.4 and 1.1.3 of memory leak fix, but 1.1.2 works fine. Because the logs outputs an error from vmp, i thought to report here, but its a memory leak fix issue, lmk, and ill start one up there too.
+",confirmed,title/description report unintended or incorrect software behaviour
+revolutionary-games/thrive,2191,Quickloading during a cutscene freezes the game,bug,"When pressing F9 during the ""new game""-cutscene the game loads the savegame, but a frame of the cutscene still takes up the screen",confirmed,title/description report unintended or incorrect software behaviour
+revolutionary-games/thrive,2969,Add max length to the savename,bug,"Linux and windows has a max filename of 255, which means 244 characters are usable (without the `.thrivesave` ending). The user can enter longer filenames and the saving crashes.",confirmed,title/description report unintended or incorrect software behaviour
+revolutionary-games/thrive,5432,Some models are missing in Art Gallery,bug,It applies to phosphate chunks new ferroplast organelle available in non-lawk and injectisome upgrade,confirmed,title/description report unintended or incorrect software behaviour
+rptools/maptool,3574,[Bug]: Properties table in Edit Token dialog is not displayed,bug,"### Describe the Bug
+
+When opening the Edit Token dialog an exception is thrown and the table under the Properties tab does not display.
+
+### To Reproduce
+
+1. Open the Edit Token dialog for any token
+2. Observe the exception
+3. Check the Properties tab and observe that it just displays the text ""propertiesTable""
+
+### Expected Behaviour
+
+No exception is thrown and the properties tab works as expected.
+
+### Screenshots
+
+_No response_
+
+### MapTool Info
+
+develop branch
+
+### Desktop
+
+Windows 10
+
+### Additional Context
+
+The exception:
+<details>
+java.lang.ClassCastException: class com.jeta.forms.components.label.JETALabel cannot be cast to class com.jidesoft.grid.PropertyTable (com.jeta.forms.components.label.JETALabel and com.jidesoft.grid.PropertyTable are in unnamed module of loader 'app')
+	at net.rptools.maptool.client.ui.token.EditTokenDialog.getPropertyTable(EditTokenDialog.java:880)
+	at net.rptools.maptool.client.ui.token.EditTokenDialog.lambda$updatePropertiesTable$5(EditTokenDialog.java:604)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.a",confirmed,title/description report unintended or incorrect software behaviour
+rptools/maptool,4352,"[Bug]: Inconsistent tooltips for ""diamond"" / ""isometric rectangle"" tools",bug,"### Describe the Bug
+
+The topology tools were [recently updated](https://github.com/RPTools/maptool/issues/4027) to use the term ""isometric rectangle"" for the diamond-shaped tools. Meanwhile the analogous drawing tool and FoW tool still use the term ""diamond"" where ""isometric rectangle"" would be more appropriate.
+
+### To Reproduce
+
+Hover over the rightmost drawing tool and see the tooltip:
+> Draw a _diamond_.
+
+Hover over the rightmost FoW tool and see the tooltip
+> Expose/Hide a _diamond_ on the Fog of War.
+
+### Expected Behaviour
+
+The cases above should read:
+> Draw an _isometric rectangle_.
+
+and
+
+> Expose/Hide an _isometric rectangle_ on the Fog of War.
+
+### Screenshots
+
+_No response_
+
+### MapTool Info
+
+MapTool 1.14.0-rc.4
+
+### Desktop
+
+Linux Mint 21.2
+
+### Additional Context
+
+_No response_",confirmed,title/description report unintended or incorrect software behaviour
+sfttech/openage,1651,`std::find_if` not found when compiling with gcc 14,bug,"```
+/media/christoph/LinuxDat/Git-Repositories/openage-testing/libopenage/main/demo/interactive/interactive.cpp: In function ‘void openage::main::tests::interactive::demo(const openage::util::Path&)’:
+/media/christoph/LinuxDat/Git-Repositories/openage-testing/libopenage/main/demo/interactive/interactive.cpp:21:32: error: ‘find_if’ is not a member of ‘std’; did you mean ‘find’?
+   21 |         auto mod_engine = std::find_if(mods.begin(), mods.end(), [](const assets::ModpackInfo &mod) {
+      |                                ^~~~~~~
+      |                                find
+make[3]: *** [libopenage/CMakeFiles/libopenage.dir/build.make:2546: libopenage/CMakeFiles/libopenage.dir/main/demo/interactive/interactive.
+```
+
+I think this might be just a missing include of `<algorithm>`.",confirmed,title/description report unintended or incorrect software behaviour
+smcameron/space-nerds-in-space,81,Planetary rings disappear when they shouldn't,bug,"Planetary rings sometimes disappear.  I think this is culling at the object level when the center of the ring is out of the field of view, and the entire ring gets culled.
+",confirmed,title/description report unintended or incorrect software behaviour
+softbearstudios/mk48,218,Player was banned without reason,bug,"**Describe the bug**
+
+I was sending normal messages in the chat area and the system said ""You have been restricted for 18m due to profanity/spam"", I wasn't sending profanity or spam, I was just exchanging base information with my teammates.
+
+**Expected behavior**
+
+Optimize the criteria for banning.
+
+",confirmed,title/description report unintended or incorrect software behaviour
+the-tale/the-tale,893,exception в логике,type_bug,"```
+Traceback (most recent call last):
+
+  File ""/home/the-tale/env/lib/python2.7/site-packages/the_tale/common/amqp_queues/workers.py"", line 95, in process_cmd
+    run_with_newrelic(cmd, cmd_data)
+
+  File ""/home/the-tale/env/lib/python2.7/site-packages/the_tale/common/amqp_queues/workers.py"", line 19, in run_with_newrelic
+    return method(**method_data)
+
+  File ""/home/the-tale/env/lib/python2.7/site-packages/the_tale/game/workers/logic.py"", line 80, in process_next_turn
+    self.storage.process_turn(logger=self.logger)
+
+  File ""/home/the-tale/env/lib/python2.7/site-packages/the_tale/game/logic_storage.py"", line 126, in process_turn
+    leader_action.process_turn()
+
+  File ""/home/the-tale/env/lib/python2.7/site-packages/the_tale/game/actions/prototypes.py"", line 337, in process_turn
+    self.process_action()
+
+  File ""/home/the-tale/env/lib/python2.7/site-packages/the_tale/game/actions/prototypes.py"", line 330, in process_action
+    self.process()
+
+  File ""/home/the-tale/env/lib/python2.7/site-packages/the_tale/game/actions/prototypes.py"", line 477, in process
+    percents = self.hero.quests.current_quest.process()
+
+  File ""/home/the-tale/env/lib/python2.7/site-packages/the_tale/gam",confirmed,title/description report unintended or incorrect software behaviour
+the-tale/the-tale,1456,Лингвистика: переменные defender и attacker не имеют в ограничениях архетип,type_bug,"",confirmed,title/description report unintended or incorrect software behaviour
+tmodloader/tmodloader,3167,.NET Error when trying to join server on RHEL 9 based servers,Bug,"### Version
+
+Latest 1.4-stable
+
+### OS
+
+Linux
+
+### Platform
+
+Steam
+
+### This bug affects
+
+Gameplay as a Player
+
+### Description
+
+When players try to join a hosted world on an RHEL9 based server, they cannot get past the ""Server Found"" message. 
+
+On the server side, the administrator receives the following message: 
+error:03000098:digital envelope routines::invalid digest (see server.log for full trace)
+
+
+### Log File
+
+[server.log](https://github.com/tModLoader/tModLoader/files/10333779/server.log)
+
+
+### Steps to reproduce
+
+1. Host RHEL 9 based server (I have set up an Oracle Cloud instance based on Oracle Linux 9 with ARM64 CPUs)
+2. Try to join password-protected TmodLoader server hosted on this instance
+3. Get stuck on ""Server Found"" message
+
+### Expected Behavior
+
+Players should connect to the server and load the world successfully.
+
+### Actual Behavior
+
+When a player tries to join a hosted world, they cannot get past the ""Server Found"" message..
+
+### Reproduction frequency
+
+Everytime when a player tries to join the server and SHA1 signature creation and verification is disabled.
+
+### Additional Information
+
+It seems to have someth",confirmed,title/description report unintended or incorrect software behaviour
+tobymao/18xx,10026,1822 - Cannot sell shares in a company that has already operated,bug,"https://18xx.games/game/145168
+
+Trying to sell shares in a company which has completed an operating round, in this case MR shares where I am e-buying a train for Minor 28 immediately following the 1st round MR operated, which should be legal according to Rule 4.4.1 ""Shares cannot be sold in a company that has not completed an operating round.""
+
+No option for MR sale at this point.",confirmed,title/description report unintended or incorrect software behaviour
+tophat2d/tophat,219,`input::getMouseDelta` isn't scaled to the viewport,bug,"",confirmed,title/description report unintended or incorrect software behaviour
+vcmi/vcmi,4693,Freeze in battle with opening spell,bug,"**Describe the bug**
+Sometimes when the opening spell is casted, after that the battle freezes.
+
+**Game logs**
+That seems to be referring to battle. (it's VCMIClient log)
+
+[2024-Sep-29 17:19:11.451435] TRACE [runNetwork] global - Attempt to play sound 70 with file name BATTLE00 with cache
+[2024-Sep-29 17:19:11.482689] TRACE [runNetwork] network - 	Made second apply on cl: 11BattleStart
+[2024-Sep-29 17:19:11.482756] TRACE [runNetwork] network - Received CPack of type 14TurnTimeUpdate
+[2024-Sep-29 17:19:11.482780] TRACE [runNetwork] network - 	Made first apply on cl: 14TurnTimeUpdate
+[2024-Sep-29 17:19:11.482841] TRACE [runNetwork] network - 	Applied on gs: 14TurnTimeUpdate
+[2024-Sep-29 17:19:11.482854] TRACE [runNetwork] network - 	Made second apply on cl: 14TurnTimeUpdate
+[2024-Sep-29 17:19:11.482876] TRACE [runNetwork] network - Received CPack of type 16BattleLogMessage
+[2024-Sep-29 17:19:11.482892] TRACE [runNetwork] network - 	Made first apply on cl: 16BattleLogMessage
+[2024-Sep-29 17:19:11.482907] TRACE [runNetwork] network - 	Applied on gs: 16BattleLogMessage
+[2024-Sep-29 17:19:11.482935] TRACE [runNetwork] global - CBattleConsole message: Paladins casts 'Prayer",confirmed,title/description report unintended or incorrect software behaviour
+vcmi/vcmi,6080,CBattleInfoCallback Atempt to attack from invalid position!,bug,"**Describe the bug**
+There's an issue reported by GrafDeVan with AttackableTiles CBattleInfoCallback::getPotentiallyAttackableHexes triggering throw std::runtime_error(""Atempt to attack from invalid position!"");
+After talking with Ivan and Dydzio, it was agreed to introduce a temporary workaround so we avoind game crashes, but I'm making this report so we can store the saved game with which we can reproduce the issue.
+
+**Game logs**
+[VCMI_Client_log attempt to attack from invalid position.txt](https://github.com/user-attachments/files/22058626/VCMI_Client_log.attempt.to.attack.from.invalid.position.txt)
+
+**To Reproduce**
+[20250930 NewCrash.vsgm1.zip](https://github.com/user-attachments/files/22058602/20250930.NewCrash.vsgm1.zip)
+
+1. Download and start the saved game
+2. End your turn so AI can start his.
+3. AI goes into battle and triggers this error which crashes the game.
+
+**Expected behavior**
+Game shouldn't crash and battle should be valid.
+
+**Actual behavior**
+Game crashes
+
+**Did it work earlier?**
+Don't know when and if, didn't test it.
+
+**Screenshots**
+<img width=""1104"" height=""1225"" alt=""Image"" src=""https://github.com/user-attachments/assets/8e05cb9e-6148-45c6-b038-42e3c8a04",confirmed,title/description report unintended or incorrect software behaviour

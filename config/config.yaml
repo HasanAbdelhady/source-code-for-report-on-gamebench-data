@@ -1,0 +1,44 @@
+# OSSGameBench v2 empirical study configuration.
+# All paths are resolved relative to the project root unless absolute.
+# Override the dataset location with the environment variable
+# OSSGAMEBENCH_DATA_ROOT (must point at the directory that contains
+# issue.parquet, pr.parquet, etc.).
+
+dataset:
+  # Directory containing the extracted OSSGameBench v2 parquet files.
+  root: "../../OSSGameBench"
+  # Per-project commit-detail files (contain diffs); used only for the
+  # inventory (row counts from parquet footers) — never bulk-loaded.
+  commits_dir: "commits"
+  # Entity tables (parquet, relative to dataset.root)
+  tables:
+    project: "project.parquet"
+    issue: "issue.parquet"
+    issue_comment: "issue_comment.parquet"
+    pr: "pr.parquet"
+    pr_comment: "pr_comment.parquet"
+    pr_commit: "pr_commit.parquet"
+    issue_pr: "issue_pr.parquet"
+    commit_metadata: "commit_metadata.parquet"
+
+provenance:
+  zenodo_record: "https://zenodo.org/records/17553539"
+  dataset_doi: "10.5281/zenodo.17553539"
+  dataset_version: "v2"
+  paper_doi: "https://doi.org/10.1145/3793302.3793313"
+  # Published MD5 of the original Zenodo archive OSSGameBench.zip
+  original_archive_md5_published: "40fd064b56ec327b6284039b18b19ea1"
+  # Computed on this machine (see logs/provenance.log)
+  original_archive_md5_observed: "40fd064b56ec327b6284039b18b19ea1"
+  verified: true
+
+analysis:
+  seed: 20261120
+  bootstrap_iterations: 10000
+  # Minimum eligible issues per project for within-project analyses
+  min_project_issues: 10
+  # Minimum issues per group (single-PR / multi-PR) within a project
+  min_project_group_size: 5
+  # Closure-duration winsorisation cap (days) for robustness check R6
+  winsorize_cap_days: 365
+  output_formats: ["csv", "parquet"]

@@ -1,0 +1,61 @@
+decision,project,number,state,title,matching_label,reason
+broad,openra/openra,12201,CLOSED,Chinook Transports are unable to remain airborne over open terrain. [Playtest_20161001],Regression,standard defect-symptom category (crash/error/regression)
+broad,triplea-game/triplea,9634,CLOSED,"2.5.22294: LobbyWatcherKeepAliveTask - Failed to re-post game back to the lobby, connectiv",Error Report,standard defect-symptom category (crash/error/regression)
+broad,LostArtefacts/TR1X,2566,CLOSED,TR2X bug: ammo count is displayed in NG+ when loading a savegame,TRX bug,contains standalone token 'bug' (qualified bug statement)
+broad,LostArtefacts/TR1X,1568,CLOSED,OG bug: using CD audio can cause game crashes and other issues,OG bug,contains standalone token 'bug' (qualified bug statement)
+broad,tobymao/18xx,5847,CLOSED,[1870] Simultaneous Connection Runs tell multiple players it's their turn,minor bug,contains standalone token 'bug' (qualified bug statement)
+broad,LostArtefacts/TR1X,480,CLOSED,T1M bug (master): arrows breaking inventory ring,TRX bug,contains standalone token 'bug' (qualified bug statement)
+broad,pioneerspacesim/pioneer,1482,CLOSED,Can't create save file and game doesn't save settings.,Crash or hang,standard defect-symptom category (crash/error/regression)
+broad,FakeFishGames/Barotrauma,11731,CLOSED,Trying to open published mod instantly crashes the game,Crash,standard defect-symptom category (crash/error/regression)
+broad,triplea-game/triplea,13566,CLOSED,"2.5.22294: UnitsDrawer - MISSING UNIT IMAGE (won't be displayed): maginot_hit, UnitImageFa",Error Report,standard defect-symptom category (crash/error/regression)
+broad,triplea-game/triplea,11416,CLOSED,UnifiedInvocationHandler#invoke:57 - java.lang.IllegalStateException 2.6.22372: UnifiedInv,Error Report,standard defect-symptom category (crash/error/regression)
+broad,openra/openra,20462,CLOSED,Game won't start  `System.InvalidOperationException`,Crash,standard defect-symptom category (crash/error/regression)
+broad,theassemblyarmada/thyme,994,OPEN,Logic in GameWindow::Find_Next_Leaf looks suspicious,vanilla-bug,contains standalone token 'bug' (qualified bug statement)
+broad,triplea-game/triplea,7316,CLOSED,2.1.20365: ResourceCollection#removeResource:54 - IllegalArgumentException,Error Report,standard defect-symptom category (crash/error/regression)
+broad,FakeFishGames/Barotrauma,6805,CLOSED,Unstable - Character customization,Crash,standard defect-symptom category (crash/error/regression)
+broad,openra/openra,8980,CLOSED,Big maps overflow the radar widget when one enables the disableshroud cheat.,Crash,standard defect-symptom category (crash/error/regression)
+broad,openra/openra,7312,CLOSED,Missing InWorld check for starport drop,Crash,standard defect-symptom category (crash/error/regression)
+broad,LostArtefacts/TR2X,131,CLOSED,"TR2X bug: Delay when loading Lara's Home, New Game and Load Game",TRX bug,contains standalone token 'bug' (qualified bug statement)
+broad,pioneerspacesim/pioneer,3527,CLOSED,Crash with translations in Options screen,Crash or hang,standard defect-symptom category (crash/error/regression)
+broad,triplea-game/triplea,6826,CLOSED,2.0.20234: ClientFileSystemHelper#getCodeSourceFolder:49 - IllegalArgumentException,Error Report,standard defect-symptom category (crash/error/regression)
+broad,openra/openra,3835,CLOSED,Crash in Monster Tank Madness,Crash,standard defect-symptom category (crash/error/regression)
+excluded,etlegacy/etlegacy,970,CLOSED,Dynamite glowing shader,P3: Normal,no explicit bug/defect claim in label
+excluded,almasb/fxgl,392,CLOSED,"Change MouseTrigger.toString() to LMB, RMB, MMB",difficulty:medium,no explicit bug/defect claim in label
+excluded,almasb/fxgl,392,CLOSED,"Change MouseTrigger.toString() to LMB, RMB, MMB",type:refactor,no explicit bug/defect claim in label
+excluded,almasb/fxgl,392,CLOSED,"Change MouseTrigger.toString() to LMB, RMB, MMB",help wanted,no explicit bug/defect claim in label
+excluded,revolutionary-games/thrive,1027,CLOSED,Reimplement microbe death sound,intermediate,no explicit bug/defect claim in label
+excluded,revolutionary-games/thrive,1027,CLOSED,Reimplement microbe death sound,C#,no explicit bug/defect claim in label
+excluded,revolutionary-games/thrive,1027,CLOSED,Reimplement microbe death sound,programming,no explicit bug/defect claim in label
+excluded,openra/openra,7453,CLOSED,Can not order Actor.Attack command,Scripting,no explicit bug/defect claim in label
+excluded,space-wizards/space-station-14,28365,CLOSED,Warden job should roll before security officer,T: New Feature,no explicit bug/defect claim in label
+excluded,space-wizards/space-station-14,28365,CLOSED,Warden job should roll before security officer,P3: Standard,no explicit bug/defect claim in label
+excluded,space-wizards/space-station-14,28365,CLOSED,Warden job should roll before security officer,D3: Low,no explicit bug/defect claim in label
+excluded,space-wizards/space-station-14,28365,CLOSED,Warden job should roll before security officer,S: Needs Content PR Merged,no explicit bug/defect claim in label
+excluded,space-wizards/space-station-14,28365,CLOSED,Warden job should roll before security officer,A: Character/Species,no explicit bug/defect claim in label
+excluded,space-wizards/space-station-14,33029,CLOSED,deconstructing computers deletes their container contents,S: Untriaged,no explicit bug/defect claim in label
+excluded,jkgdevs/jediknightgalaxies,165,CLOSED,"ADS bug, firing animation played twice",priority:low,no explicit bug/defect claim in label
+excluded,pokeclicker/pokeclicker,815,CLOSED,Battle Frontier ideas,discussion,no explicit bug/defect claim in label
+excluded,pokeclicker/pokeclicker,815,CLOSED,Battle Frontier ideas,improvement,no explicit bug/defect claim in label
+excluded,tobymao/18xx,10608,CLOSED,18Chessapeake LHV unable to place Tile 1 on J2/Allentown/Home tile.,needs triage,no explicit bug/defect claim in label
+excluded,Vivecraft/VivecraftMod,101,OPEN,Gravity API Compatibility,mod compatibility,no explicit bug/defect claim in label
+excluded,hackclub/sprig,1310,CLOSED,use trie-based search in the sprig gallery,tech debt,no explicit bug/defect claim in label
+strict,draftbot-a-discord-adventure/draftbot,1839,CLOSED,Les anciennes missions de campagne de fight font crash la commande,bug,canonical whitelist: bare bug/defect type assertion
+strict,etlegacy/etlegacy,970,CLOSED,Dynamite glowing shader,🐞 Bug,canonical whitelist: bare bug/defect type assertion
+strict,jkgdevs/jediknightgalaxies,165,CLOSED,"ADS bug, firing animation played twice",bug,canonical whitelist: bare bug/defect type assertion
+strict,angband/angband,2795,CLOSED,main-gcu.c compile errors,T: bug,canonical whitelist: bare bug/defect type assertion
+strict,magefree/mage,3542,CLOSED,Stinkdrinker Bandit applies bonus twice,bug,canonical whitelist: bare bug/defect type assertion
+strict,snozbot/fungus,503,CLOSED,Fungus Lua setcharacter bug,bug,canonical whitelist: bare bug/defect type assertion
+strict,odamex/odamex,922,CLOSED,[BUG] Client crash when exiting any level in Chapter 5 of 2022: A DOOM Odyssey,Type-Bug,canonical whitelist: bare bug/defect type assertion
+strict,FakeFishGames/Barotrauma,4132,CLOSED,Reseting settings to default removes all items in level,Bug,canonical whitelist: bare bug/defect type assertion
+strict,angband/angband,2889,CLOSED,Lose turn when unable to attack,T: bug,canonical whitelist: bare bug/defect type assertion
+strict,kranx/vangers,186,CLOSED,Particle speed fix,Bug,canonical whitelist: bare bug/defect type assertion
+strict,hajimehoshi/ebiten,396,CLOSED,Crash on an Alpine container,bug,canonical whitelist: bare bug/defect type assertion
+strict,ihhub/fheroes2,719,CLOSED,Medusa's path calculation problem,bug,canonical whitelist: bare bug/defect type assertion
+strict,magefree/mage,6580,CLOSED,setCastSourceIdWithAlternateMana allows casting without additional non-mana costs,bug,canonical whitelist: bare bug/defect type assertion
+strict,diballesteros/nuzlocke,333,CLOSED,User Submitted Issue: # 88,bug,canonical whitelist: bare bug/defect type assertion
+strict,robosturm/commander_wars,1100,CLOSED,grimm's mini co not implemented,bug,canonical whitelist: bare bug/defect type assertion
+strict,pokeclicker/pokeclicker,2746,CLOSED,[BUG] Pokémon in hatchery disappeared since last update,bug,canonical whitelist: bare bug/defect type assertion
+strict,cozuya/secret-hitler,99,CLOSED,"Edge does not display chat right, especially noticable on 9 and 10 player games.",bug,canonical whitelist: bare bug/defect type assertion
+strict,FakeFishGames/Barotrauma,7106,CLOSED,Alien blood refuses to combine.,Bug,canonical whitelist: bare bug/defect type assertion
+strict,rptools/maptool,1149,CLOSED,execFunction fails for functions requiring trusted macros when defer = 1,bug,canonical whitelist: bare bug/defect type assertion
+strict,lss-manager/lss-manager-v3,454,CLOSED,WachenHover und Heatmap zeigen nix mehr an,BUG,canonical whitelist: bare bug/defect type assertion

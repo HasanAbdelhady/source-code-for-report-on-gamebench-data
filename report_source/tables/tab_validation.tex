@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Label-validation audit of the strict-bug classification (seeded random sample of 100 cohort issues; LLM-assisted single-reviewer screening, not independent double-human validation).\label{tab:validation}}
+\small \begin{tabular}{@{}lp{0.52\textwidth}@{}}
+\toprule
+Outcome & $n$ (of 100) \\\midrule
+Confirmed as a genuine bug report & 91 \\
+Rejected (not a bug report) & 2 \\
+Uncertain & 7 \\
+\midrule
+Precision, decided cases only & \textbf{97.9\%} (95\% Wilson CI 92.5\%--99.4\%) \\
+Precision, uncertain counted as errors & 91.0\% (CI 83.8\%--95.2\%) \\
+\bottomrule
+\end{tabular}
+\end{table}

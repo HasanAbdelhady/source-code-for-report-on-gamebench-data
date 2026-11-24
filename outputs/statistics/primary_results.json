@@ -1,0 +1,276 @@
+{
+  "seed": 20261120,
+  "bootstrap_iterations": 10000,
+  "descriptives": [
+    {
+      "group": "A_single",
+      "n": 14280,
+      "mean_days": 110.60090474002102,
+      "sd_days": 323.15118476145824,
+      "var_days2": 104426.68821273414,
+      "min_days": 2.3148148148148147e-05,
+      "q1_days": 1.5124247685185184,
+      "median_days": 7.98615162037037,
+      "q3_days": 54.413093171296296,
+      "iqr_days": 52.900668402777775,
+      "p90_days": 279.8431076388889,
+      "p95_days": 588.2482291666663,
+      "max_days": 4097.5903356481485
+    },
+    {
+      "group": "B_multi",
+      "n": 662,
+      "mean_days": 219.37344230796126,
+      "sd_days": 485.2948932204798,
+      "var_days2": 235511.13338587692,
+      "min_days": 0.0017013888888888888,
+      "q1_days": 5.917789351851852,
+      "median_days": 35.27314236111111,
+      "q3_days": 200.5593460648148,
+      "iqr_days": 194.64155671296294,
+      "p90_days": 624.7607650462962,
+      "p95_days": 1054.0723796296247,
+      "max_days": 5041.858113425926
+    },
+    {
+      "group": "C_zero_excluded",
+      "n": 48746,
+      "mean_days": 131.09195601495696,
+      "sd_days": 350.9603330825355,
+      "var_days2": 123173.15539740425,
+      "min_days": 0.0,
+      "q1_days": 0.736712962962963,
+      "median_days": 7.841510416666667,
+      "q3_days": 71.60532118055556,
+      "iqr_days": 70.8686082175926,
+      "p90_days": 363.33670138888886,
+      "p95_days": 764.7447916666666,
+      "max_days": 6405.766608796296
+    }
+  ],
+  "primary": {
+    "n_A": 14280,
+    "n_B": 662,
+    "median_A_days": 7.98615162037037,
+    "median_B_days": 35.27314236111111,
+    "median_diff_days": 27.28699074074074,
+    "mannwhitney_U": 6069998.0,
+    "p_two_sided": 3.3100495779104574e-35,
+    "p_one_sided_B_greater": 1.6550247889552287e-35,
+    "cliffs_delta": 0.2841990572664111,
+    "cliffs_magnitude": "small",
+    "hodges_lehmann_shift_days": 9.761921296296297,
+    "median_diff_ci95_issue_level": [
+      18.286361834490737,
+      35.2306607349537
+    ],
+    "median_diff_ci95_project_cluster": [
+      13.855502748842595,
+      51.42020775462961
+    ],
+    "n_projects_in_AB": 361
+  },
+  "project_level": {
+    "n_projects_both_groups": 117,
+    "n_projects_B_higher": 88,
+    "n_projects_B_lower": 29,
+    "sign_test_p": 4.2799427179907984e-08,
+    "median_of_project_diffs_days": 24.44590277777778,
+    "leave_projects_out": {
+      "drop_top1_by_nB": {
+        "n_A": 13654,
+        "n_B": 606,
+        "median_A": 8.034513888888888,
+        "median_B": 38.82508680555556,
+        "median_diff": 30.79057291666667,
+        "cliffs_delta": 0.30255813042854013
+      },
+      "drop_top5_by_nB": {
+        "n_A": 9579,
+        "n_B": 444,
+        "median_A": 9.060983796296297,
+        "median_B": 36.61177083333333,
+        "median_diff": 27.550787037037033,
+        "cliffs_delta": 0.27381782032580654
+      },
+      "drop_top10_by_nB": {
+        "n_A": 7836,
+        "n_B": 328,
+        "median_A": 9.425081018518519,
+        "median_B": 43.53293402777778,
+        "median_diff": 34.10785300925926,
+        "cliffs_delta": 0.30966209738667066
+      },
+      "drop_top20_by_nB": {
+        "n_A": 5555,
+        "n_B": 202,
+        "median_A": 9.278310185185186,
+        "median_B": 44.21898726851852,
+        "median_diff": 34.940677083333334,
+        "cliffs_delta": 0.28944221154788746
+      }
+    }
+  },
+  "regression": {
+    "n": 14942,
+    "n_projects": 361,
+    "coef_b_multi_log1p": 0.9054736272515325,
+    "se_cluster_project": 0.11966830332185444,
+    "ci95": [
+      0.6709280626496829,
+      1.1400191918533822
+    ],
+    "p": 3.833301243188518e-14,
+    "multiplicative_interpretation_days_gt1": 1.473102974679254,
+    "note": "log1p scale; multiplicative reading is meaningful for durations >> 1 day"
+  },
+  "secondary": {
+    "spearman_rho_AB": 0.10146115622903384,
+    "spearman_p_AB": 1.7212499143544746e-35,
+    "spearman_rho_with_zero": 0.043781238086817116,
+    "spearman_p_with_zero": 2.0983034185832327e-28,
+    "kruskal_H": 158.71505646855923,
+    "kruskal_p": 2.7573377071349113e-33,
+    "categories": [
+      {
+        "kcat": "1",
+        "n": 14280,
+        "median_days": 7.98615162037037,
+        "p90_days": 279.83417824074075
+      },
+      {
+        "kcat": "2",
+        "n": 615,
+        "median_days": 33.43560185185185,
+        "p90_days": 615.3306481481482
+      },
+      {
+        "kcat": "3",
+        "n": 44,
+        "median_days": 86.76420717592592,
+        "p90_days": 878.1911921296296
+      },
+      {
+        "kcat": "4",
+        "n": 1,
+        "median_days": 8.945023148148149,
+        "p90_days": 8.945023148148149
+      },
+      {
+        "kcat": "5+",
+        "n": 2,
+        "median_days": 2013.5037094907407,
+        "p90_days": 3664.6363310185184
+      }
+    ]
+  },
+  "timing": {
+    "B_last_PR_lifetime_fraction_median": 0.9528118700930115,
+    "B_last_PR_after_90pct_share": 0.5755287009063444,
+    "B_last_PR_after_75pct_share": 0.7084592145015106,
+    "B_first_PR_lifetime_fraction_median": 0.2772678575862165,
+    "A_PR_lifetime_fraction_median": 0.8346176587305678,
+    "determined_exposure_subset": {
+      "definition": "issues with >0 duration whose every matched linked PR was created within the first 50% of the issue lifetime",
+      "n_A": 4271,
+      "n_B": 108,
+      "median_A": 3.343240740740741,
+      "median_B": 11.96408564814815,
+      "median_diff": 8.620844907407408,
+      "mwu_U": 319771.0,
+      "p": 6.4374790886195446e-12,
+      "cliffs_delta": 0.3864868146066929
+    }
+  },
+  "resolution_path_exploratory": {
+    "tests": [
+      {
+        "measure": "n_contrib",
+        "n_A": 14280,
+        "n_B": 662,
+        "median_A": 1.0,
+        "median_B": 1.0,
+        "U": 6709093.0,
+        "p_raw": 0.0,
+        "cliffs_delta": 0.41940918361302226,
+        "p_holm": 0.0
+      },
+      {
+        "measure": "median_pr_time_days",
+        "n_A": 14275,
+        "n_B": 662,
+        "median_A": 0.7770023148148149,
+        "median_B": 2.046513310185185,
+        "U": 5960769.0,
+        "p_raw": 4.507217234390041e-30,
+        "cliffs_delta": 0.26153173792731255,
+        "p_holm": 9.014434468780083e-30
+      },
+      {
+        "measure": "n_commits",
+        "n_A": 14280,
+        "n_B": 662,
+        "median_A": 2.0,
+        "median_B": 5.0,
+        "U": 7266349.5,
+        "p_raw": 1.1275481416392933e-133,
+        "cliffs_delta": 0.5373051486455609,
+        "p_holm": 5.637740708196467e-133
+      },
+      {
+        "measure": "n_pr_comments",
+        "n_A": 14280,
+        "n_B": 662,
+        "median_A": 1.0,
+        "median_B": 3.0,
+        "U": 7026623.0,
+        "p_raw": 7.546043013655179e-113,
+        "cliffs_delta": 0.48658741442196213,
+        "p_holm": 3.0184172054620717e-112
+      },
+      {
+        "measure": "n_issue_comments",
+        "n_A": 14280,
+        "n_B": 662,
+        "median_A": 1.0,
+        "median_B": 2.0,
+        "U": 5959297.5,
+        "p_raw": 7.033720111693772e-32,
+        "cliffs_delta": 0.26077870725329405,
+        "p_holm": 2.1101160335081314e-31
+      }
+    ],
+    "merge_rate": {
+      "measure": "share_with_merged_PR",
+      "rate_A": 0.9717787114845938,
+      "rate_B": 0.9652567975830816,
+      "chi2": 0.7503986969889375,
+      "p_raw": 0.3863500303024764,
+      "p_holm": 0.3863500303024764
+    },
+    "note": "exploratory; comment/commit counts are NOT effort measures"
+  },
+  "censored_supplementary": {
+    "snapshot_estimate": "2025-10-12 22:28:19+09:00",
+    "groups": {
+      "A": {
+        "n": 12672,
+        "n_open": 276,
+        "median_obs_days": 8.0
+      },
+      "B": {
+        "n": 2620,
+        "n_open": 74,
+        "median_obs_days": 14.0
+      }
+    },
+    "logrank_chi2": 43.80820699492392,
+    "logrank_p": 3.621830933661978e-11,
+    "caveats": [
+      "final link counts for still-open issues are snapshot-truncated (they can only grow), biasing group assignment",
+      "issue-to-PR LINK addition times are not recorded; PR creation times only upper-bound nothing about when a link appeared",
+      "excludes issues with zero links entirely",
+      "EXPLORATORY: not part of confirmatory inference"
+    ]
+  }
+}

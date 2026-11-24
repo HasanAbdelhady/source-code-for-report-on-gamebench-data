@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Primary comparison: single-PR (A) vs.\ multi-PR (B) closed strict bugs. Both confidence intervals use 10{,}000 bootstrap draws (seed 20261120); the project-level one is wider and is the honest reading.\label{tab:main}}
+\small \begin{tabular}{@{}ll@{}}
+\toprule
+Quantity & Value \\\midrule
+Samples (Group A / Group B) & 14,280 / 662 issues \\
+Median days to closure (A / B) & 8.0 / 35.3 \\
+Median difference (B $-$ A) & \textbf{27.3}~days \\
+Hodges--Lehmann shift & 9.8~days \\
+Mann--Whitney $U$ (two-sided $p$) & 6\,069\,998 ($p=3.31\times 10^{-35}$) \\
+Cliff's $\delta$ (magnitude) & 0.284 (small) \\
+95\% CI for median difference, resampling issues & [18.3, 35.2] days \\
+95\% CI for median difference, resampling projects & [13.9, 51.4] days \\
+Within-project sign test & B slower in 88/117 projects ($p=4.28\times 10^{-8}$) \\
+Regression $\log(1+\text{days})$, project $\times$ year fixed effects & $\hat\beta=0.905$, CI [0.67, 1.14], $p=3.83\times 10^{-14}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
