@@ -21,8 +21,9 @@ cd source-code-for-report-on-gamebench-data
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export OSSGAMEBENCH_DATA_ROOT=/path/to/extracted/OSSGameBench
-for s in inspect_schema inventory classify_bugs prepare_data analyze \
-         robustness landmark validate_labels make_figures build_report; do
+for s in inspect_schema inventory classify_bugs prepare_data \
+         analyze robustness landmark validate_labels \
+         make_figures build_report; do
   .venv/bin/python -I src/$s.py || break
 done
 \end{verbatim}
