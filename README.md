@@ -50,10 +50,7 @@ Extract it so the directory contains the entity tables
 `issue_pr.parquet`, `commit_metadata.parquet`) plus the `commits/`
 directory of per-project commit-detail parquet files.
 
-*Dataset version note.* The analysis runs on v2. The newer Zenodo
-record 18359123 (v3) publishes scripts and documentation only — no
-data archive — so v2 is the only version that supports the analysis;
-Section 2 of the report states this explicitly.
+*Dataset version note.* The analysis runs on OSSGameBench Version v2 (Zenodo record 17553539, DOI `10.5281/zenodo.17553539`), which provides the full 65.8 GB data archive analyzed in this study. Section 2 of the report documents the dataset provenance and checksum verification.
 
 Then tell the pipeline where the data lives (pick one):
 

@@ -19,7 +19,7 @@ To ensure that the observed association between multi-PR status and closure dela
 
 The empirical direction holds across all seven checks: Cliff's $\delta$ remains confined within a narrow band (0.279 to 0.314, all $p < 10^{-10}$), confirming that the raw statistical association is robust.
 
-\subsection{The Fixed-Landmark Finding: Disentangling Link Accumulation}\label{sec:landmark}
+\subsection{Fixed-Landmark Analysis: Evaluating Time-Dependent Link Accumulation}\label{sec:landmark}
 The core inquiry is whether the raw \valmedDiff-day gap reflects genuine resolution friction or reverse-causality link accumulation.
 
 \textbf{Exposure-Restricted Subset.} Restricting the analysis to issues whose linked PRs were all created within the initial 50\% of the issue's lifespan reduces the median gap from \valmedDiff{}~days to \valdetDiff{}~days (Group B median \valdetMedB{} vs.\ Group A \valdetMedA{}~days; $n_A=\valdetNA$, $n_B=\valdetNB$; $\delta = \valdetD$, $p = \valdetP$). However, because selecting this subset conditions on the final closure date (the outcome itself), it acts as an informative upper bound rather than an unbiased causal estimate.
@@ -31,20 +31,30 @@ The core inquiry is whether the raw \valmedDiff-day gap reflects genuine resolut
   \item Only \vallmNM{} issues had accumulated \textbf{two or more} linked PRs by day~30.
 \end{itemize}
 
-When we measure the subsequent calendar duration from day~30 until closure, the gap between one-PR and multi-PR issues \textbf{completely vanishes}:
+When measuring subsequent calendar duration from day~30 until closure, the observed difference between one-PR and multi-PR issues is small:
 \begin{equation}
 \text{Median}(\ge 2\text{ PRs}) - \text{Median}(1\text{ PR}) = \vallmMedM{} - \vallmMedOne{} = \vallmDiff\text{ days}
 \end{equation}
-The difference is statistically indistinguishable from zero ($\delta = \vallmD$, $p = \vallmP$, Mann--Whitney $U$). The project-clustered 95\% confidence interval spans \vallmCI{}~days, firmly straddling zero (Table~\ref{tab:landmark}). Within individual repositories, among the \vallmSignN{} projects with both landmark groups at day~30, multi-PR issues close slower in \vallmSignW{} projects and faster in 9 ($p=\vallmSignP$---equivalent to a random coin toss).
+The difference is not statistically distinguishable from zero ($\delta = \vallmD$, $p = \vallmP$, Mann--Whitney $U$). However, this non-significant result must \textbf{not} be interpreted as demonstrating that the true difference is zero:
+\begin{enumerate}
+  \item \textbf{Statistical Imprecision}: With only $n=33$ multi-PR issues at day~30, the test has limited statistical power. The project-clustered 95\% confidence interval spans \vallmCI{} (Table~\ref{tab:landmark}), which accommodates substantial differences in either direction (from roughly three weeks faster to four weeks slower). The result is therefore statistically inconclusive rather than proof of equivalence.
+  \item \textbf{Selection and Survivor Bias}: The landmark cohort is restricted to issues that eventually closed and eventually received at least one linked PR. Issues still open at the dataset snapshot date and issues that never received a PR are omitted. While landmarking reduces a specific form of calendar accumulation bias, it does not eliminate all selection biases.
+\end{enumerate}
 
 \input{tables/tab_landmark}
 
-Two decisive mechanisms account for this finding:
-\begin{enumerate}
-  \item \textbf{Late Link Assembly}: \textbf{\vallmShareB{}} of original Group-B issues had not yet accumulated two PRs by day~30. Their multi-PR status was assembled in the second half of an already-prolonged open lifecycle.
-  \item \textbf{The True Bottleneck is Zero PR Activity}: Issues with \emph{no} linked PR by day~30 suffered severe subsequent delays, requiring a median of \vallmMedZ{} additional days to close after the landmark, compared to only \vallmMedM{} days for the multi-PR cohort ($\delta = \vallmZD$, $p = \vallmZP$).
-\end{enumerate}
+\textbf{Landmark Mechanisms and PR Arrival Timing.}
+Two findings clarify the dynamic:
+\begin{itemize}
+  \item \textbf{Late Link Assembly}: Crucially, \textbf{\vallmShareB{}} of original Group-B issues had not yet accumulated two PRs by day~30. The overwhelming majority of multi-PR linkages were assembled late in an already-extended open period, demonstrating that multi-PR status is largely assembled over time.
+  \item \textbf{Zero PR Activity at Day 30}: In contrast, issues with \emph{no} linked PR by day~30 experienced severe delays, requiring a median of \vallmMedZ{} additional days to close after the landmark, compared to \vallmMedM{} days for the multi-PR cohort ($\delta = \vallmZD$, $p = \vallmZP$).
+\end{itemize}
 
-\textbf{Sensitivity at $L=7$ and $L=90$ days.} At an early landmark of $L=7$ days, multi-PR issues ($n=47$ at risk) closed 5.1 days \emph{faster} ($p=0.015$), indicating that early multi-PR activity reflects intense, active contributor focus. At $L=90$ days, the subsequent difference is small and statistically non-significant ($+21.2$ days, 95\% CI $-41.3$ to $+189.0$ days, $n=22$ multi-PR). 
+\textbf{Varying Landmarks: Day-7 and Day-90 Comparisons.}
+The day-30 finding cannot be assumed to represent every development milestone:
+\begin{itemize}
+  \item \textbf{Day 7 ($L=7$)}: At day~7 ($n_1=1{,}656, n_{\ge 2}=47$), multi-PR issues closed a median of $5.1$~days \emph{faster} than 1-PR issues ($p=0.0154$, 95\% CI $[-6.8, -1.4]$ days). Early multi-PR submissions likely capture active, coordinated contributor engagement on urgent defects.
+  \item \textbf{Day 90 ($L=90$)}: At day~90 ($n_1=449, n_{\ge 2}=22$), multi-PR issues closed $21.2$~days later, but with only 22 multi-PR tickets, the comparison is statistically non-significant ($p=0.641$) and yields an exceptionally wide 95\% confidence interval ($-41.3$ to $+189.0$ days).
+\end{itemize}
 
-In summary, once the link-accumulation channel is controlled, having multiple linked PRs does not cause substantive resolution delays. The raw 27.3-day delay is predominantly an artifact of open issues accumulating pull requests over time.
+In summary, the landmark analysis demonstrates that multi-PR status is overwhelmingly assembled late in ticket lifecycles rather than early in triage. While this substantially discounts the raw 27.3-day association as a direct causal effect, landmark estimates at later stages remain imprecise due to small surviving cell counts.

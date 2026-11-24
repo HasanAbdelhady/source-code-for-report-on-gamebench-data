@@ -1,6 +1,6 @@
 \section{Discussion and Practical Improvements}\label{sec:implications}
 
-Two central empirical findings shape the practical implications of this study. First, multi-PR bug issues close substantially later in raw calendar time (\S\ref{sec:primary}), but the vast majority of secondary PR links appear only near the conclusion of the issue's lifespan (\S\ref{sec:timing}). Second, when the time-accumulation channel is blocked via a fixed landmark, having multiple PRs introduces essentially zero additional delay (\S\ref{sec:landmark})—whereas issues with \emph{no} linked PR by day~30 endure prolonged delays. Consequently, accumulating multiple pull requests is primarily a \emph{symptom} of a long-lived issue rather than a causal driver of resolution difficulty. The primary operational warning sign is not "multiple PRs submitted," but "an open defect with zero reviewable contributions."
+Two central empirical findings shape the practical implications of this study. First, multi-PR bug issues close substantially later in raw calendar time (\S\ref{sec:primary}), but the vast majority of secondary PR links appear only near the conclusion of the issue's lifespan (\S\ref{sec:timing}). Second, when assessing subsequent duration at fixed calendar landmarks (\S\ref{sec:landmark}), differences between 1-PR and multi-PR issues at day~30 are not statistically distinguishable from zero ($-0.8$ days, $p=0.832$), though this estimate remains imprecise ($n=33$, 95\% CI $[-22.5, +29.2]$ days). Meanwhile, issues with \emph{no} linked PR by day~30 endure severe subsequent delays. Consequently, accumulating multiple pull requests is primarily a \emph{symptom} of a long-lived issue rather than a proven causal driver of resolution difficulty. The primary operational warning sign is not "multiple PRs submitted," but "an open defect with zero reviewable contributions."
 
 Table~\ref{tab:recommendations} summarizes five grounded practical recommendations for open-source game maintainers. Each recommendation connects an empirical finding to an operational maintainer action, while explicitly delineating the analytical boundaries of what our observational data can and cannot prove.
 
@@ -31,9 +31,9 @@ That triage intervention accelerates resolution or prevents abandonment. \\
 \addlinespace
 \textbf{3. Decouple PR Count from Difficulty}\newline
 Treat PR multiplicity as workflow noise rather than defect complexity. &
-Landmark analysis gap $\approx 0$ days; PR review durations remain short despite long calendar life. &
+Landmark gap at day~30 is not distinguishable from zero (wide CI $[-22.5, 29.2]$~d, $n=33$); PR review durations remain short. &
 Do not use linked PR count or commit churn as triage proxies for defect difficulty or effort. &
-Actual developer debugging effort or cognitive task complexity (unmeasured). \\
+Actual developer debugging effort, or that multi-PR issues carry zero additional burden. \\
 \addlinespace
 \textbf{4. Decompose Closure Time}\newline
 Deconstruct calendar time into operational phases; closure $\neq$ verified fix. &
@@ -69,7 +69,7 @@ Empirical efficacy of domain-specific triage tooling (future work). \\
 \textbf{Evidence boundary.} The data demonstrates that multi-PR status is assembled late in calendar time, but it cannot establish whether active maintainer intervention would accelerate resolution or whether delayed closure stems from inherently intractable architectural defects.
 
 \subsection{Decoupling PR Multiplicity from Bug Difficulty in Triage}
-\textbf{Empirical motivation.} Group-B issues accumulate significantly more commits (median 5 vs.\ 2, Cliff's $\delta=0.537$) and PR comments (median 3 vs.\ 1, $\delta=0.487$, Table~\ref{tab:exploratory}). However, the median duration of individual PRs remains modest (2.05~days for B vs.\ 0.78~days for A), and 96.5\% of Group-B issues ultimately merge at least one PR. Once time accumulation is blocked, the landmark gap is $\approx 0$ days.
+\textbf{Empirical motivation.} Group-B issues accumulate significantly more commits (median 5 vs.\ 2, Cliff's $\delta=0.537$) and PR comments (median 3 vs.\ 1, $\delta=0.487$, Table~\ref{tab:exploratory}). However, the median duration of individual PRs remains modest (2.05~days for B vs.\ 0.78~days for A), and 96.5\% of Group-B issues ultimately merge at least one PR. In the day-30 landmark analysis, subsequent closure times for multi-PR issues are not statistically distinguishable from single-PR issues ($-0.8$ days, $p=0.832$), though the estimate is imprecise due to small surviving sample size ($n=33$).
 
 \textbf{Operational problem.} Project managers and automated triage algorithms often treat PR counts or commit volume as direct proxies for defect complexity or debugging effort. This conflates implementation churn and social coordination overhead with intrinsic computational difficulty.
 

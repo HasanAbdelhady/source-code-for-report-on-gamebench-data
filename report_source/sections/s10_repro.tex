@@ -1,25 +1,21 @@
 \section{Reproducibility and Replication Package}\label{sec:repro}
 
-To guarantee full empirical transparency and independent verification, all analysis code, reproduction scripts, configuration templates, and data extraction pipelines are publicly archived:
-\begin{center}
-\textbf{Replication Repository:} \url{https://github.com/HasanAbdelhady/source-code-for-report-on-gamebench-data}
-\end{center}
+To guarantee full empirical transparency and independent verification, all analysis code, reproduction scripts, configuration templates, and data extraction pipelines are publicly archived at:
+\url{https://github.com/HasanAbdelhady/source-code-for-report-on-gamebench-data}.
 
 \textbf{Dataset Access and Integrity Verification.}
-The study uses the official \textbf{OSSGameBench dataset (Version v2)}, available from Zenodo under record \texttt{17553539} (DOI: \texttt{10.5281/zenodo.17553539})~\cite{zenodo_ossgamebench_v2}. Before running the analysis, the archive checksum should be verified:
-\begin{verbatim}
-md5sum OSSGameBench.zip
-# Expected: 40fd064b56ec327b6284039b18b19ea1
-\end{verbatim}
-The extracted directory contains the core Parquet tables: \texttt{project.parquet}, \texttt{issue.parquet}, \texttt{pr.parquet}, \texttt{issue\_comment.parquet}, \texttt{pr\_comment.parquet}, \texttt{pr\_commit.parquet}, \texttt{commit\_metadata.parquet}, and \texttt{issue\_pr.parquet}.
+The study uses the official \textbf{OSSGameBench dataset (Version v2)}, available from Zenodo under record \texttt{17553539} (DOI: \texttt{10.5281/zenodo.17553539})~\cite{zenodo_ossgamebench_v2}. Before analysis, archive integrity should be verified:
+\begin{center}
+\texttt{md5sum OSSGameBench.zip} $\rightarrow$ \texttt{40fd064b56ec327b6284039b18b19ea1}
+\end{center}
+Extracted tables include: \texttt{project.parquet}, \texttt{issue.parquet}, \texttt{pr.parquet}, \texttt{issue\_comment.parquet}, \texttt{pr\_comment.parquet}, \texttt{pr\_commit.parquet}, \texttt{commit\_metadata.parquet}, and \texttt{issue\_pr.parquet}.
 
 \textbf{Execution and Environment Setup.}
 The replication pipeline requires Python 3.10+ and scientific libraries (\texttt{pandas}, \texttt{pyarrow}, \texttt{scipy}, \texttt{numpy}, \texttt{statsmodels}, and \texttt{matplotlib}). To reproduce all findings from scratch:
 \begin{verbatim}
 git clone https://github.com/HasanAbdelhady/source-code-for-report-on-gamebench-data.git
-cd source-code-for-report-on-gamebench-data
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+cd source-code-for-report-on-gamebench-data && python -m venv .venv
+source .venv/bin/activate && pip install -r requirements.txt
 export OSSGAMEBENCH_DATA_ROOT=/path/to/extracted/OSSGameBench
 for s in inspect_schema inventory classify_bugs prepare_data \
          analyze robustness landmark validate_labels \
@@ -29,4 +25,4 @@ done
 \end{verbatim}
 
 \textbf{Pipeline Stages and Determinism.}
-The pipeline executes sequentially: (1) schema inspection and data-quality inventory; (2) label taxonomy classification across all 4{,}273 labels; (3) cohort filtering ledger construction; (4) non-parametric hypothesis testing with 10{,}000-draw project-clustered bootstrap intervals; (5) PR arrival timing and fixed-landmark survival modeling ($L=7, 30, 90$); (6) label audit evaluation; (7) robustness testing (R1--R7); and (8) figure and table generation. All random processes (bootstrapping and validation sampling) use fixed seed 20261120, guaranteeing bit-for-bit numerical reproducibility across re-runs.
+The pipeline executes sequentially: (1) schema inspection and data inventory; (2) label taxonomy classification across all 4{,}273 labels; (3) cohort filtering ledger construction; (4) non-parametric hypothesis testing with 10{,}000-draw project-clustered bootstrap intervals; (5) PR arrival timing and fixed-landmark survival modeling ($L=7, 30, 90$); (6) label audit evaluation; (7) robustness testing (R1--R7); and (8) figure and table generation. All random processes use fixed seed 20261120, guaranteeing bit-for-bit numerical reproducibility.

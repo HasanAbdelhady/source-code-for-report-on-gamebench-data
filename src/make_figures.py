@@ -224,19 +224,32 @@ def fig5_timing(df):
     fb = (b["last_pr_days_after_issue"] / b["duration_days"]).drop_nulls()
     fa = fa.to_numpy().astype(float)
     fb = fb.to_numpy().astype(float)
-    fig, ax = plt.subplots(figsize=(6.6, 3.2))
+    fig, ax = plt.subplots(figsize=(7.2, 3.8))
     bins = np.linspace(0, 2, 41)
     ax.hist(fa, bins=bins, density=True, color=BLUE, alpha=0.65,
             label=f"A: single linked PR (n={fa.size:,})", zorder=3)
     ax.hist(fb, bins=bins, density=True, color=ORANGE, alpha=0.85,
             label=f"B: last of multiple linked PRs (n={fb.size:,})",
             zorder=4)
-    for arr, col, med_y in ((fa, BLUE, 9.9), (fb, ORANGE, 10.8)):
-        m = np.median(arr)
-        ax.axvline(m, color=col, lw=1.4, ls=(0, (4, 3)))
-        ax.text(m + 0.025, med_y, f"median {m:.2f}", color=col,
-                fontsize=8, ha="left", va="bottom")
-    ax.set_ylim(0, 11.6)
+
+    med_a = np.median(fa)
+    med_b = np.median(fb)
+
+    # Vertical median lines
+    ax.axvline(med_a, color=BLUE, lw=1.5, ls="--", zorder=5)
+    ax.axvline(med_b, color=ORANGE, lw=1.5, ls="--", zorder=5)
+
+    # Place annotations neatly above the histogram bars and clear of the legend
+    ax.text(med_a - 0.02, 8.2, f"median {med_a:.2f}", color=BLUE,
+            fontsize=8.5, fontweight="bold", ha="right", va="center",
+            bbox=dict(boxstyle="round,pad=0.25", fc="white", ec=BLUE, lw=0.8, alpha=0.9),
+            zorder=6)
+    ax.text(med_b + 0.03, 10.5, f"median {med_b:.2f}", color=ORANGE,
+            fontsize=8.5, fontweight="bold", ha="left", va="center",
+            bbox=dict(boxstyle="round,pad=0.25", fc="white", ec=ORANGE, lw=0.8, alpha=0.9),
+            zorder=6)
+
+    ax.set_ylim(0, 12.0)
     ax.set_xlim(0, 2)
     ax.set_xticks([0, 0.5, 1, 1.5, 2], ["0", "0.5", "1.0\n(closure)", "1.5",
                                         "2.0"])
@@ -246,7 +259,7 @@ def fig5_timing(df):
                   "lifetime (0 = issue created, 1 = closed; off-scale: "
                   f"A {off_a:.1f}%, B {off_b:.1f}%)")
     ax.set_ylabel("density")
-    ax.legend(loc="upper left")
+    ax.legend(loc="upper left", bbox_to_anchor=(0.02, 0.98))
     ax.set_axisbelow(True)
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
